@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Jekyll CSS Styleguide
+title: EBI Pattern library
 description: Easily generate a CSS Styleguide—or 'Pattern Library'— on Jekyll
 ---
 

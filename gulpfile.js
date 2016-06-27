@@ -4,7 +4,7 @@
 // npm install gulp --save-dev
 // npm install gulp-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-clean gulp-notify gulp-rename gulp-cache browser-sync --save-dev
 
-// Most of this is taken from: 
+// Most of this is taken from:
 // http://markgoodyear.com/2014/01/getting-started-with-gulp/
 
 
@@ -41,23 +41,23 @@ gulp.task('sass', function() {
 });
 
 // COPY CSS
-gulp.task('copycss', function() {
-	return gulp.src(paths.css+'app.min.css')
-		.pipe(gulp.dest('./_site/static/css/'))
-		// .pipe(notify({ message: 'Copied Minified CSS to _site/static/css' }));
-});
+// gulp.task('copycss', function() {
+// 	return gulp.src(paths.css+'app.min.css')
+// 		.pipe(gulp.dest('./_site/static/css/'))
+// 		// .pipe(notify({ message: 'Copied Minified CSS to _site/static/css' }));
+// });
 
 
 // JEKYLL
 // Start a `jekyll build` task
 // From: http://stackoverflow.com/questions/21293999/use-jekyll-with-gulp
 gulp.task('jekyll-build', function() {
-	require('child_process').spawn('jekyll', ['build', '--config=_config.dev.yml'], {stdio: 'inherit'});
+	require('child_process').spawn('jekyll', ['build', '--config=_config.yml'], {stdio: 'inherit'});
 });
 
 // Start a `jekyll build --watch` task
 gulp.task('jekyll-watch', function() {
-	require('child_process').spawn('jekyll', ['build', '--watch', '--config=_config.dev.yml'], {stdio: 'inherit'});
+	require('child_process').spawn('jekyll', ['build', '--watch', '--config=_config.yml'], {stdio: 'inherit'});
 });
 
 // BROWSER-SYNC
