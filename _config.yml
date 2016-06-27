@@ -1,4 +1,6 @@
 sitename: EBI Pattern library
+group: EMBL-EBI Web Development
+email: noreply@ebi.ac.uk
 version: '1.1 Beta'
 # # NOTE: you _could_ add custom CSS / JS here
 # # .. but better is to add it to /static/scss/app.scss and/or individual component.md files
@@ -13,6 +15,7 @@ ga_code: 'UA-XXXXX-X'
 # root repo for this project
 repo:        "https://github.com/ebiwd/EBI-Pattern-library"
 # baseurl: in this case the gh-pages subfolder
+domain: //ebiwd.github.io
 baseurl:     /EBI-Pattern-library
 port: 4000
 source:      .
@@ -23,4 +26,5 @@ future:      false
 lsi:         false
 #pygments:    false
 #markdown:    maruku
-permalink:   /:categories/:title/
+permalink:    pretty
+#permalink:   /:categories/:title/
