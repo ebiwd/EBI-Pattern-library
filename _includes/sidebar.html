@@ -1,9 +1,3 @@
-<h2><a{% if 'Colors' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/colors">Colors</a></h2>
-
-<div class="js-to-toggle" id="color-info">
-	<p class="message message--warning">There are no <code>_posts/color/*.md</code>. Simply add your colors in the page at <a href="{{site.repo}}/blob/master/colors/index.md" title="Example of colors/index.md"><code>colors/index.md</code></a></p>
-</div>
-
 <h3><a{% if 'Components' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/components">All components</a></h3>
 <ul class="sg-linklist js-to-toggle" id="components-list">
   {% for component in site.categories['components'] %}
@@ -22,14 +16,14 @@ http://stackoverflow.com/a/21002505
 
 {% assign sortedtags = tags | split:' ' | sort %}
 {% if sortedtags %}
-  <h3>Components by Tag <a href="#tag-list">▸</a></h3>
+  <h3>Components by tag</h3>
 
   <div class="js-to-toggle" id="tag-list">
     {% for tag in sortedtags %}
-      <h5>{{tag|capitalize}}:</a></h5>
-      <ul class="sg-linklist js-to-toggle" id="tag-list-{{tag|downcase}}">
+      <span class="label tiny">{{tag|capitalize}}:</span>
+      <ul id="tag-list-{{tag|downcase}}">
         {% for post in site.tags[tag] %}
-          <span class="label tiny"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></span>
+          <span><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></span>
         {% endfor %}
       </ul>
     {% endfor %}
