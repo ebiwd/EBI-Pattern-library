@@ -1,5 +1,4 @@
-# DEV version of config file: mainly baseurl change
-sitename: EBI Patter library
+sitename: EBI Pattern library
 version: '1.1 Beta'
 # # NOTE: you _could_ add custom CSS / JS here
 # # .. but better is to add it to /static/scss/app.scss and/or individual component.md files
