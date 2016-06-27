@@ -13,7 +13,7 @@ ga_code: 'UA-XXXXX-X'
 # root repo for this project
 repo:        "https://github.com/ebiwd/EBI-Pattern-library"
 # baseurl: in this case the gh-pages subfolder
-baseurl:
+baseurl:     /EBI-Pattern-library
 port: 4000
 source:      .
 destination: ./_site
