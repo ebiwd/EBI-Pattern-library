@@ -1,5 +1,5 @@
 # EBI Pattern Library
-This documents and [demonstrates](https://ebiwd.github.io/EBI-Pattern-library/) patterns for the EBI Visual framework.
+This documents and [demonstrates](https://ebiwd.github.io/EBI-Pattern-library/) patterns for the [EBI Visual framework](https://github.com/ebiwd/EBI-Framework).
 
 ## How to use?
 
