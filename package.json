@@ -1,7 +1,7 @@
 {
-  "name": "jekyll-styleguide",
+  "name": "ebi-pattern-library",
   "version": "0.0.1",
-  "description": "Jekyll-based, Styleguide Generator",
+  "description": "EMBL-EBI Pattern library",
   "main": "_site/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
     "Library",
     "NodeJS"
   ],
-  "author": "David Hund",
+  "author": "EBI",
   "license": "MIT",
   "devDependencies": {
     "gulp": "~3.6.0",
