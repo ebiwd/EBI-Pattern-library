@@ -77,8 +77,8 @@ To install and use Gulp (you should be at the root of the project, in a command 
 4. Now go change some files, save, and watch your browser autoreload ;)
 
 
-### Troubleshooting ### {: #troubleshooting}
+### Troubleshooting
 
 - Using the Gulp task, sometimes `jekyll` child processes crap out and keep running (multiple) in the background. This could cause issues. One way to `kill` all of those child processes, and start over, is to stop the Gulp task (CTRL+C) and do: `ps aux | awk '/jekyll/ {print $2}' | xargs kill`
 
-Check out the defined [Colors](/colors){: .btn} or [Components](/components){: .btn}
+Check out the defined [Colors](/colors){: .button} or [Components](/components){: .button}
