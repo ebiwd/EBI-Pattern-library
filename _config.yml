@@ -25,6 +25,6 @@ exclude:     [node_modules, .sass-cache, gulpfile.js, package.json, HOWTO.md]
 future:      false
 lsi:         false
 #pygments:    false
-markdown:    maruku
+markdown:    kramdown
 #permalink:    pretty
 permalink:   /:categories/:title/
