@@ -37,8 +37,11 @@
           </div> <!-- /.sidebar -->
 
           <div class="medium-9 columns">
+
+            <h2>{{page.title}}</h2>
+
             <ul class="tabs" data-tabs id="component-tabs">
-              <li class="tabs-title is-active"><a href="#component-view" aria-selected="true">{{page.title}}</a></li>
+              <li class="tabs-title is-active"><a href="#component-view" aria-selected="true">Rendered</a></li>
               <li class="tabs-title"><a href="#component-html">HTML</a></li>
               <li class="tabs-title"><a href="#component-css">CSS</a></li>
               <li class="tabs-title"><a href="#component-info">Info</a></li>
@@ -61,7 +64,7 @@
                   <div class="meta">
                     <ul class="nav nav--keywords">
                       <li>Last updated: {{page.date|date_to_string}}</li>
-                      <li><a href="{{site.repo}}{{page.path}}">Source</a></li>
+                      <li><a href="{{site.repo}}/blob/gh-pages/{{page.path}}">Source</a></li>
                     </ul>
                   </div>
                   <p>
