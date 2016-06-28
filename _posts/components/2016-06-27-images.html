@@ -1,0 +1,96 @@
+---
+layout: component
+title: Images
+categories: components
+tags:
+- layout
+- visuals
+description: To come
+---
+
+<div class="row collapse">
+  <div class="thumbnail float-right medium-4 columns">
+    <img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/large/public/groups/external_relations/images/News/TCell_news_EBI.jpg?itok=b_KTDxDO" alt="Photo of Uranus.">
+    <div class="caption">You can also add a caption with <code>.caption</code>.</div>
+  </div>
+
+  <p>For images inserted inside text areas, you can use the CSS class of <code>.thumbnail</code> to add subtle padding and spacing.</p>
+  <p>You can further combine with <code>.float-left</code> or <code>.float-right</code> for a nice treatment, and size with, say, <code>.columns .medium-4</code> for a responsive effect.</p>
+  <p>Images will dynamically scale down to fit the container, but will not scale above their actual size.</p>
+  <p>This is the treatment you see to the right.</p>
+
+  ### Image shortcuts
+  If you have a series of images you'd like to use to promot various areas, you can use <code>.shortcuts</code>
+
+
+  <div class="row">
+    <div class="medium-up-3 columns medium-12 callout">
+
+      <div class="column shortcuts transparent">
+        <a href="http://www.embl.de/research/faculty/index.php?dtySt=0"><img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/highlights/Faculty_500.jpg" alt="EMBL Faculty" title="EMBL Faculty" />
+          <p class="pane-title">EMBL faculty</p>
+        </a>
+      </div>
+
+      <div class="column shortcuts transparent">
+        <a href="http://www.ebi.ac.uk/research/postdocs"><img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/News/Postdocs_highlight.jpg" alt="Postdocs at EMBL-EBI" title="Postdocs at EMBL-EBI" />
+          <p class="pane-title">Postdocs at EMBL-EBI</p>
+        </a>
+      </div>
+
+      <div class="column shortcuts transparent">
+        <a href="http://www.ebi.ac.uk/research/eipp"><img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/highlights/PhD_500.jpg" alt="EMBL International PhD Programme" title="EMBL International PhD Programme" />
+          <p class="pane-title">PhD Programme</p>
+        </a>
+      </div>
+
+      <div class="column shortcuts transparent">
+        <a href="http://targetvalidation.org"><img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/highlights/CTTV_highlight.jpg" alt="Open Targets" title="Open Targets" />
+          <p class="pane-title">Centre for Therapeutic Target Validation</p>
+        </a>
+      </div>
+
+      <div class="column shortcuts transparent">
+        <a href="http://www.sanger.ac.uk/science/collaboration/sanger-institute-ebi-single-cell-genomics-centre"><img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/News/Single_cell_genomics_centre_highlight.jpg" alt="Single Cell Genomics Centre" title="Single Cell Genomics Centre" />
+          <p class="pane-title">Sanger/EBI Single-Cell Genomics Centre</p>
+        </a>
+      </div>
+
+      <div class="column shortcuts transparent">
+        <a href="http://www.ebi.ac.uk/about/brochures"><img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/highlights/Brochure_highlights.jpg" alt="EMBL-EBI brochures link" title="EMBL-EBI brochures link" />
+          <p class="pane-title">Read more about EMBL-EBI</p>
+        </a>
+      </div>
+
+    </div>
+  </div> <!-- /row -->
+
+
+  <h3>Image overlays</h3>
+  <p>Alternatively, you can use a <code>.with-overlay</code> for a darkened effect with a text overlay.</p>
+  <p>Notes:</p>
+  <ul>
+    <li>Links: when the caption is a link the text automatically takes on a large font face and arrow. This style is best used as an image button to tease and link further content.</li>
+    <li>Image height: this method expects your images with have shared aspect ratios or the same width and height. If you are unable to predict or control the sizes, you can use <a href="http://foundation.zurb.com/sites/docs/equalizer.html">the equilization technique</a>.</li>
+  </ul>
+
+</div>
+
+<div class="row collapse">
+  <div class="columns medium-4 with-overlay ">
+    <img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/large/public/groups/external_relations/images/News/DREAMchallenge_News_24_03_16_EBI.jpg?itok=-33Ign4S" alt="Photo of Uranus.">
+    <div class="caption">
+      <div class="inner">
+        Standard caption without a link.
+      </div>
+    </div>
+  </div>
+  <div class="columns medium-4 with-overlay end">
+    <img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/large/public/groups/external_relations/images/News/TCell_news_EBI.jpg?itok=b_KTDxDO" alt="Photo of Uranus.">
+    <div class="caption">
+      <a href="http://www.embl.de/" class="inner">
+        As a linked button
+      </a>
+    </div>
+  </div>
+</div>

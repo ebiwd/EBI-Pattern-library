@@ -1,0 +1,173 @@
+---
+layout: component
+title: Lists
+categories: components
+tags:
+- typography
+- lists
+description: To come
+---
+
+<p>A useful and diverse category, use one of these list types for your content. View the code source for the implementation technique.</p>
+<p>If you have need of a type not shown, get in touch.</p>
+
+<h3>Leaders list</h3>
+Good for a table of statistics, or contents.
+
+<div class="callout columns">
+  <ul class="leaders serif">
+    <li>
+      <span>Sample row</span>
+      <span>61.7%</span>
+    </li>
+    <li>
+      <span>Sample row</span>
+      <span>61.7%</span>
+    </li>
+  </ul>
+</div>
+
+<div class="row">
+
+  <div class="columns medium-6">
+    <h3>Unordered lists</h3>
+    <p>Use an unordered list to... list things, if the order of the items doesn't matter.</p>
+
+    <ul>
+      <li>List item with a much longer description or more content.</li>
+      <li>List item</li>
+      <li>List item
+        <ul>
+          <li>Nested list item</li>
+          <li>Nested list item</li>
+          <li>Nested list item</li>
+        </ul>
+      </li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+  </div>
+
+  <div class="columns medium-6">
+
+    <h3>Ordered lists</h3>
+    <p>Use an ol when creating a list where the order of the items is important, like ranking pizza toppings from best to worst.</p>
+
+    <ol>
+      <li>Cheese (essential)</li>
+      <li>Pepperoni</li>
+      <li>Bacon
+        <ol>
+          <li>Normal bacon</li>
+          <li>Canadian bacon</li>
+        </ol>
+      </li>
+      <li>Sausage</li>
+      <li>Onions</li>
+      <li>Mushrooms</li>
+    </ol>
+  </div>
+
+</div>
+
+<h3>No-bullet list</h3>
+<p>Think bullets are for chumps? Use class <code>.no-bullet</code>.</p>
+
+<div class="callout">
+  <ul class="no-bullet">
+    <li>List item with a much longer description or more content.</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ul>
+</div>
+
+<h3>Definition list</h2>
+<p>A definition list (<code>&lt;dl&gt;</code>) is used to display name-value pairs, like metadata or a dictionary definition. Each term (<code>&lt;dt&gt;</code>) is paired with one or more definitions (<code>&lt;dd&gt;</code>).</p>
+
+<div class="callout">
+  <dl>
+    <dt>Time</dt>
+    <dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.</dd>
+    <dt>Space</dt>
+    <dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
+    <dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
+  </dl>
+</div>
+
+<h3>Icon list</h2>
+<p>Want to use the font icons as your "bullet"? Add the class <code>.icon-bullet</code> to your <code>&lt;li&gt;</code> and then insert the icon code at the start of list item.</p>
+
+<div class="callout">
+  <ul>
+    <li class="icon-bullet"><span class="icon icon-socialmedia" data-icon="X"></span> List item with a much longer description or more content because text is the way to go when doing a really long list item.</li>
+    <li>No icon</li>
+    <li class="icon-bullet"><span class="icon icon-species" data-icon="D"></span> A dolphin list item</li>
+    <li>List item</li>
+  </ul>
+</div>
+
+<h3>Horizontal list (AKA: pagers)</h2>
+<p>Have items you want to show horizontall and a using the grid layout is too much, here are a few of techniques:</p>
+
+<h4>Horizontal items</h4>
+<p>Combine a <code>ul</code> with class <code>.inline</code>.</p>
+
+<div class="callout sans-serif">
+  <ul class="inline">
+    <li><a href="#">Test item</a></li>
+    <li><a href="#" class="active">Active item</a></li>
+    <li><a href="#">Third item</a></li>
+    <li><a href="#"><span class="icon icon-species" data-icon="D"></span> A dolphin!</a></li>
+  </ul>
+</div>
+
+<h4>Badge</h4>
+<div class="row">
+  <div class="columns medium-7">
+    <p>Combine a <code>ul</code> with class <code>.inline</code>, then give your <code>li</code> a <code>.badge</code>.</p>
+
+    <p>The <code>.lead</code> class on the <code>ul</code> bumps up the size of the font.</p>
+  </div>
+
+  <div class="columns medium-5 callout">
+    <ul class="inline lead">
+      <li><a href="#" class="secondary badge">2</a></li>
+      <li><a href="#" class="success badge">3</a></li>
+      <li><a href="#" class="alert badge">A</a></li>
+      <li><a href="#" class="warning badge"><span class="icon icon-species" data-icon="D"></span></a></li>
+    </ul>
+  </div>
+</div>
+
+<h4>Pager</h4>
+<div class="">
+  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+    <li class="pagination-previous disabled">Previous</li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="ellipsis"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+  </ul>
+</div>
+
+<h4>Read more lins</h4>
+<p>You can read more as a button, if it's a primary call to action, or a link, if it's not as important.</p>
+
+<div data-equalizer>
+
+  <div class="columns small-6 callout" data-equalizer-watch>
+    <h6>High priority read more links</h6>
+    <a href="#" class="readmore button">Read more</a>
+  </div>
+
+  <div class="columns small-6 callout" data-equalizer-watch>
+    <h6>Lower priority read more links</h6>
+    <a href="#" class="readmore">Read more</a>
+  </div>
+
+</div>
