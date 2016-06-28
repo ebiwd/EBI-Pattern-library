@@ -1,56 +1,89 @@
-{% include head.html %}
-		<header class="sg-header">
-			<p class="sg-info"><a href="{{site.repo}}">Jekyll Styleguide</a> v{{site.version}}</p>
-			<h1 class="sg-title"><a href="{{site.baseurl}}/">{{site.sitename}}</a></h1>
-			<ul class="sg-nav">
-				<li class="sg-nav__root"><a href="{{site.baseurl}}/">Home</a></li>
-				<li><a href="{{site.baseurl}}/components">Components</a></li>
-				<li class="is-active">{{page.title}}</li>
-			</ul>
-		</header>
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="level2"><!-- add any of your classes or IDs -->
+    {% include local_masthead.html %}
+    <div id="content" role="main" class="row">
 
-		<div class="sg-content">
-			<main class="sg-main">
+      <section>
 
-                <div class="sg-tabs-block" id="component-detail">
-                    <ul class="sg-tabs">
-                        <li><a href="#component-view">{{page.title}}</a></li>
-                        <li><a href="#component-html">HTML</a></li>
-                        <li><a href="#component-css">CSS</a></li>
-                        <li><a href="#component-info">Info</a></li>
-                    </ul>
-                    <section id="component-view" class="sg-tabs__content">
-                        <h3><code>.{{page.title|downcase}}</code> preview</h3>
-						{{page.content}}
-                    </section>
-                    <section id="component-html" class="sg-tabs__content">
-                        <h3>{{page.title}} HTML</h3>
-						<pre class="language-markup"><code>{{page.content|escape}}</code></pre>
-                    </section>
-                    <section id="component-css" class="sg-tabs__content">
-                        <h3>{{page.title}} Style</h3>
-                        <p>You can find <a href="{{page.scssurl}}">the original source of the <code>CSS</code> as <code>.scss</code></a></p>
-                    </section>
-                    <section id="component-info" class="sg-tabs__content">
-                        <h3>{{page.title}}</h3>
-                        <div class="meta">
-                        	<ul class="nav nav--keywords">
-                        		<li>Last updated: {{page.date|date_to_string}}</li>
-                        		<li><a href="{{site.repo}}{{page.path}}">Source</a></li>
-                        	</ul>
-                        </div>
-                        <p>
-                        {% if page.description %}
-							{{page.description}}
-						{% else %}
-							No more information available for {{page.title}}&hellip;
-						{% endif %}
-                        </p>
-                    </section>
-                </div>
-			</main>
-            <nav class="sg-sidebar" id="navigation">
-                {% include sidebar.html %}
-            </nav>
-		</div>
-{% include footer.html %}
+        <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
+        <nav aria-label="You are here:" role="navigation">
+          <ul class="breadcrumbs">
+            <li><a href="{{site.baseurl}}/components">Components</a></li>
+            <li class="disabled">Disabled</li>
+            <li>
+              <span class="show-for-sr">Current: </span> {{page.title}}
+            </li>
+          </ul>
+        </nav>
+
+
+        <div class="row" id="main-content-area">
+
+          <div class="medium-3 columns sidebar" data-sticky-container>
+            <div class="sticky" data-sticky data-anchor="main-content-area"  data-options="marginTop:4;">
+              {% include sidebar.html %}
+
+              <h4>See also</h4>
+              <p>These resources will help you engage and understand the EBI Framework.</p>
+              <div class="">
+                <ul class="menu vertical">
+                  <li class=""><a href="//github.com/ebiwd/EBI-Framework">Core framework repository <i class="icon icon-generic" data-icon="x"></i></a></li>
+                  <li class=""><a href="//ebiwd.github.io/EBI-Framework">Core framework documentations <i class="icon icon-generic" data-icon="x"></i></a></li>
+                  <li class=""><a href="//ebiwd.github.io/EBI-Framework/sample-site/">Sample pages <i class="icon icon-generic" data-icon="x"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- /.sidebar -->
+
+          <div class="medium-9 columns">
+
+            <div class="sg-tabs-block" id="component-detail">
+                <ul class="sg-tabs">
+                    <li><a href="#component-view">{{page.title}}</a></li>
+                    <li><a href="#component-html">HTML</a></li>
+                    <li><a href="#component-css">CSS</a></li>
+                    <li><a href="#component-info">Info</a></li>
+                </ul>
+                <section id="component-view" class="sg-tabs__content">
+                  <h3><code>.{{page.title|downcase}}</code> preview</h3>
+                  {{page.content}}
+                </section>
+                <section id="component-html" class="sg-tabs__content">
+                  <h3>{{page.title}} HTML</h3>
+                  <pre class="language-markup"><code>{{page.content|escape}}</code></pre>
+                </section>
+                <section id="component-css" class="sg-tabs__content">
+                    <h3>{{page.title}} Style</h3>
+                    <p>You can find <a href="{{page.scssurl}}">the original source of the <code>CSS</code> as <code>.scss</code></a></p>
+                </section>
+                <section id="component-info" class="sg-tabs__content">
+                    <h3>{{page.title}}</h3>
+                    <div class="meta">
+                      <ul class="nav nav--keywords">
+                        <li>Last updated: {{page.date|date_to_string}}</li>
+                        <li><a href="{{site.repo}}{{page.path}}">Source</a></li>
+                      </ul>
+                    </div>
+                    <p>
+                    {% if page.description %}
+                    {{page.description}}
+                    {% else %}
+                    No more information available for {{page.title}}&hellip;
+                    {% endif %}
+                    </p>
+                </section>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div><!-- /.container -->
+
+    {% include footer.html %}
+  </body>
+</html>
