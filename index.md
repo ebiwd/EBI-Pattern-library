@@ -4,23 +4,6 @@ title: EBI Pattern library
 description: Document and demonstrating EBI styles
 ---
 
-<div class="medium-3 columns sidebar" data-sticky-container>
-  <div class="sticky" data-sticky data-anchor="main-content-area"  data-options="marginTop:4;">
-    <h4>See also</h4>
-    <p>These resources will help you engage and understand the EBI Framework.</p>
-    <div class="">
-      <ul class="menu vertical">
-        <li class=""><a href="https://github.com/ebiwd/EBI-Framework">GitHub repository <i class="icon icon-generic" data-icon="x"></i></a></li>
-        <li class=""><a href="https://github.com/ebiwd/EBI-Framework/issues">Issue queue <i class="icon icon-generic" data-icon="x"></i></a></li>
-        <li class=""><a href="https://ebiwd.github.io/EBI-Framework/sample-site/">Sample pages</a></li>
-        <li class=""><a href="https://ebiwd.github.io/EBI-Framework/fonts/index.html">Icon gallery</a></li>
-      </ul>
-    </div>
-  </div>
-
-</div>
-
-<section id="overview" data-magellan-target="overview">
 
   Tired of updating a collection of screenshots (PSD/PDF) to show new website components? Remember the horror that was `homepage.v2.REVISED.UPDATED.psd`? You need a '*HTML/CSS Styleguide*'… Manually editing `HTML` and `CSS` files is hard work. This is where this style guide comes in.
   {: .lead}
@@ -31,11 +14,13 @@ description: Document and demonstrating EBI styles
 
   Jekyll's main focus is to quickly setup a weblog, but we can use it to create a collection of `HTML` and `CSS` *components* just as easily. Now, to add a new Component, simply create a new markdown (`.md` or `.html`) file with the HTML for your component in the `posts/components` folder and run `jekyll build` (or use the included `GulpJS` script).
 
-  <span class="secondary label sans-serif"><i class="icon icon-generic" data-icon="i"></i> Framework version: 1.1 Alpha</span>
+  <span class="secondary label"><i class="icon icon-generic" data-icon="i"></i> Framework version: 1.1 Alpha</span>
 
   <p class="lead">The framework is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust web content faster than if you were to make it from scratch.</p>
   <p>This page offers guidance on building web site, pages, and content that comply with the EMBL-EBI: visual look and semantic structure.</p>
 
+
+<section id="overview" data-magellan-target="overview">
 
   <h3>How to use this</h3>
   Use this as page and its associated assets as your boilerplate. Read through the text and draw on the examples. Use your browser's web inspector and view the source.
@@ -74,9 +59,11 @@ description: Document and demonstrating EBI styles
 
   </dl>
 
-  <h3>Requirements and what you get</h3>
-  <p>The framework is built with modern best practices and targets browsers shipped within the past three years; though other browsers should still handle the content and appearance well (graceful degradation). The framework is also mobile responsive (Responsive Web Design), so you won't have to spend too much time adapting for mobile.</p>
-  <p>To help us help you, we've used the Foundation Framework (version 6) as a baseline. Using this we get a robust set of web components (tool tips, forms, sliders, and modal boxes) as well as technical guidance and extensive open source community testing -- and, perhaps, you'll be fortunate enough to already have a developer with experience with Foundation.</p>
+  ### Requirements and what you get
+  The framework is built with modern best practices and targets browsers shipped within the past three years; though other browsers should still handle the content and appearance well (graceful degradation). The framework is also mobile responsive (Responsive Web Design), so you won't have to spend too much time adapting for mobile.
+
+  To help us help you, we've used the Foundation Framework (version 6) as a baseline. Using this we get a robust set of web components (tool tips, forms, sliders, and modal boxes) as well as technical guidance and extensive open source community testing -- and, perhaps, you'll be fortunate enough to already have a developer with experience with Foundation.
+  
   <p>But we've taken care to make the implementation non-intrusive, so if you don't want to use these features, they won't likely get in your way.</p>
   <p>The easiest way to implement the style guide is to <a href="https://ebiwd.github.io/EBI-Framework/sample-site/#boilerplate">download the EBI boilerplate</a> - use those HTML files as a template for your own pages. It contains the HTML for the EBI header and footer and place holders for your project name / logo and page content. It also links to the core stylesheets you'll need to make your web pages look like part of the EBI website.</p>
   <p><a href="https://github.com/ebiwd/EBI-Framework/archive/master.zip" class="button sans-serif">Download the framework</a> or <a href="https://github.com/ebiwd/EBI-Framework/">view on Github</a></p>
