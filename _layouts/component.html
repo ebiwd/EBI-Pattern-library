@@ -39,6 +39,13 @@
           <div class="medium-9 columns">
 
             <h2>{{page.title}}</h2>
+            <p class="lead">
+              {% if page.description %}
+              {{page.description}}
+              {% else %}
+              No more information available for {{page.title}}&hellip;
+              {% endif %}
+            </p>
 
             <ul class="tabs" data-tabs id="component-tabs">
               <li class="tabs-title is-active"><a href="#component-view" aria-selected="true">Rendered</a></li>
@@ -48,7 +55,6 @@
             </ul>
             <div class="tabs-content" data-tabs-content="component-tabs">
               <section id="component-view" class="tabs-panel is-active">
-                <h3>{{page.title}} preview</h3>
                 {{page.content}}
               </section>
               <section id="component-html" class="tabs-panel">
@@ -67,13 +73,6 @@
                       <li><a href="{{site.repo}}/blob/gh-pages/{{page.path}}">Source</a></li>
                     </ul>
                   </div>
-                  <p>
-                  {% if page.description %}
-                  {{page.description}}
-                  {% else %}
-                  No more information available for {{page.title}}&hellip;
-                  {% endif %}
-                  </p>
               </section>
             </div> <!-- /#tabs-content -->
           </div>
