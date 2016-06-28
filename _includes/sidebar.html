@@ -1,12 +1,5 @@
 <h3><a{% if 'Components' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/components">All components</a></h3>
 <ul class="menu vertical" id="components-list">
-  {% for category in site.categories %}
-      {{ category | first }}
-  {% endfor %}
-  {% for tag in site.tags %}
-      {{ tag | first }}
-  {% endfor %}
-
   {% for component in site.categories['components'] %}
     <li class="{% if component.path == page.path %}is-current-page{% endif %}"><a href="{{site.baseurl}}{{component.url}}" title="{{component.path}}">{{component.title}}</a></li>
   {% endfor %}
@@ -27,12 +20,12 @@ http://stackoverflow.com/a/21002505
 
   <div class="js-to-toggle" id="tag-list">
     {% for tag in sortedtags %}
-      <span class="label tiny">{{tag|capitalize}}:</span>
-      <ul id="tag-list-{{tag|downcase}}">
+      <a href="{{site.baseurl}}/tags/{{tag|lowercase}}" class="label tiny">{{tag|capitalize}}</span>
+      <!-- <ul id="tag-list-{{tag|downcase}}">
         {% for post in site.tags[tag] %}
           <span><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></span>
         {% endfor %}
-      </ul>
+      </ul> -->
     {% endfor %}
   </div>
 {% endif %}
