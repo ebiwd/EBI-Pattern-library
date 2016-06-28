@@ -20,7 +20,7 @@ http://stackoverflow.com/a/21002505
 
   <div class="js-to-toggle" id="tag-list">
     {% for tag in sortedtags %}
-      <a href="{{site.baseurl}}/tags/{{tag|lowercase}}" class="label tiny">{{tag|capitalize}}</span>
+      <a href="{{site.baseurl}}/tags?tag={{tag|lowercase}}" class="label tiny">{{tag|capitalize}}</a>
       <!-- <ul id="tag-list-{{tag|downcase}}">
         {% for post in site.tags[tag] %}
           <span><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></span>
