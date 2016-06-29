@@ -5,7 +5,7 @@
   {% endfor %}
 {% endcapture %}
 
-{% assign sortedcomponents = components | split:' ' | sort 'title' }
+{% assign sortedcomponents = components.title | sort }
 <h3><a{% if 'Components' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/components">All components</a></h3>
 <ul class="menu vertical" id="components-list">
   {% for component in site.categories['components'] %}
