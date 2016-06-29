@@ -1,14 +1,9 @@
 <!-- Sort components -->
-{% assign sorted_components = (site.categories['components'] | sort: 'title') %}
-{% for page in sorted_components %}
-    <li class="cardmenu-item"><a href="{{ page.url }}">{{ page.title }}</a></li>
-{% endfor %}
-
-
 <h3><a{% if 'Components' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/components">All components</a></h3>
 <ul class="menu vertical" id="components-list">
-  {% for component in site.categories['components'] | sort: 'title' %}
-    <li class="{% if component.path == page.path %}is-current-page{% endif %}"><a href="{{site.baseurl}}{{component.url}}" title="{{component.path}}">{{component.title}}</a></li>
+  {% assign component = (site.categories['components'] | sort: 'title') %}
+  {% for page in component %}
+      <li class="{% if component.path == page.path %}is-current-page{% endif %}"><a href="{{site.baseurl}}{{component.url}}" title="{{component.path}}">{{component.title}}</a></li>
   {% endfor %}
 </ul>
 
