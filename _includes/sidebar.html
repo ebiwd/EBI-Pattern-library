@@ -3,7 +3,7 @@
 <ul class="menu vertical" id="components-list">
   {% assign component_sorted = (site.categories['components'] | sort: 'title') %}
   {% for component in component_sorted %}
-      <li class="{% if component.path == page.path %}is-current-page{% endif %}"><a href="{{site.baseurl}}{{component.url}}" title="{{component.path}}">{{component.title}}</a></li>
+    <li class="{% if component.path == page.path %}is-current-page{% endif %}"><a href="{{site.baseurl}}{{component.url}}" title="{{component.path}}">{{component.title}}</a></li>
   {% endfor %}
 </ul>
 
@@ -18,7 +18,7 @@ http://stackoverflow.com/a/21002505
 
 {% assign sortedtags = tags | split:' ' | sort %}
 {% if sortedtags %}
-  <h3>Components by tag</h3>
+  <h3>Tags</h3>
 
   <div class="js-to-toggle" id="tag-list">
     {% for tag in sortedtags %}
@@ -31,3 +31,11 @@ http://stackoverflow.com/a/21002505
     {% endfor %}
   </div>
 {% endif %}
+
+<h4>See also</h4>
+<p>These resources will help you engage and understand the EBI Framework.</p>
+<ul class="menu vertical">
+  <li class=""><a href="//github.com/ebiwd/EBI-Framework">Core framework repository <i class="icon icon-generic" data-icon="x"></i></a></li>
+  <li class=""><a href="//ebiwd.github.io/EBI-Framework">Core framework documentations <i class="icon icon-generic" data-icon="x"></i></a></li>
+  <li class=""><a href="//ebiwd.github.io/EBI-Framework/sample-site/">Sample pages <i class="icon icon-generic" data-icon="x"></i></a></li>
+</ul>
