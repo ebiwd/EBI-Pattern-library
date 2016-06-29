@@ -10,8 +10,7 @@ description: To come
 ---
 
 <div class="row collapse">
-  ### Image shortcuts
-  If you have a series of images you'd like to use to promot various areas, you can use <code>.shortcuts</code>
+  If you have a series of images you'd like to use to promote various areas, you can use <code>.shortcuts</code>
 
 
   <div class="row">

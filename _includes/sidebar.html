@@ -1,3 +1,11 @@
+<!-- Sort components -->
+{% capture components %}
+  {% for component in site.categories['components'] %}
+    {{ component[0] }}
+  {% endfor %}
+{% endcapture %}
+
+{% assign sortedcomponents = components | split:' ' | sort %}
 <h3><a{% if 'Components' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/components">All components</a></h3>
 <ul class="menu vertical" id="components-list">
   {% for component in site.categories['components'] %}
