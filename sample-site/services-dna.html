@@ -205,6 +205,40 @@
                             </div>
                           </div> -->
 
+                          <script type="text/javascript">
+                            function addRandomTags() {
+                              tags = '<div class="">';
+                              randomAmount = Math.round(Math.random() * (3 - 1) + 1);
+                              for( var i=1; i < randomAmount+1; i++ ) {
+                                tags += '<a href="#" class="label secondary"> ';
+                                switch (Math.round(Math.random() * (randomAmount - 1) + 1)) {
+                                  case 1:
+                                    tags += 'A sample tag';
+                                    break;
+                                  case 2:
+                                    tags += 'Demonstration';
+                                    break;
+                                  case 3:
+                                    tags += 'A longer sample tag';
+                                    break;
+                                  case 4:
+                                    tags += 'Pairwise sequence alignment';
+                                    break;
+                                  case 5:
+                                    tags += 'Pairwise sequence alignment';
+                                    break;
+                                  default:
+                                    tags += 'Local sequence alignment';
+                                    break;
+                                }
+                                tags += '</a> ';
+                              }
+                              tags += '</div>';
+                              return tags;
+                            }
+                          </script>
+
+
                           <div data-equalizer data-equalize-on="medium" id="tools-list">
 
                             <div class="columns medium-4">
@@ -216,6 +250,7 @@
                                 </div>
                                 <h5><a href="#">ArrayExpress</a></h5>
                                 <p class="small">ArrayExpress Archive of Functional Genomics Data stores data from high-throughput functional genomics experiments, and provides data for reuse to the research community. <br/><a href="#" class="readmore">View service</a></p>
+                                <script type="text/javascript">document.write(addRandomTags());</script>
                               </div>
                               <div class="live-filter-target-granularity" data-equalizer-watch>
                                 <hr/>
@@ -224,6 +259,7 @@
                                 </div>
                                 <h5><a href="#">Ensembl</a></h5>
                                 <p class="small">Ensembl enables and advances genome science by providing high-quality, integrated annotation on vertebrate genomes within a consistent and accessible infrastructure. <br/><a href="#" class="readmore">View service</a></p>
+                                <script type="text/javascript">document.write(addRandomTags());</script>
                               </div>
                               <div class="live-filter-target-granularity" data-equalizer-watch>
                                 <hr/>
@@ -232,6 +268,7 @@
                                 </div>
                                 <h5><a href="#">Clustal Omega</a></h5>
                                 <p class="small">Multiple sequence alignment of DNA or protein sequences. Clustal Omega replaces the older ClustalW alignment tools. <br/><a href="#" class="readmore">View service</a></p>
+                                <script type="text/javascript">document.write(addRandomTags());</script>
                               </div>
                               <div class="live-filter-target-granularity" data-equalizer-watch>
                                 <hr/>
@@ -240,6 +277,7 @@
                                   <img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/service-thumbnail/public/resource/logo/ena_100x100_1.png" />
                                 </div>
                                 <p class="small">An open, supported platform for the management, sharing, integration, archiving and dissemination of public-domain sequence data. <br/><a href="#" class="readmore">View service</a></p>
+                                <script type="text/javascript">document.write(addRandomTags());</script>
                               </div>
                             </div>
 
@@ -252,6 +290,7 @@
                                 </div>
                                 <h5><a href="#">FASTA [nucleotide]</a></h5>
                                 <p class="small">Similarity search tool for nucleotide sequence databases. <br/><a href="#" class="readmore">View service</a></p>
+                                <script type="text/javascript">document.write(addRandomTags());</script>
                               </div>
                               <div class="live-filter-target-granularity" data-equalizer-watch>
                                 <hr/>
@@ -260,6 +299,7 @@
                                 </div>
                                 <h5><a href="#">InterPro</a></h5>
                                 <p class="small">A database for the classification of proteins into families, domains and conserved sites. <br/><a href="#" class="readmore">View service</a></p>
+                                <script type="text/javascript">document.write(addRandomTags());</script>
                               </div>
                               <div class="live-filter-target-granularity" data-equalizer-watch>
                                 <hr/>
@@ -268,6 +308,7 @@
                                 </div>
                                 <h5><a href="#">KALIGN</a></h5>
                                 <p class="small">Very fast multiple sequence alignment tool, suitable for large alignments. <br/><a href="#" class="readmore">View service</a></p>
+                                <script type="text/javascript">document.write(addRandomTags());</script>
                               </div>
                             </div>
 
@@ -280,6 +321,7 @@
                                 </div>
                                 <h5><a href="#">European Variation Archive</a></h5>
                                 <p class="small">The EVA is an open-access database of all types of genetic variation data, from all species. The EVA provides access to highly detailed, granular, raw variant data from human, with other species to follow.<br/><a href="#" class="readmore">View service</a></p>
+                                <script type="text/javascript">document.write(addRandomTags());</script>
                               </div>
                               <div class="live-filter-target-granularity" data-equalizer-watch>
                                 <hr/>
