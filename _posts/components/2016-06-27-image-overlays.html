@@ -1,6 +1,6 @@
 ---
 layout: component
-title: Image overlays
+title: Images with tinting
 categories: components
 tags:
 - layout
@@ -9,15 +9,7 @@ tags:
 description: To come
 ---
 
-<p>Alternatively, you can use a <code>.with-overlay</code> for a darkened effect with a text overlay.</p>
-
-<p>Notes:</p>
-
-<ul>
-  <li>Links: when the caption is a link the text automatically takes on a large font face and arrow. This style is best used as an image button to tease and link further content.</li>
-  <li>Image height: this method expects your images with have shared aspect ratios or the same width and height. If you are unable to predict or control the sizes, you can use <a href="http://foundation.zurb.com/sites/docs/equalizer.html">the equilization technique</a>.</li>
-</ul>
-
+<p>You can enhance the "Images with captions" pattern by adding class <code>.with-overlay</code> for a darkened effect with a text overlay.</p>
 
 <div class="row collapse">
   <div class="columns medium-4 with-overlay ">
@@ -28,6 +20,11 @@ description: To come
       </div>
     </div>
   </div>
+</div>
+
+<p>If your <code>.inner</code> element is a link, the text automatically takes on a large font face and arrow. This style is best used as an image button to tease and link further content.</p>
+
+<div class="row collapse">
   <div class="columns medium-4 with-overlay end">
     <img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/large/public/groups/external_relations/images/News/TCell_news_EBI.jpg?itok=b_KTDxDO" alt="Photo of Uranus.">
     <div class="caption">
