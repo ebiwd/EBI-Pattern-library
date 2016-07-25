@@ -6,44 +6,29 @@ description: Document and demonstrating EBI styles
 
 <span class="secondary label"><i class="icon icon-generic" data-icon="i"></i> For EBI Visual Framework v{{ site.ebi_visual_framework_version }} </span>
 
-Tired of updating a collection of screenshots (PSD/PDF) to show new website components? Remember the horror that was `homepage.v2.REVISED.UPDATED.psd`? You need a '*HTML/CSS Styleguide*'… Manually editing `HTML` and `CSS` files is hard work. This is where this style guide comes in.
-{: .lead}
+<p class="lead">This is a "living guide" that implements a broad range of interface items. Use this as a guide on how you should make your page elements look and function.</p>
 
-[Jekyll](http://jekyllrb.com) is a *static site generator*: a script that takes a folder of [Markdown](http://daringfireball.net/projects/markdown/) files and converts them to a complete website.
+<p>For edge cases not covered, please <a href="https://github.com/ebiwd/EBI-Framework/issues">open an issue in the tracker</a>. We'll update this living style guide with feedback that grows from there.</p>
 
-This site documents and [demonstrates](https://ebiwd.github.io/EBI-Pattern-library/) patterns for the [EBI Visual framework](https://github.com/ebiwd/EBI-Framework).
-
-To add a new Component, simply create a new markdown (`.md` or `.html`) file with the HTML for your component in the `posts/components`.
-
-
-<p class="lead">The framework is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust web content faster than if you were to make it from scratch.</p>
+<h3>About the Framework</h3>
+<p>The framework is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust web content faster than if you were to make it from scratch.</p>
 
 This page offers guidance on building web site, pages, and content that comply with the EMBL-EBI: visual look and semantic structure.
 
 <section id="overview" data-magellan-target="overview">
 
-  <h3>How to use this</h3>
-  Use this as page and its associated assets as your boilerplate. Read through the text and draw on the examples. Use your browser's web inspector and view the source.
-  <blockquote class="float-left">
+  <h4>How to use this</h4>
+  <blockquote class="float-right lead ebi-color">
     Do as I do, not as I say.
     <cite>This Framewok</cite>
   </blockquote>
+
+  <p>Read the information below for context and use the menu to the left to view patterns.</p>
+
   <p>This guide does not offer prescriptive solutions for every scenario, but integrates a wide range of pull quotes, form boxes, menus, and more to show you how things should be done.</p>
   <p>Also <a href="http://foundation.zurb.com/sites/docs/global.html">consult the Foundation 6 docs <i class="icon icon-generic" data-icon="x"></i></a>, as this framework leverages that toolset.</p>
   <p>We plan to host workshops to educate on the tooling and address issues or concerns, <a href="https://github.com/ebiwd/EBI-Framework/issues/1">register you interest here</a> or if you don't have a GitHub account e-mail khawkins@ebi.ac.uk</p>
   <p>If you need technical guidance or have questions, <a href="#help">see the help section</a>.</p>
-
-  <div class="callout warning">
-    <h1 class="training-color"><span class="icon icon-generic " data-icon="U"></span> Heads up!</h1>
-    <p>This framework is in a very early stage of testing and is still being actively planned.</p>
-    <p>The takeaway is that there are two goals here:</p>
-    <ol>
-      <li>Refresh the EBI Compliance theme to be more visually compliant with EMBL-EBI standards.</li>
-      <li>Offer optional reusable tooling to make the lives of developers easier and to make EMBL-EBI sites look more consistent with less effort.</li>
-    </ol>
-    <p>The documentation below is a work in progress. We are looking for input and concerns about the scope, direction and technical solutions. Post to <a href="https://github.com/ebiwd/EBI-Framework/issues/1">the GitHub issue queue</a>, if you don't have a GitHub account: e-mail khawkins@ebi.ac.uk</p>
-    <p>Also see the <a href="sample-site/">sample pages</a> to get an idea of how real content would look and work using the framework.</p>
-  </div>
 
   <h3>Implementing the framework</h3>
   <p>There are two likely scenarios:</p>
@@ -59,7 +44,7 @@ This page offers guidance on building web site, pages, and content that comply w
 
   </dl>
 
-  ### Requirements and what you get
+  <h3>Requirements and what you get</h3>
   The framework is built with modern best practices and targets browsers shipped within the past three years; though other browsers should still handle the content and appearance well (graceful degradation). The framework is also mobile responsive (Responsive Web Design), so you won't have to spend too much time adapting for mobile.
 
   To help us help you, we've used the Foundation Framework (version 6) as a baseline. Using this we get a robust set of web components (tool tips, forms, sliders, and modal boxes) as well as technical guidance and extensive open source community testing -- and, perhaps, you'll be fortunate enough to already have a developer with experience with Foundation.
@@ -111,13 +96,6 @@ This page offers guidance on building web site, pages, and content that comply w
     <dt>Animation:</dt>
       <dd><p>Using CSS3 and JavaScript animations there are many opportunities to make our sites look good and function better, but we want to take this one step at a time and get other items in order. Currently on target for v1.5. <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Foundation does have a complementary animation toolset that we've not bundled, but you could...">Feel free to experiment with subtle animations</span>, let us know if you do.</p></dd>
   </dl>
-</section>
-
-<section id="design-patterns" data-magellan-target="design-patterns">
-  <h2>Design patterns</h2>
-  <p>This page acts as a "living guide" by implementing a broad range of interface items, use them as a guide for how to make your page elements look and function.</p>
-
-  <p>For edge cases not covered, please <a href="https://github.com/ebiwd/EBI-Framework/issues">open an issue in the tracker</a>. We'll update this living style guide with feedback that grows from there.</p>
 </section>
 
 <section id="browser-compatibility" data-magellan-target="browser-compatibility">
