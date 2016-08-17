@@ -153,6 +153,38 @@
 
       <section class="columns medium-12">
 
+        <script type="text/javascript">
+          function addRandomTags() {
+            tags = '<div class="">';
+            randomAmount = Math.round(Math.random() * (1 - 1) + 1);
+            for( var i=1; i < randomAmount+1; i++ ) {
+              tags += '<a href="#" class="tag white-color secondary-background"> ';
+              switch (Math.round(Math.random() * (randomAmount - 1) + 1)) {
+                case 1:
+                  tags += 'Sample EDAM term';
+                  break;
+                case 2:
+                  tags += 'Demonstration';
+                  break;
+                case 3:
+                  tags += 'A longer sample tag';
+                  break;
+                case 4:
+                  tags += 'Pairwise sequence alignment';
+                  break;
+                case 5:
+                  tags += 'Pairwise sequence alignment';
+                  break;
+                default:
+                  tags += 'Local sequence alignment';
+                  break;
+              }
+              tags += '</a> ';
+            }
+            tags += '</div>';
+            return tags;
+          }
+        </script>
 
         <div class="content">
           <div id="node-527" class="node node-panel clearfix" about="/research" typeof="sioc:Item foaf:Document">
@@ -225,6 +257,7 @@
                                </div>
                                <h5><a href="#">Clustal Omega</a></h5>
                                <p class="small">Multiple sequence alignment of DNA or protein sequences. Clustal Omega replaces the older ClustalW alignment tools. <br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -234,6 +267,7 @@
                                </div>
                                <h5><a href="#">Ensembl</a></h5>
                                <p class="small">Genome browser, API and database, providing access to reference genome annotation. <br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -243,6 +277,7 @@
                                </div>
                                <h5><a href="#">InterProScan </a></h5>
                                <p class="small">InterProScan searches sequences against InterPro's predictive protein signatures. <br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -252,6 +287,7 @@
                                </div>
                                <h5><a href="#">UniProt</a></h5>
                                <p class="small">A comprehensive resource for protein sequence and functional annotation. <br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -261,6 +297,7 @@
                                </div>
                                <h5><a href="#">NCBI BLAST [protein]</a></h5>
                                <p class="small">Fast local similarity search tool for protein sequence databases. <br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -270,6 +307,7 @@
                                </div>
                                <h5><a href="#">PDBe</a></h5>
                                <p class="small">The European resource for the collection, organisation and dissemination of 3D structural data (from PDB and EMDB) on biological macromolecules and their complexes. <br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -279,6 +317,7 @@
                                </div>
                                <h5><a href="#">NCBI BLAST [nucleotide]</a></h5>
                                <p class="small">Fast local similarity search tool for nucleotide sequence databases. <br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -288,6 +327,7 @@
                                </div>
                                <h5><a href="#">Europe PMC</a></h5>
                                <p class="small">Europe's life sciences literature database.<br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -297,6 +337,7 @@
                                </div>
                                <h5><a href="#">HMMER</a></h5>
                                <p class="small">Fast sensitive protein homology searches using profile hidden Markov models (HMMs) for querying against both sequence and HMM target databases. <br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -306,6 +347,7 @@
                                </div>
                                <h5><a href="#">Expression Atlas</a></h5>
                                <p class="small">An added-value database that shows which genes/proteins are expressed under which conditions, and how expression differs between conditions.<br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
                              <div class="column live-filter-target-granularity" data-equalizer-watch>
                                <hr/>
@@ -315,6 +357,7 @@
                                </div>
                                <h5><a href="#">ChEMBL</a></h5>
                                <p class="small">An open data resource of binding, functional and ADMET bioactivity data.<br/><a href="#" class="readmore">View service</a></p>
+                               <script type="text/javascript">document.write(addRandomTags());</script>
                              </div>
 
 
