@@ -19,12 +19,6 @@
 
         <div class="row" id="main-content-area">
 
-          <div class="medium-3 columns sidebar" data-sticky-container>
-            <div class="sticky" data-sticky data-anchor="main-content-area"  data-options="marginTop:4;">
-              {% include sidebar.html %}
-            </div>
-          </div> <!-- /.sidebar -->
-
           <div class="medium-9 columns">
             <h2>{{page.title}}</h2>
             <p class="lead">
@@ -67,6 +61,12 @@
             <p>Have a use case that's not covered? Please <a href="https://github.com/ebiwd/EBI-Pattern-library/issues">open an issue in the tracker</a>. We'll update this living pattern library with your feedback.</p>
 
           </div>
+
+          <div class="medium-3 columns sidebar" data-sticky-container>
+            <div class="sticky" data-sticky data-anchor="main-content-area"  data-options="marginTop:4;">
+              {% include sidebar.html %}
+            </div>
+          </div> <!-- /.sidebar -->
 
         </div>
 
