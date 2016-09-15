@@ -12,32 +12,33 @@ description: To come
 
 <p>Sizing of default text is done with <code>rem</code>; equivlent to 16px on 24px leading, or 12pt on 16pt leading. Note that these sizes are for desktop-class browser widths, tablet and mobile sized screens are scaled.</p>
 
-<p>For large narrative text areas, consider the CSS class <code>.serif</code> to use the "EB Garamond" font, which is also loaded by the font stylesheet. You can switch back to sans-serif styling with the class <code>.sans-serif</code>.</p>
 
-  <h3>Headlines</h3>
-  <div class="callout ebi-background">
-    <h1>H1: HTML Heading 1</h1>
-    <p class="white-color">Reserved for use in the local header. 3rem, 36pt.</p>
-  </div>
+<h3>Headlines</h3>
+<div class="callout ebi-background">
+  <h1>H1: HTML Heading 1</h1>
+  <p class="white-color">Reserved for use in the local header. 3rem, 36pt.</p>
+</div>
 
-  <h2>H2: HTML Heading 2</h2>
-  <p>Use sparingly. Generally a max of one per URL, as the page title. 2.5rem, 30pt.</p>
+<h2>H2: HTML Heading 2</h2>
+<p>Use sparingly. Generally a max of one per URL, as the page title. 2.5rem, 30pt.</p>
 
-  <h3>H3: HTML Heading 3</h3>
-  <p>The standard section heading. 2rem, 24pt.</p>
+<h3>H3: HTML Heading 3</h3>
+<p>The standard section heading. 2rem, 24pt.</p>
 
-  <h4>H4: HTML Heading 4</h4>
-  <p>Use a sub heading. 1.5 rem, 18pt.</p>
+<h4>H4: HTML Heading 4</h4>
+<p>Use a sub heading. 1.5 rem, 18pt.</p>
 
-  <h5>H5: HTML Heading 5</h5>
-  <p>Sample paragraph. 1.25 rem, 15pt.</p>
+<h5>H5: HTML Heading 5</h5>
+<p>Sample paragraph. 1.25 rem, 15pt.</p>
 
-  <h6>H6: HTML Heading 6</h6>
-  <p>Sample paragraph. 1rem, 12pt.</p>
+<h6>H6: HTML Heading 6</h6>
+<p>Sample paragraph. 1rem, 12pt.</p>
 
 <h3>Quick index of styles</h3>
 
 <p>With a variety of text comes the need for many formatting styles, use this table as a helper. Maybe you want to print it?</p>
+
+
 
 <table>
   <thead>
@@ -54,9 +55,19 @@ description: To come
       <td>HTML <span class="code">&lt;cite&gt;</span> element</td>
     </tr>
     <tr>
-      <td>Pullquotes</td>
-      <td><blockquote>I'm being quouted here, or maybe just highlighted?</blockquote</td>
+      <td>Basic pullquotes</td>
+      <td><blockquote>I'm being quouted here, or maybe just highlighted?</blockquote></td>
       <td>HTML <span class="code">&lt;blockquote&gt;</span> element. Consider combining with the grid classes and float-left or float-right for a highlight look.</td>
+    </tr>
+    <tr>
+      <td>Emphasis pullquotes</td>
+      <td><blockquote class="lead">I'm being quouted here and want to be noticed</blockquote></td>
+      <td>HTML <span class="code">&lt;blockquote&gt;</span> element with class <code>.lead</code>.</td>
+    </tr>
+    <tr>
+      <td>Emphasis pullquote with quotation mark and citation</td>
+      <td><blockquote class="lead quote">I'm being quouted here and want to be noticed. <cite>Hi, I'm a <a href="#">citation</a>!</cite></blockquote></td>
+      <td>HTML <span class="code">&lt;blockquote&gt;</span> element with class <code>.lead</code> and <code>.quote</code>.</td>
     </tr>
     <tr>
       <td>Small text</td>
@@ -72,6 +83,21 @@ description: To come
       <td>Read more</td>
       <td><a href="#" class="readmore">Read more here</a></td>
       <td>CSS class <code>.readmore</code></td>
+    </tr>
+    <tr>
+      <td>Read more [as a button]</td>
+      <td><a href="#" class="button readmore">Read more here</a></td>
+      <td>CSS class <code>.readmore</code> <code>.button</code></td>
+    </tr>
+    <tr>
+      <td>Serif text</td>
+      <td class="serif">For large narrative text areas, consider the CSS class <code>.serif</code> to use the "EB Garamond" font, which is also loaded by the font stylesheet.</td>
+      <td>CSS class <code>.serif</code></td>
+    </tr>
+    <tr>
+      <td>Serif text</td>
+      <td class="sans-serif">We use sans-serif by default, but maybe you need to force it for some reason?</td>
+      <td>CSS class <code>.sans-serif</code></td>
     </tr>
   </tbody>
 </table>
