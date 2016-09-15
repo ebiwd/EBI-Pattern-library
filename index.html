@@ -53,25 +53,21 @@ This page offers guidance on building web site, pages, and content that comply w
   <h3>Framework components</h3>
   <p>This framework functions similar to many front-end solutions: several files and structures are used and generally can be implemented seperately so you can use what you can or your own solution if required. We also leverage a NPM build process so there's no need to use all of the Foundation framework, if you don't need it.</p>
 
-  <div class="callout">
-    <ol>
-      <li>Core HTML structure: The basic HTML markup structure for the page: global-nav black bar, local-nav area, main content div, footer, etc.</li>
-      <li><a href="css/ebi-global.css">EBI base CSS styles</a>: Our basic look/colours.</li>
-      <li><a href="https://ebiwd.github.io/EBI-Framework/libraries/foundation-6/css/foundation.css">Foundation base CSS styles</a>: this provides the base grid structure, style resets, and core structure of the page.</li>
-      <li><a href="css/theme-embl-petrol.css">Your site's CSS colours</a>: Colours specific to your service/site.</li>
-      <li>Fonts.css</li>
-      <li>jQuery 1.10.2: Slightly older versions may be compatible.</li>
-        <ul>
-          <li>Foundation JS</li>
-          <ul>
-            <li><a href="https://ebiwd.github.io/EBI-Framework/js/foundationExtendEBI.js">EBI JS tweaks to Foundation</a>: A series of value adds that build atop Foundation.</li>
-          </ul>
-        </ul>
-      <li>EBI JS</li>
-      <li>Cookie JS</li>
-      <li>Footer JS</li>
-    </ol>
+
+  <div class="button-grid">
+    <a class="button primary columns medium-12" href="#">Core HTML structure: The basic HTML markup structure for the page: global-nav black bar, local-nav area, main content div, footer, etc</a>
+    <a class="button primary columns medium-12" href="css/ebi-global.css">EBI base CSS styles: Our basic look/colours</a>
+    <a class="button primary columns medium-12" href="https://ebiwd.github.io/EBI-Framework/libraries/foundation-6/css/foundation.css">Foundation base CSS styles: this provides the base grid structure, style resets, and core structure of the page</a>
+    <a class="button primary columns medium-12" href="css/theme-embl-petrol.css">Your site's CSS colours: Colours specific to your service/site</a>
+    <a class="button primary columns medium-12" href="#">Font and iconfont stylesheets</a>
+    <a class="button primary columns medium-12" href="#">jQuery 1.10.2: Slightly older versions may be compatible</a>
+    <a class="button primary columns medium-12" href="#"><a href="https://ebiwd.github.io/EBI-Framework/js/foundationExtendEBI.js">EBI JS tweaks to Foundation</a>: A series of value adds that build atop Foundation.</a>
+    <a class="button primary columns medium-12" href="#">EBI JS</a>
+    <a class="button primary columns medium-12" href="#">Cookie JS</a>
+    <a class="button primary columns medium-12" href="#">Footer JS</a>
   </div>
+
+  <span class="icon icon-fileformats" data-icon="p"></span>
 
   <p>In short: add header markup, footer markup, CSS and JS. Then add content.</p>
   <p>To get started check out the structure of the <a href="sample-site">sample boiler plate page</a>.</p>
@@ -79,7 +75,7 @@ This page offers guidance on building web site, pages, and content that comply w
   <h3>FAQs</h3>
   <dl>
     <dt>JavaScript:</dt>
-      <dd><p>The framework does not require jQuery, but if you do use it you will get more nice to haves and your life may be easier all around. The jQuery functionality is enable by default. For more see the section on disabling JavaScript addons (you'll comment out two lines -- need to write this...)</p></dd>
+      <dd><p>The framework does not require jQuery, but if you do use it you will get more nice to haves and your life may be easier all around. The jQuery functionality is enabled by default. If you do not wish to use jQuery, you will also need to remove the references to the <code>foundation.js</code> and <code>FoundationExtendEBI.js</code> files.</p></dd>
     <dt>Foundation:</dt>
       <dd><p>If you aren't able to use the included Foundation base CSS, we do provide some support for other frameworks (such as Bootstrap), but we've picked Foundation as the "recommended implementation" as it offers a path for more graceful integration of EBI styles and requirements.</p>
       <p>If you're unable to make use of the Frameworks JS or CSS tooling, use this page as a guide for how your site should look, feel, function. There's no reason that can't be done with any framework be it Angular, Material Design, or vanilla CSS3.</p>
