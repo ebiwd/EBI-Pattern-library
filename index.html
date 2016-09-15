@@ -35,8 +35,7 @@ This page offers guidance on building web site, pages, and content that comply w
 
   <p>This guide does not offer prescriptive solutions for every scenario, but integrates a wide range of pull quotes, form boxes, menus, and more to show you how things should be done.</p>
   <p>Also <a href="http://foundation.zurb.com/sites/docs/global.html">consult the Foundation 6 docs <i class="icon icon-generic" data-icon="x"></i></a>, as this framework leverages that toolset.</p>
-  <p>We plan to host workshops to educate on the tooling and address issues or concerns, <a href="https://github.com/ebiwd/EBI-Framework/issues/1">register you interest here</a> or if you don't have a GitHub account, chat with <a href="https://www.ebi.ac.uk/about/people/ken-hawkins">Ken Hawkins in the Web Development team</a>.</p>
-  <p>If you need technical guidance or have questions, <a href="#help">see the help section</a>.</p>
+  <p>If you have questions you can't find the answeres to, <a href="#help">see the help section</a>.</p>
 
   <h3>Implementing the framework</h3>
   <p>There are two likely scenarios:</p>
@@ -48,21 +47,21 @@ This page offers guidance on building web site, pages, and content that comply w
     <dd><p>If you're starting from scratch, check out the collection of boilerplate code, check out the source, and get going. <a href="https://ebiwd.github.io/EBI-Pattern-library/sample-site/" class="readmore">To the boilerplate</a></p></dd>
 
     <dt>Updating an existing site?</dt>
-    <dd><p>If you're updating a site that is already using the EBI Compliance theme, you'll just need to replace a few JS/CSS files, change some layout classes, and make minore tweaks. It could take as little as 30 minutes. <a href="https://github.com/ebiwd/EBI-Framework/commit/a49d3668f2b80058be8c277d875c8b06f47a7237" class="readmore">Check out the sample migration</a></p></dd>
+    <dd><p>If you're updating an EBI Compliance theme site, you'll just need to replace a few JS/CSS files, change some layout classes, and make minore tweaks. It could take as little as 30 minutes. <a href="https://github.com/ebiwd/EBI-Framework/blob/gh-pages/sample-site/migrations/testMigration.js" class="readmore">Run your own sample auto-migration</a></p></dd>
 
   </dl>
 
   <h3>Requirements and what you get</h3>
-  The framework is built with modern best practices and targets browsers shipped within the past three years; though other browsers should still handle the content and appearance well (graceful degradation). The framework is also mobile responsive (Responsive Web Design), so you won't have to spend too much time adapting for mobile.
+  <p>The framework is built with modern best practices and targets browsers shipped within the past three years; though other browsers should still handle the content and appearance well (graceful degradation). The framework is also mobile responsive (Responsive Web Design), so you won't have to spend too much time adapting for mobile.</p>
 
-  To help us help you, we've used the Foundation Framework (version 6) as a baseline. Using this we get a robust set of web components (tool tips, forms, sliders, and modal boxes) as well as technical guidance and extensive open source community testing -- and, perhaps, you'll be fortunate enough to already have a developer with experience with Foundation.
+  <p>To help us help you, we've used the Foundation Framework (version 6) as a baseline. Using this we get a robust set of web components (tool tips, forms, sliders, and modal boxes) as well as technical guidance and extensive open source community testing -- and, perhaps, you'll be fortunate enough to already have a developer with experience with Foundation.</p>
 
-  <p>But we've taken care to make the implementation non-intrusive, so if you don't want to use these features, they won't likely get in your way.</p>
+  <p>We've taken care to make the implementation non-intrusive, so if you don't want to use these features, they won't likely get in your way.</p>
+
   <p>The easiest way to implement the style guide is to <a href="https://ebiwd.github.io/EBI-Pattern-library/sample-site/">download the EBI boilerplate</a> - use those HTML files as a template for your own pages. It contains the HTML for the EBI header and footer and place holders for your project name / logo and page content. It also links to the core stylesheets you'll need to make your web pages look like part of the EBI website.</p>
 
   <h3>Framework components</h3>
-  <p>This framework functions many front-end solutions.</p>
-  <p>There are several files and structures that we use, generally these can be implemented seperately so you can use what you can or your own solution if required.</p>
+  <p>This framework functions similar to many front-end solutions: several files and structures are used and generally can be implemented seperately so you can use what you can or your own solution if required. We also leverage a NPM build process so there's no need to use all of the Foundation framework, if you don't need it.</p>
 
   <div class="callout">
     <ol>
@@ -279,25 +278,6 @@ This page offers guidance on building web site, pages, and content that comply w
   <h5>Special targets</h5>
   <p>These devices, browsers, or OS versions have been identified as critical needs.</p>
   <p>None currently known.</p>
-
-</section>
-
-<section id="accesibility" data-magellan-target="accesibility">
-  <h2>accessibility</h2>
-  <p>The information and data that we provide via our website should be accessible to as many people as possible, regardless of their abilities.</p>
-  <p>Considering accessibility is not a bolt-on activity or after-thought, but a core part of our design activities. It is therefore not an extra piece of work that you need to do - with thoughtful, standards-compliant coding and good design, you can radically improve the accessibility of your web pages.</p>
-  <h4>Recommendations</h4>
-  <p>There are a number of basic things you can do (some of these are repeated elsewhere in these guidelines)</p>
-  <ul>
-   <li>Provide appropriate alternative text</li>
-   <li>Ensure content is well structured and clearly written</li>
-   <li>Help users navigate to relevant content</li>
-   <li>Provide headers for data tables</li>
-   <li>Do not rely on colour alone to convey meaning</li>
-   <li>Ensure users can complete and submit all forms</li>
-   <li>Ensure links make sense out of context</li>
-  </ul>
-  <p>For further detail, <a href="//www.ebi.ac.uk/web/guidelines" title="">see the Accessibility advice provided</a> in the overall EBI Website guidelines.</p>
 
 </section>
 
