@@ -4,9 +4,11 @@ title: EBI Pattern library
 description: Document and demonstrating EBI styles
 ---
 
-<p class="lead">This is a "living guide" that implements the broad range of interface functionality in the <a href="https://github.com/ebiwd/EBI-Framework">EBI Visual Framework</a>. This site will guide on how you should make your page elements look and function.</p>
+{:refdef: .lead}
+This is a "living guide" that implements the broad range of interface functionality in the <a href="https://github.com/ebiwd/EBI-Framework">EBI Visual Framework</a>. This site will guide on how you should make your page elements look and function.
+{: refdef}
 
-<p>Go on: check out some of the patterns on the <<< left. Or, read below for background on the pattern library.</p>
+Go on: check out some of the patterns on the <<< left. Or, read below for background on the pattern library.
 
 ### About the Framework
 
