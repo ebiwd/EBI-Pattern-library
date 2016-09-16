@@ -8,13 +8,13 @@ description: Document and demonstrating EBI styles
 This is a "living guide" that implements the broad range of interface functionality in the <a href="https://github.com/ebiwd/EBI-Framework">EBI Visual Framework</a>. This site will guide on how you should make your page elements look and function.
 {: refdef}
 
-Go on: check out some of the patterns on the <<< left. Or, read below for background on the pattern library.
+Go on: check out some of the patterns on the << left. Or, read below for background on the pattern library.
 
 ### About the Framework
 
 <p>The framework is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust reliable web content faster than if you were to make it from scratch.</p>
 
-<section id="overview" data-magellan-target="overview">
+<section id="overview" data-magellan-target="overview" markdown="1">
 
 #### How to use this
 <blockquote class="float-right lead quote ebi-color">
