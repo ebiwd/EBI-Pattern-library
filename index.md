@@ -6,15 +6,15 @@ description: Document and demonstrating EBI styles
 
 <p class="lead">This is a "living guide" that implements the broad range of interface functionality in the <a href="https://github.com/ebiwd/EBI-Framework">EBI Visual Framework</a>. This site will guide on how you should make your page elements look and function.</p>
 
-<p>Go on: check out some of the patterns on the <<< left. Or, read below for background on the pattern libary.</p>
+<p>Go on: check out some of the patterns on the <<< left. Or, read below for background on the pattern library.</p>
 
-<h3>About the Framework</h3>
+### About the Framework
 
 <p>The framework is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust reliable web content faster than if you were to make it from scratch.</p>
 
 <section id="overview" data-magellan-target="overview">
 
-  <h4>How to use this</h4>
+  #### How to use this
   <blockquote class="float-right lead quote ebi-color">
     Do as I do, not as I say.
     <cite class="text-right">This Framewok</cite>
@@ -40,8 +40,8 @@ description: Document and demonstrating EBI styles
     <dd><p>If you're updating an EBI Compliance theme site, you'll just need to replace a few JS/CSS files, change some layout classes, and make minore tweaks. It could take as little as 30 minutes. <a href="https://github.com/ebiwd/EBI-Framework/blob/gh-pages/sample-site/migrations/testMigration.js" class="readmore">Run your own sample auto-migration</a></p></dd>
   </dl>
 
-  <h3>Requirements and what you get</h3>
-  
+  ### Requirements and what you get
+
   <p>The framework uses modern best practices and targets browsers shipped within the past three years; though other browsers will function through graceful degradation. The framework is also mobile responsive (Responsive Web Design), so you won't have to spend too much time adapting for mobile.</p>
 
   <p>To help us help you, we've used the Foundation Framework (version 6) as a baseline. Using this we get a robust baseline (tool tips, forms, sliders, and modal boxes) as well as technical guidance and extensive open source community testing -- and, perhaps, you'll be fortunate enough to already be (or have) a developer with Foundation experience.</p>
@@ -51,7 +51,7 @@ description: Document and demonstrating EBI styles
   <p>The easiest way to implement the style guide is to <a href="https://ebiwd.github.io/EBI-Pattern-library/sample-site/">download the EBI boilerplate</a> - use those HTML files as a template for your own pages. It contains the HTML for the EBI header, footer, place holders for your project name/logo and page content.</p>
 
   <h3>Framework components</h3>
-  
+
   <p>This framework functions similar to many front-end solutions: several files and structures are used and generally can be implemented seperately so you can use what you can or your own solution if required. We also leverage a NPM build process so there's no need to use all of the Foundation framework, if you don't need it.</p>
 
 
