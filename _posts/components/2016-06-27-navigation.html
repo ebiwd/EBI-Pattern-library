@@ -5,17 +5,21 @@ categories: components
 tags:
 - navigation
 - layout
-description: To come
+description: In progress
 ---
 
-There are five main navigation types on EBI web pages:
+There are five main navigation regions on EBI web pages:
 
 <ol>
-  <li><a href="#global">global menu</a></li>
-  <li><a href="#local">local menu</a></li>
-  <li><a href="#secondary">secondary menus</a></li>
-  <li><a href="#breadcrumb">breadcrumb trails</a></li>
-  <li><a href="#footer">footer global menu</a></li>
+  <li><a href="#global">Global menu</a></li>
+  <li><a href="#local">Local menu</a></li>
+  <li><a href="#secondary">Secondary menus</a></li>
+  <ul>
+    <li><a href="#secondary-strip">Secondary strip navigation</a></li>
+    <li><a href="#secondary-book">Secondary book navigation</a></li>
+  </ul>
+  <li><a href="#breadcrumb">Breadcrumb trails</a></li>
+  <li><a href="#footer">Footer global menu</a></li>
 </ol>
 
 <h3><a name="global" id="global"></a>Global menu</h3>
@@ -27,13 +31,30 @@ There are five main navigation types on EBI web pages:
 <p><img src="images/documentation/local-nav-bar.png" alt="EBI local navigation menu example" /></p>
 
 <h3><a name="secondary" id="secondary"></a>Secondary menus</h3>
- <div class="row">
-   <div class="columns medium-6">
-     <p>Once the user has selected an item from your local menu, you might need to display a secondary navigation menu for that section. So that your content takes the most important position, in the top-right of the content area, we will position these secondary menus in a column on the right in a vertical list.</p>
-     <p>If you're using the optional JavaScript resources it may be helpful to <a href="http://foundation.zurb.com/sites/docs/sticky.html">make this menu sticky</a>.</p>
-     <p>See the demo at the top right of this page.</p>
+ <div class="clearfix">
+   <div class="">
+     <p>Once the user has selected an item from your local menu, the section may require a secondary navigation menu to display its own child content. Depending on the bredth and depth of content options, there are two possibilites:</p>
+
+     <div class="callout medium-4 small-12 float-right">
+       <img src="../../../static/images/navigation/secondary-strip.png" />
+       <cite class="text-right"><a href="https://www.ebi.ac.uk/about">www.ebi.ac.uk/about</a></cite>
+     </div>
+
+     <h4><a name="secondary-strip" id="secondary-strip"></a>Secondary strip navigation</h4>
+     <p>If your page has a few child pages, use this pattern of tabs. It occupies both a highly visible and conceptually similar spot to the local menu.</p>
+
+     <p>We recommend using this for no more than eight child pages/links.</p>
+
+     <p>Use a <code>ul</code> element with classes <code>.menu.secondary-menu</code>; see a full example <a class="readmore" href="https://www.ebi.ac.uk/about/">on the EMBL-EBI main site</a></p>
+
+     <div class="callout medium-4 small-12 float-right">
+       <img src="../../../static/images/navigation/secondary-book.png" />
+       <cite class="text-right"><a href="https://www.ebi.ac.uk/about/jobs/career-profiles">www.ebi.ac.uk/about/jobs/career-profiles</a></cite>
+     </div>
+     <h4><a name="secondary-book" id="secondary-book"></a>Secondary book navigation</h4>
+     <p>If your page has many child pages and some of those pages have their own child structure, we recommend using this index-like navigation pattern as it will allow you to show dozens of pages of varying depth and allow the reader to track their progress and location.</p>
+     <p>Use a <code>ul</code> element with classes <code>.menu.vertical</code>; see a full example to the right or <a class="readmore" href="https://www.ebi.ac.uk/about/jobs/career-profiles">on the EMBL-EBI main site</a></p>
    </div>
-   <div class="callout columns medium-6"><img src="images/documentation/secondary-menu.png" alt="EBI secondary navigation menu example" /></div>
  </div>
 
 <h3><a name="breadcrumb" id="breadcrumb"></a>Breadcrumb trail</h3>
