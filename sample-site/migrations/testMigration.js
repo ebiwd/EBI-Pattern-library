@@ -131,7 +131,6 @@ function testMigration(steppingTimeSpeed) {
     // Add new JS
     jQuery('head').append('<script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/cookiebanner.js"></script>\n');
     jQuery('head').append('<script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/foot.js"></script>\n');
-    jQuery('head').append('<script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/fontpresentation.js"></script>\n');
     jQuery('head').append('<script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/script.js"></script>\n');
 
     console.log('Javascript: I\'ve added three scripts:\n' +
