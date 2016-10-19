@@ -358,7 +358,7 @@ function testMigration(steppingTimeSpeed) {
   // }, steppingTime());
 
   setTimeout(function(){
-    jQuery('#local-masthead #local-title.columns, #local-masthead #local-search.medium-6, #local-masthead .medium-6.last').wrapAll('<div class="masthead row"/>');
+    jQuery('#local-masthead #local-title, #local-masthead #local-search.medium-6, #local-masthead .medium-6.last').wrapAll('<div class="masthead row"/>');
     console.log('Local title and search: wrapping in a new div with classes .masthead.row');
     console.log('------------------\n');
   }, steppingTime());
