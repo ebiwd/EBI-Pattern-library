@@ -445,8 +445,8 @@ function testMigration(steppingTimeSpeed) {
 
   setTimeout(function(){
     // The Foundation theme JavaScript
-    jQuery('head').append('<script src="www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/js/foundation.js"></script>\n');
-    jQuery('head').append('<script src="www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/foundationExtendEBI.js"></script>\n');
+    jQuery('head').append('<script src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/js/foundation.js"></script>\n');
+    jQuery('head').append('<script src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/foundationExtendEBI.js"></script>\n');
 
     console.log('Javascript: I\'ve added (but not executed) the Foundation JS. Invoke with runJS()');
     console.log('------------------\n');
