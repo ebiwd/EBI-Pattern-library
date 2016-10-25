@@ -59,9 +59,8 @@ This framework functions similar to many front-end solutions: several files and 
     <div class="row" style="position: relative;">
       <div class="columns small-4">
         <div class="row small-collapse">
-          <a class="button primary columns small-12" href="css/theme-embl-petrol.css">Your site's CSS<br/><small> Colours and patterns specific to your service/site</small></a>
-          <a class="button secondary columns small-6" href="#">fonts.css</a>
-          <a class="button secondary columns small-6" href="#">xxx</a>
+          <a class="button secondary columns small-6 small-push-3" href="https://www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css">fonts.css</a>
+          <a class="button secondary columns small-12" href="css/theme-embl-petrol.css">Custom CSS<br/><small> Colours and patterns specific to your service/site</small></a>
           <a class="button primary columns small-12" href="css/ebi-global.css">
             EBI base CSS styles<br/>
             <small>EMBL-EBI look, colours</small></a>
