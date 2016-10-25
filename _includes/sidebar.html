@@ -1,15 +1,5 @@
-<!-- Sort components -->
+<!-- Tag based accordian menu derived partly from http://stackoverflow.com/a/21002505 -->
 <h3><a{% if 'Components' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/components">All components</a></h3>
-<ul class="menu vertical" id="components-list">
-  {% assign component_sorted = (site.categories['components'] | sort: 'title') %}
-  {% for component in component_sorted %}
-    <li class="{% if component.path == page.path %}is-current-page{% endif %}"><a href="{{site.baseurl}}{{component.url}}" title="{{component.path}}">{{component.title}}</a></li>
-  {% endfor %}
-</ul>
-
-<!--
-http://stackoverflow.com/a/21002505
--->
 {% capture tags %}
   {% for tag in site.tags %}
     {{ tag[0] }}
@@ -18,19 +8,21 @@ http://stackoverflow.com/a/21002505
 
 {% assign sortedtags = tags | split:' ' | sort %}
 {% if sortedtags %}
-  <h3>Tags</h3>
 
-  <div class="js-to-toggle" id="tag-list">
+  <ul class="menu vertical" data-accordion-menu>
     {% for tag in sortedtags %}
-      <a href="{{site.baseurl}}/tags?tag={{tag|lowercase}}" class="label tiny">{{tag|capitalize}}</a>
-      <!-- <ul id="tag-list-{{tag|downcase}}">
-        {% for post in site.tags[tag] %}
-          <span><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></span>
-        {% endfor %}
-      </ul> -->
+      <li>
+        <a href="{{site.baseurl}}/tags#tag-{{tag|lowercase}}" class="">{{tag|capitalize}}</a>
+        <ul class="menu vertical nested tag-list-{{tag|downcase}}">
+          {% for post in site.tags[tag] %}
+            <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul> 
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 {% endif %}
+
 
 <h4>See also</h4>
 <p>These resources will help you engage and understand the EBI Framework.</p>

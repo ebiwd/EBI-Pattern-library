@@ -1,0 +1,36 @@
+<!-- A dumping ground for include code we might not use anymore... -->
+
+
+<!-- Sort components -->
+<!-- <h3><a{% if 'Components' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/components">All components</a></h3>
+<ul class="menu vertical" id="components-list">
+  {% assign component_sorted = (site.categories['components'] | sort: 'title') %}
+  {% for component in component_sorted %}
+    <li class="{% if component.path == page.path %}is-current-page{% endif %}"><a href="{{site.baseurl}}{{component.url}}" title="{{component.path}}">{{component.title}}</a></li>
+  {% endfor %}
+</ul> -->
+
+<!--
+http://stackoverflow.com/a/21002505
+-->
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+
+{% assign sortedtags = tags | split:' ' | sort %}
+{% if sortedtags %}
+  <h3>Tags</h3>
+
+  <div class="js-to-toggle" id="tag-list">
+    {% for tag in sortedtags %}
+      <a href="{{site.baseurl}}/tags?tag={{tag|lowercase}}" class="label tiny">{{tag|capitalize}}</a>
+      <!-- <ul id="tag-list-{{tag|downcase}}">
+        {% for post in site.tags[tag] %}
+          <span><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></span>
+        {% endfor %}
+      </ul> -->
+    {% endfor %}
+  </div>
+{% endif %}
