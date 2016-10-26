@@ -16,7 +16,8 @@ On the right you'll find details on patterns, and below your can read background
 
 <section id="overview" data-magellan-target="overview" markdown="1">
 
-#### How to use this
+## How to use this
+
 <blockquote class="float-right lead quote ebi-color">
   Do as I do, not as I say.
   <cite class="text-right">This pattern library</cite>
@@ -50,7 +51,7 @@ We've taken care to make the implementation very passive, so if you don't want t
 
 The easiest way to implement the style guide is to <a href="https://ebiwd.github.io/EBI-Pattern-library/sample-site/">download the EBI boilerplate</a> -- use those HTML files as a template for your own pages. It contains the HTML for the EBI header, footer, place holders for your project name/logo and page content.
 
-### Framework components
+## Framework components
 
 This framework functions similar to many front-end solutions: several files and structures are used and generally can be implemented separately so you can use what you can or your own solution if required. We also leverage a NPM build process so there's no need to use all of the Foundation framework, if you don't need it.
 
@@ -101,7 +102,7 @@ In short: add header markup, footer markup, CSS and JS. Then add content.
 
 To get started check out the structure of the <a href="sample-site">sample boiler plate page</a>.
 
-### FAQs
+## FAQs
 
 **JavaScript**
 : The framework does not require jQuery, but using it will get more nice to haves easing your life. The boilerplate includes jQuery functionality by default, if you do not wish to use jQuery you will also need to remove references to <code>foundation.js</code> and <code>FoundationExtendEBI.js</code> files.
