@@ -1,0 +1,71 @@
+---
+layout: pattern
+title: Formatting
+categories: patterns
+tags:
+- typography
+- writing
+description: A quick index of styles. With a variety of text comes the need for many formatting styles, use this table as a helper.
+---
+
+<table>
+  <thead>
+    <tr>
+      <th class="medium-2">Use</th>
+      <th class="medium-6">Sample</th>
+      <th>How to implement?</th>
+    </tr>
+  </thead>
+  <tboyd>
+    <tr>
+      <td>Citations</td>
+      <td><cite>Hi, I'm a <a href="#">citation</a>!</cite></td>
+      <td>HTML <span class="code">&lt;cite&gt;</span> element</td>
+    </tr>
+    <tr>
+      <td>Basic pullquotes</td>
+      <td><blockquote>I'm being quoted here, or maybe just highlighted?</blockquote></td>
+      <td>HTML <span class="code">&lt;blockquote&gt;</span> element. Consider combining with the grid classes and float-left or float-right for a highlight look.</td>
+    </tr>
+    <tr>
+      <td>Emphasis pullquotes</td>
+      <td><blockquote class="lead">I'm being quoted here and want to be noticed</blockquote></td>
+      <td>HTML <span class="code">&lt;blockquote&gt;</span> element with class <code>.lead</code>.</td>
+    </tr>
+    <tr>
+      <td>Emphasis pullquote with quotation mark and citation</td>
+      <td><blockquote class="lead quote">I'm being quoted here and want to be noticed. <cite class="text-right">Hi, I'm a <a href="#">citation</a>!</cite></blockquote></td>
+      <td>HTML <span class="code">&lt;blockquote&gt;</span> element with class <code>.lead</code> and <code>.quote</code>.</td>
+    </tr>
+    <tr>
+      <td>Small text</td>
+      <td><span class="small">I'm so small.</span></td>
+      <td>CSS class <code>.small</code></td>
+    </tr>
+    <tr>
+      <td>Lead intro text</td>
+      <td><span class="lead">I'm some intro text.</span></td>
+      <td>CSS class <code>.lead</code></td>
+    </tr>
+    <tr>
+      <td>Read more</td>
+      <td><a href="#" class="readmore">Read more here</a></td>
+      <td>CSS class <code>.readmore</code></td>
+    </tr>
+    <tr>
+      <td>Read more (as a button)</td>
+      <td><a href="#" class="button readmore">Read more here</a></td>
+      <td>CSS class <code>.readmore</code> <code>.button</code></td>
+    </tr>
+    <tr>
+      <td>Serif text</td>
+      <td class="serif">For large narrative text areas, consider the CSS class <code>.serif</code> to use the "EB Garamond" font, which is also loaded by the font stylesheet.</td>
+      <td>CSS class <code>.serif</code></td>
+    </tr>
+    <tr>
+      <td>Serif text</td>
+      <td class="sans-serif">We use sans-serif by default, but maybe you need to force it for some reason?</td>
+      <td>CSS class <code>.sans-serif</code></td>
+    </tr>
+  </tbody>
+</table>

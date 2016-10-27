@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="level2"><!-- add any of your classes or IDs -->
+    {% include local_masthead.html %}
+    <div id="content" role="main" class="row">
+
+      <section>
+
+        <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
+        <nav aria-label="You are here:" role="navigation">
+          <ul class="breadcrumbs">
+            <li><a href="{{site.baseurl}}/patterns">Patterns</a></li>
+            <li>
+              <span class="show-for-sr">Current: </span> {{page.title}}
+            </li>
+          </ul>
+        </nav>
+
+        <div class="row" id="main-content-area">
+
+          <div class="medium-8 large-9 columns">
+            {% include content-top.html %}
+
+            <h2>{{page.title}}</h2>
+            <p class="lead">
+              {% if page.description %}
+              {{page.description}}
+              {% else %}
+              No more information available for {{page.title}}&hellip;
+              {% endif %}
+            </p>
+
+            <ul class="tabs" data-tabs id="component-tabs">
+              <li class="tabs-title is-active"><a href="#component-view" aria-selected="true">Rendered</a></li>
+              <li class="tabs-title"><a href="#component-html">HTML</a></li>
+              <li class="tabs-title"><a href="#component-css">CSS</a></li>
+              <li class="tabs-title"><a href="#component-info">Info</a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="component-tabs">
+              <section id="component-view" class="tabs-panel is-active">
+                {{page.content}}
+              </section>
+              <section id="component-html" class="tabs-panel">
+                <h3>{{page.title}} HTML</h3>
+                <pre class="code">{{page.content|escape}}</pre>
+              </section>
+              <section id="component-css" class="tabs-panel">
+                  <h3>{{page.title}} Style</h3>
+                  <p>You can find <a href="{{page.scssurl}}">the original source of the <code>CSS</code> as <code>.scss</code></a></p>
+              </section>
+              <section id="component-info" class="tabs-panel">
+                  <h3>{{page.title}}</h3>
+                  <div class="meta">
+                    <ul class="nav nav--keywords">
+                      <li>Last updated: {{page.date|date_to_string}}</li>
+                      <li><a href="{{site.repo}}/blob/gh-pages/{{page.path}}">Source</a></li>
+                    </ul>
+                  </div>
+              </section>
+            </div> <!-- /#tabs-content -->
+
+            <div class="row">
+              <div class="callout margin-top-xlarge columns small-push-1 small-10">
+                <h4>Have a use case that's not covered? </h4>
+                <p>Please <a href="https://github.com/ebiwd/EBI-Pattern-library/issues/new?title=Idea on the '{{page.title}}' pattern&body=Refrence: {{page.url}}">open an issue in the tracker</a>. We'll update this living pattern library with your feedback.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="medium-4 large-3 columns sidebar" data-sticky-container>
+            <div class="sticky" data-sticky data-anchor="main-content-area"  data-options="marginTop:4;">
+              {% include sidebar.html %}
+            </div>
+          </div> <!-- /.sidebar -->
+
+        </div>
+
+      </section>
+
+    </div><!-- /.container -->
+
+    {% include footer.html %}
+  </body>
+</html>

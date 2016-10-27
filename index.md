@@ -57,7 +57,7 @@ The easiest way to implement the style guide is to <a href="https://ebiwd.github
 
 This framework functions similar to many front-end solutions: several files and structures are used and generally can be implemented separately so you can use what you can or your own solution if required. We also leverage a NPM build process so there's no need to use all of the Foundation framework, if you don't need it.
 
-<div class="button-grid row small-collapse margin-bottom-large" markdown="0">
+<div class="button-grid small-collapse margin-bottom-large" markdown="0">
   <div class="columns">
     <div class="row" style="position: relative;">
       <div class="columns small-4">

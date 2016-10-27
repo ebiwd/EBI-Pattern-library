@@ -1,0 +1,22 @@
+---
+layout: pattern
+title: Images with captions
+categories: patterns
+tags:
+- layout
+- visuals
+- images
+description: For images inserted inside text areas, you can use make a div.thumbnail wrap an image and a div.caption to add subtle padding and spacing.
+---
+
+<div class="row collapse">
+  <div class="thumbnail float-right medium-4 columns">
+    <img src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/large/public/groups/external_relations/images/News/TCell_news_EBI.jpg?itok=b_KTDxDO" alt="Photo of Uranus.">
+    <div class="caption">You can also add a caption with <code>.caption</code>.</div>
+  </div>
+
+  <p>You can further combine with <code>.float-left</code> or <code>.float-right</code> for a nice treatment, and size with, say, <code>.columns .medium-4</code> for a responsive effect.</p>
+  <p>Images will dynamically scale down to fit the container, but will not scale above their actual size.</p>
+  <p>This is the treatment you see to the right.</p>
+
+</div>

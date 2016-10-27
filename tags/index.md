@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tags
-category: components
+category: patterns
 ---
 
 <!--

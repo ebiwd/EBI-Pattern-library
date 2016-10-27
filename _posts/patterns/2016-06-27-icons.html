@@ -1,0 +1,30 @@
+---
+layout: pattern
+title: Icons
+categories: patterns
+tags:
+- graphics
+description: To come
+---
+
+<p>The <code>fonts.css</code> stylesheet automatically loads a range of icon fonts that you can use.</p>
+
+<p>Icons are added automatically through CSS using the <code>:before</code> feature in CSS, so they will appear before whatever piece of text you associate them with. To make this association, you need to include particular class and data-icon attributes in the relevant HTML element: e.g. <code>&lt;h4&gt;&lt;span class="icon icon-generic" data-icon="4"&gt;&lt;/span&gt; Travel by plane&lt;/h4&gt;</code>.</p>
+
+<div class="row">
+  <div class="medium-10 medium-centered columns">
+    <div class="callout sans-serif secondary">
+      <h4><span class="icon icon-generic" data-icon="4"></span> Travel by plane</h4>
+    </div>
+  </div>
+</div>
+
+<p>The web browser will read the data-icon parameter and use the icon pictogram corresponding to "4".</p>
+
+<p>Note this method is now widely supported. We do not recommend using PNG images as they offer inferior performance and inferior support for high resolution screens.</p>
+
+<p>This requires JavaScript to work as designed. jQuery and the Foundation JS library are not required. Strictly, JavaScript is not needed, but this feature will not execture if the user has JavaScript disabled.</p>
+
+<p>Looking for an icon?</p>
+
+<a href="//ebiwd.github.io/EBI-Framework/fonts/index.html" class="button readmore">View the gallery</a>

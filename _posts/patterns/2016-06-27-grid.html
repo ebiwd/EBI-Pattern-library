@@ -1,0 +1,30 @@
+---
+layout: pattern
+title: Grid
+categories: patterns
+tags:
+- grid
+- layout
+description: Formatting content layout
+---
+
+Start by adding an element with a class of <code>.row</code>. This will create a horizontal block to contain vertical columns. Then add elements with a <code>.column</code> class within that row. You can use <code>.column</code> or <code>.columns</code>&mdash;the only difference is grammar. Specify the widths of each column with the <code>.small-#</code>, <code>.medium-#</code>, and <code>.large-#</code> classes.
+
+<p>For example: The EBI Framework uses a 12 column grid. This page has a 9/12 left column, and 3/12 right column; the structure:</p>
+
+<pre class="callout">
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;columns medium-9&quot;&gt; Main left column &lt;/div&gt;
+&lt;div class=&quot;columns medium-3&quot;&gt; Right sidebar &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<p>Note that by using <code>.medium-</code> the two columns automatically expand to full width on small screens (mobile devices).</p>
+
+<p>For further background and demonstration, <a href="http://foundation.zurb.com/sites/docs/grid.html">view the Foundation documentation on grids</a>.</p>
+
+<h3>EBI Customisations</h3>
+
+<h4>Collapse column padding</h4>
+<p>In addtion to using the Foundation <code>.no-collapse</code> option on grid rows, we've found that our layouts benefit from collapsing column padding in some locations.</p>
+
+<p>You can remove right or left padding by giving the <code>div.column</code> a <code>.no-pad-right</code> or <code>.no-pad-left</code></p>

@@ -1,5 +1,5 @@
 <!-- Tag based accordian menu derived partly from http://stackoverflow.com/a/21002505 -->
-<h3><a{% if 'Components' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/components">All components</a></h3>
+<h3><a{% if 'Patterns' == page.title %} class="is-current-page"{% endif %} href="{{site.baseurl}}/patterns">All patterns</a></h3>
 {% capture tags %}
   {% for tag in site.tags %}
     {{ tag[0] }}
