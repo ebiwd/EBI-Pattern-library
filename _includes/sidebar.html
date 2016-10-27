@@ -11,23 +11,42 @@
 
   <ul class="menu vertical" data-accordion-menu>
     {% for tag in sortedtags %}
-      <li>
-        <a href="{{site.baseurl}}/tags#tag-{{tag|lowercase}}" class="">{{tag|capitalize}}</a>
-        <ul class="menu vertical nested tag-list-{{tag|downcase}}">
-          {% for post in site.tags[tag] %}
-            <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul> 
-      </li>
+      {% if site.tags[tag] %}
+        <li>
+
+          {% if {{site.tags[tag].size}} > 1 %}
+            {% assign pluralPatterns = "patterns" %}
+          {% else %}
+            {% assign pluralPatterns = "pattern" %}
+          {% endif %}
+          {% assign patternBarWidth = {{site.tags[tag].size}} | divided_by: 1.5 | plus: 3 %}
+
+          <a href="{{site.baseurl}}/tags#tag-{{tag|lowercase}}" class="">{{tag|capitalize}} <span class="spark-chart-bar tag medium-gray-background float-right text-right" style="min-width: {{patternBarWidth}}rem">{{site.tags[tag].size}} {{pluralPatterns}}</span></a>
+          <ul class="menu vertical nested tag-list-{{tag|downcase}}">
+            {% for post in site.tags[tag] %}
+              <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul> 
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 {% endif %}
+
+<style type="text/css">
+/* Temp while we decide if we keep spark things as a real pattern */
+span.spark-chart-bar.tag {
+  position: relative;
+  z-index: 2;
+  top: -.3rem;
+}
+</style>
 
 
 <h4>See also</h4>
 <p>These resources will help you engage and understand the EBI Framework.</p>
 <ul class="menu vertical">
-  <li class=""><a href="//github.com/ebiwd/EBI-Framework">Core framework repository <i class="icon icon-generic" data-icon="x"></i></a></li>
-  <li class=""><a href="//ebiwd.github.io/EBI-Pattern-library/">Core framework documentations <i class="icon icon-generic" data-icon="x"></i></a></li>
-  <li class=""><a href="//ebiwd.github.io/EBI-Pattern-library/sample-site/">Sample pages <i class="icon icon-generic" data-icon="x"></i></a></li>
+  <li class=""><a href="//github.com/ebiwd/EBI-Framework">EBI Visual Framework repository <i class="icon icon-generic" data-icon="x"></i></a></li>
+  <li class=""><a href="//ebiwd.github.io/EBI-Pattern-library/sample-site/">Boilerplate pages <i class="icon icon-generic" data-icon="x"></i></a></li>
+  <li class=""><a href="//foundation.zurb.com/sites/docs/">Foundation Framework docs <i class="icon icon-generic" data-icon="x"></i></a></li>
 </ul>

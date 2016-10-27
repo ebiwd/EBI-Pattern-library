@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Components
+title: Pattern list
 category: components
+group: in_local_navigation 
+order: 2
 ---
 
 {% for component in site.categories[page.category] %}

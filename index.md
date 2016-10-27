@@ -1,7 +1,9 @@
 ---
 layout: default
-title: EBI Pattern library
+title: EBI Pattern library overview
 description: Document and demonstrating EBI styles
+group: in_local_navigation 
+order: 1
 ---
 
 {:refdef: .lead}
