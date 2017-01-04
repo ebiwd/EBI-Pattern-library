@@ -12,38 +12,56 @@ This is a living guide that implements the broad range of interface functionalit
 
 On the right you'll find details on patterns, and below your can read background on the pattern library.
 
-### About the EBI Pattern library
-
-<p>This is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust reliable web content faster than if you were to make it from scratch.</p>
-
 <section id="overview" data-magellan-target="overview" markdown="1">
-
-## How to use this
-
-<blockquote class="float-right lead quote ebi-color">
-  Do as I do, not as I say.
-  <cite class="text-right">This pattern library</cite>
-</blockquote>
 
 This guide does not offer prescriptive solutions for every scenario, but integrates a wide range of pull quotes, form boxes, menus, and more to show you how things should be done.
 
-Also <a href="http://foundation.zurb.com/sites/docs/global.html">consult the Foundation 6 documentation <i class="icon icon-generic" data-icon="x"></i></a> as this framework leverages that toolset.
 
-If you have questions you can't find the ansers to, <a href="#help">see the help section</a>.
+<div class="row">
+  <div class="columns callout medium-10 medium-push-1">
+    <h3><i class="icon icon-generic padding-right-medium" data-icon="i"></i>Quick info</h3>
 
-### Implementing
+    <p>This is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust reliable web content faster than if you were to make it from scratch.</p>
+
+    <div class="columns medium-up-3 row " data-equalizer data-equalize-on="medium">
+      <div class="column">
+        <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/patterns/page-structure/">
+          <h6 class="white-color text-left">Learn about the EMBL-EBI page structure</h6>
+        </a>
+      </div>
+      <div class="column">
+        <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/patterns/">
+          <h6 class="white-color text-left">View all EBI Visual Framewowk patterns</h6>
+        </a>
+      </div>
+      <div class="column">
+        <a data-equalizer-watch class="industry-background button" target="_blank" href="http://foundation.zurb.com/sites/docs/global.html">
+          <h6 class="white-color text-left">Consult the Foundation 6 patterns <i class="icon icon-generic" data-icon="x"></i></h6>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+## Implementing
 
 <p>There are two likely scenarios:</p>
 
 <div class="float-right columns callout medium-5"><h5>Using Drupal?</h5> There is <a href="https://github.com/ebiwd/drupal_7_ebi_framework">a Drupal 7 theme you can use</a>.</div>
 
 **Implementing a new project?**
-: If you're starting from scratch, check out the collection of boilerplate code, check out the source, and get going. <a href="https://ebiwd.github.io/EBI-Pattern-library/sample-site/" class="readmore">To the boilerplate</a>
+: If you're starting from scratch, check out the collection of boilerplate code, check out the source, and get going. <a href="/EBI-Pattern-library/patterns/sample-pages/" class="readmore">To the sample pages</a> <a href="/EBI-Pattern-library/patterns/page-structure/" class="readmore">Learn about the EMBL-EBI page structure</a>
 
 **Updating an existing site?**
 : If you're updating an EBI Compliance theme site, you'll just need to replace a few JS/CSS files, change some layout classes, and make minore tweaks. It could take as little as 30 minutes. <a href="https://github.com/ebiwd/EBI-Framework/blob/gh-pages/sample-site/migrations/testMigration.js" class="readmore">Run your own sample auto-migration</a>
 
-### Requirements and what you get
+## Requirements and what you get
+
+<blockquote class="float-right lead quote ebi-color">
+  Do as I do, not as I say.
+  <cite class="text-right">This pattern library</cite>
+</blockquote>
 
 The framework uses modern best practices and targets browsers shipped within the past three years (<a href="/EBI-Pattern-library/components/browser-compatibility/" class="">more on browser support</a>); though other browsers will function through the an implementation of [graceful degradation](https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement). The framework is also mobile responsive (Responsive Web Design), so you won't have to spend too much time adapting for mobile.
 
@@ -51,7 +69,7 @@ To help us help you, we've used the Foundation Framework (version 6) as a baseli
 
 We've taken care to make the implementation very passive, so if you don't want to use these features they won't likely get in your way.
 
-The easiest way to implement the style guide is to <a href="https://ebiwd.github.io/EBI-Pattern-library/sample-site/">download the EBI boilerplate</a> -- use those HTML files as a template for your own pages. It contains the HTML for the EBI header, footer, place holders for your project name/logo and page content.
+The easiest way to implement the style guide is to <a href="/EBI-Pattern-library/patterns/sample-pages/">follow the EBI boilerplate</a> -- use those HTML files as a template for your own pages. It contains the HTML for the EBI header, footer, place holders for your project name/logo and page content. And be sure to <a href="/EBI-Pattern-library/patterns/page-structure/" class="readmore">read up on the EMBL-EBI page strucutre</a>
 
 ## Framework components
 
