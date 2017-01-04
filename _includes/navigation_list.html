@@ -1,3 +1,10 @@
+{% comment %}
+We construct the site naviagion by loading a list of the site's pages
+and filtering to just those with the front matter of:
+  group: "in_local_navigation"
+and we order by adding
+  order: 2 (whatever number)
+{% endcomment %}
 {% for node in navigation_list %}
   {% if group == null or group == node.group %}
     {% if page.url == node.url %}
@@ -7,5 +14,17 @@
     {% endif %}
   {% endif %}
 {% endfor %}
+
+{% for post in site.posts %}
+  {% if post.group == "in_local_navigation" %}
+    {% if page.url == post.url %}
+      <li class="active"><a href="{{ site.domain }}{{ site.baseurl }}{{post.url}}" class="active">{{post.title}}</a></li>
+    {% else %}
+      <li><a href="{{ site.domain }}{{ site.baseurl }}{{post.url}}">{{post.title}}</a></li>
+    {% endif %}
+  {% endif %}
+
+{% endfor %}
+
 {% assign pages_list = nil %}
 {% assign group = nil %}
