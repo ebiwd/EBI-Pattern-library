@@ -193,7 +193,7 @@
         <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
         <nav aria-label="You are here:" role="navigation">
           <ul class="breadcrumbs">
-            <li class="float-right">
+            <li class="float-right elixir-badge">
               <a href="#" data-toggle="example-dropdown-2"><img src="http://cfgbc.mf.uni-lj.si/images/ELIXIR_logo_white_background.png" alt="Part of the ELIXIR distributed infrastructure for life-science information." style="height: 1.2rem;"> Part of the ELIXIR infrastructure</a>
             </li>
             <li><a href="../../">EBI Framework</a></li>
@@ -213,26 +213,37 @@
         </nav>
 
         <div id="main-content-area" class="row">
-          <div class="small-12 medium-9 columns">
+          <div class="small-12 medium-9 columns">      
 
             <section>
               <h2>Affiliates</h2>
-              <p>Your content</p>
-            </section>
+              <p>Most services require an area to place information and logos from your sponsors/affiliates/collaborators/endorsers. To ensure consistency across EMBL-EBI sites and services we work within the <a href="/EBI-Pattern-library/patterns/page-structure/">page structure guidance</a> and are mindful that display of these logos and information is consistent and understandable while keeping them visible but not obtrusive to the core reason a user visists a site: to use the service itself.</p>
 
-            <section>
-              <h3>About</h3>
               <p>Our sites often show a number of relationships with outside entities:</p>
-              <ul>
-                <li>Parent organisation</li>
-                <li>Funders</li>
-                <li>Collaborators</li>
-                <li>Endorsements/affiliates/some other word (ELIXIR, for example)</li>
-              </ul>
-              <p>And we must be mindful to display these types of content consistently, understandably while making them visible but not obtrusive.</p>
+              <dl>
+                <dt><h4>Parent organisation</h4></dt>
+                <dd>For EMBL-EBI compliant sites the parent organisation (EMBL-EBI) shows in <code>#global-masthead</code> on the right side.</dd>
+                <dt><h4>Funders &amp; collaborators</h4></dt>
+                <dd>These logos should be placed in the <code>#local-footer</code>, you can see an example in this page's footer.</dd>
+                <dt><h4>Endorsement affiliate</h4></dt>
+                <dd>
+                  <p>This relationshop can be highlighted in one of two places on a website, the top right or the local footer. ELIXIR -- as demonstrated in the top right and banner below -- is an example of an endorsement relationship that applies to some EMBL-EBI services.</p>
+                  <p>Which placement (top right or lower banner) you should use will likely depend on the structure of your service. For services that use the breadcrumb, it may be appropriate for this badge to appear on most pages. If you use the lower banner, you may wish to limit its showing to your service homepage and the about pages.</p>
 
-              <h4>Level 4 heading</h4>
-              <p>More content in a full-width container.</p>
+                  <p>Not sure if you have an endorsement affiliate?</p>
+                    <ul>
+                      <li>The logo will make the user feel reassured about the sustainability and quality of the current site or resource.</li>
+                      <li>An objective is to promote the a unifying entity.</li>
+                      <li>When the user clicks on the graphic, they should learn something about what the affiliated organisation is.</li>
+                      <li>They are quite rare and if you do have an endorsing affiliate, it's unlikely to be more than one.
+                    </ul>
+
+                    
+                </dd>
+              </dl>
+              <p>We also recommend that services have an <code>/about/relationships</code> page. Such as page creates space to explain the nuance of any relationships, while also acting as truth about how the service functions with other parties.</p>
+              <p>For questions about how best to integrate your relationships, you can reach out to <a href="http://tsc.ebi.ac.uk/web-development">the Web Development team</a> or the <a href="https://www.ebi.ac.uk/seqdb/confluence/display/WGC/Web+Guidelines+committee">Web Guidelines Committee</a>.</p>
+
             </section>
 
           </div> <!-- /medium-9 -->
@@ -290,6 +301,30 @@
     <footer>
       <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
 
+      <style>
+      .breadcrumbs li.elixir-badge:not(:last-child):after {
+        content: ">";
+        font-family: "EBI-Functional";
+        font-size: .85em;
+        top: -0rem;
+        margin: 0;
+      }
+      li.elixir-badge a img { padding-right: 0.5rem; }
+      .elixir-logo {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 842 595'><style>.st0{fill:#FFF;} .st1{fill:#FFF;}%3c/style>%3cpath class='st0' d='M738 5.2c1.6.4 3.2 1 4.8 1.2 19 3.5 33.2 19 35.2 38.3 2.3 22-12.5 43-35.2 47-16.6 3-30.5-2.2-41.6-15l-2.4-3-2 .8-25 13.8c-2.3 1.3-2.3 1.4-1.7 4 3.5 18-7.3 34.6-25 38.2-10.3 2-19.5-.4-27.5-7l-2-1.8-.6-.2-2.2 1-19.6 12c-1.7 1-2 2-2 4 1.4 10.4-2.2 19-11.2 25-9 5.6-18.2 5.4-27.2 0-2-1.3-3.2-1.3-5 0-6.5 4.7-13.3 9.2-20 13.8-1.6 1-2.3 2.2-2.2 4.3.7 9.5-5.7 17-13.5 19-4 1-8 1-11.7-.8-2-1-3.2-.5-4.8.7-29.5 22-58 45.5-84.4 71.3-2.4 2.4-2.4 2.4-1 5.5 12 29.4 22 59.4 30 90.2 4 15.7 7.6 31.6 9.5 47.8.6 5.2 1 10.6.8 15.8-.2 11-4 20.4-11 28.5-7 8-15.5 10.8-25.7 8.4l-3-1.2c-2.7-1.5-3.3-4.3-1.3-6.7.8-1 2-1.6 3-2.2 6.5-3.7 9.8-9.4 10.8-16.6 1-6 .4-12-.2-18-3.6-32-12-63.2-21-94-3.3-11-7-21.7-10.5-32.5-.2-.7-.6-1.4-1-2h-.8l-17.3 19-14.7 17.7v1h2.4c5 0 9.8 0 14.7.2 3.8 0 6.7 2.5 7.7 6s-.3 7-3.2 9.2c-1.7 1.2-3.5 1.5-5.6 1.5h-27c-2.4 0-4 .6-5.4 2.5-6.2 8.8-12.6 17.5-19 26.3l-1.8 3.3h52.3c1.4 0 2.8 0 4 .4 4 1 6.5 5 6 9s-3.8 7-8 7.3h-62c-2.3 0-3.7.7-4.8 2.8-5 9-10 18-14.7 27l-1.6 3.7c1.5 0 2.6.3 3.7.3H373c1.4 0 3 0 4.3.6 3.8 1.3 6 5 5.4 9-.6 4-3.8 7-7.8 7.2h-88.3c-1.8-.2-2.8.6-3.5 2.4-7.2 19.6-12 39.6-11 60.6 1.2 20.8 8 39.3 23 54 3.2 3 6.6 5.8 10.3 8 4.3 2.6 4 7.5 1.3 10.3-2 2-4.4 3-7.2 3.5-3.3.4-6.5 0-9.5-1-17.8-7.2-33.2-17.4-44.3-33.5-7-10.4-11-22-12.6-34.4-2-18 .7-35.5 5.7-52.8 6.3-21.5 16-41.5 27-60.8 18-30.8 39.6-59 63.5-85.2 15.7-17.3 32.3-33.7 50-49 2-1.7 2-1.7 1-4.7-9-23.3-18.8-46.4-29.7-69-13.3-27.7-28-54.5-45-80.2-13.2-20.2-27.7-39.3-44.2-57-1.4-1.6-2.5-3.4-3.5-5.2-.4-.6-.3-1.8 0-2.4.7-1 2-.8 2.7-.3 2 1 4 2.2 5.5 3.7 14.6 14 28.2 29.2 41 45 30 36.8 55.3 77 76.7 119.4 5 10 9.7 20.2 14.5 30.3.4 1 1 1.7 1.5 3 1-.7 1.6-1 2.2-1.6 26.6-22.4 55-42.4 84-61.5.7-.4 1.2-.8 1.8-1 1.2-.8 1.5-1.7 1.2-3-.7-4-.2-7.6 1.6-11.2 4.8-9.7 17-13.3 26-7.5 2.3 1.4 3.6 1 5.6 0 6-4 12.4-7.7 18.6-11.4l3-1.8c-3.5-8-3.8-15.8.2-23.5 2.5-4.8 6.3-8.5 11.2-11 5.7-2.7 11.7-3 17.8-1.6 6 1.6 11 5.4 14.8 10.8l23-12.8c-5-9.7-6-19.5-1.8-29.4 3-7 8-12.3 14.7-16 12-6.4 33-5.4 44.3 14.7 9.5-5 19-9.7 28.8-14.7l-1.4-3.2c-11-25 3-53.8 29.8-60.2l7-1.6c2-.4 4-.4 5.8-.4z'/>%3cpath class='st1' d='M5.4 329.8c.4-.8 1-1.5 1-2.3 5-22 10-44 15.2-66 1.2-5.2 3-10.2 5.2-15 5-11.2 14-16.8 25.8-18.2 3.3-.4 6.6-.6 10-.6h79.6c5 0 9.8.3 14.5 1.6 8.5 2.4 12.7 7.8 13.2 16.6 0 4.2-.3 8.5-1.3 12.7l-9 40-1 2.8H47.4c-.3.8-.7 1.4-.8 2-2 8.4-4 16.8-5.7 25.2-.4 1.8-.6 3.7-.6 5.5 0 2.8 1 4.2 3.8 4.8 1.2.3 2.5.4 3.8.4h84.6c5.5 0 11-1 16.3-1.7l2-.2-7.4 18H31.5c-4.4 0-8.8-.2-13-1.5-6-1.8-10.5-5-12-11.4 0-.6-.7-1-1-1.6v-11.2zM51.2 285h76.4l.6-1.5c2.4-10 4.8-20.2 7-30.3.4-1.4.5-3 .5-4.4 0-2.4-1-3.7-3.3-4.2-1.8-.4-3.7-.7-5.5-.7-9.3-.2-18.5 0-27.7 0H69.6c-6.6 0-10 2.6-11.3 8.7l-6.8 30-.3 2.3zM213.3 355.5h-41.8c0-.6 0-1 .3-1.4 5-12.6 8.3-25.8 11.2-39 8-38 16.3-76 24.5-113.8 1.8-8.5 3.6-17 5-25.6.8-3.7.8-7.6 1-11.4v-3.4c2.5-.7 36.8-.8 39.7 0l-2.3 11L217 327.4c-1.4 6.7-2.4 13.5-3.4 20.3-.4 2.4-.3 5-.5 7.8zM557.6 227.8h32.7c.6 3.7-.8 7.2-.5 11.2.5-.5 1-.7 1-1 4.5-7.2 11.3-10.2 19.4-10.3 11-.2 22 0 33 0 1 0 1.8 0 2.4 1l7 12.8-5.8 7c-1.2 1.5-2.6 2-4.4 1.7-13.7-2-27.5-1.8-41.4-1.7-9 0-12.2 2.6-14.2 11.5l-8 35.3c-3 14-6.3 28-9.2 42-1 5-1.2 10.2-1.7 15.3l-.3 2.8h-39.2c0-.6 0-1 .3-1.5 4.2-10 6.6-20.4 9-30.8l17-74.7c1.4-6.2 2.6-12.5 2.4-19l.4-1.7zM484 227.8h37c0 1-.2 1.6-.3 2.4l-22.8 101c-1.8 7.7-3.5 15.4-3.5 23.3 0 .3 0 .5-.3 1h-39v-1c5.4-12.8 8.5-26 11.5-39.5l13.4-58.4c2-8.8 4-17.6 3.7-26.7l.3-2.2zM266.6 227.8h37l-.5 3c-7.5 33.7-15 67.4-22.7 101-1.7 7.5-3.3 14.8-3.2 22.4 0 .4 0 .7-.2 1.3h-39.2v-1c5.3-12.2 8.4-25 11.3-37.8 4.4-20 9.2-39.8 13.6-59.8 2-9 4-18 3.6-27 0-.7.3-1.4.4-2.2zM291.7 164.5c10.3 0 18.4 8 18.4 18.5 0 10.2-8 18.3-18.2 18.3s-18.3-8-18.4-18.2c0-10.3 8-18.5 18.3-18.5z'/%3e%3c/svg%3e");
+      }
+      .elixir-big-bar {
+        background-size: 90%;
+        background-color: #EF7C0C;
+        height: 50px;
+        width: 50px;
+        background-position: 80% 58%;
+        background-repeat: no-repeat;   
+        display: block;
+        margin-right: 1rem;     
+      }
+      </style>
+
       <div id="local-footer">
 
         <div class="row padding-top-large padding-bottom-large">
@@ -309,6 +344,15 @@
         </div>
 
         <div class="row">
+          <div class="columns medium-12 padding-bottom-large margin-left-large margin-top-large">
+            <div class="float-left elixir-logo elixir-big-bar">
+            </div>
+            <h6 class="">[Service-name] is part of the ELIXIR infrastructure</h5>
+            <p class="small">This service is part of the ELIXIR distributed infrastructure for life-science information -- this is just sample text, final language TBC. <a class=" readmore elixir-color" href="#">Learn more</a></p>
+          </div>
+        </div>
+
+        <!-- <div class="row">
           <div class="callout clearfix margin-top-large" style="background: url(../images/elixir-background.jpg); background-size: cover; background-position: 0 75%; border-top: 1px solid #fb6a2a;">
             <div class="columns padding-top-large">
               <img src="http://cfgbc.mf.uni-lj.si/images/ELIXIR_logo_white_background.png" alt="Part of the ELIXIR distributed infrastructure for life-science information." class="float-right medium-1">
@@ -317,7 +361,7 @@
               <a class=" readmore button elixir-background  white-color " href="#">Learn more</a>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
  
