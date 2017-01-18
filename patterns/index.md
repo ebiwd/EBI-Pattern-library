@@ -1,25 +1,29 @@
 ---
 layout: default
-title: Pattern list
+title: All patterns
 category: patterns
 group: in_local_navigation 
+permalink: patterns/index
 order: 2
 ---
 
-
+## All EMBL-EBI Patterns
 
 <div id="livefilterdemo" class="">
   <div class="input-group">
     <span class="input-group-label"><i data-icon="1" class="icon icon-functional"></i></span>
-    <input class="filter clearable input-group-field" type="text" value="" />
+    <input class="filter clearable input-group-field" type="text" value="" placeholder="Filter the patterns" />
   </div>
 
   <div class="live-filter-target-granularity">
     {% for pattern in site.categories[page.category] %}
     <div class="live-filter-target-granularity" id="{{pattern.title}}">
-      <h3><a href="{{site.baseurl}}{{pattern.url}}#component-detail">{{pattern.title|capitalize}}</a></h3>
-      {{pattern.description}}
-      <hr />
+      <dt><a href="{{site.baseurl}}{{pattern.url}}#component-detail">{{pattern.title|capitalize}}</a></dt>
+      <dd class="padding-left-large">{{pattern.description}}
+      {% for tag in pattern.tags %}
+        <span class="tag secondary-background">{{ tag }} </span>
+      {% endfor %}
+      </dd>
     </div>
     {% endfor %}
   </div>
@@ -33,7 +37,7 @@ order: 2
       $(document).ready(function() {
         $('#livefilterdemo').liveFilter({
           fitlerTargetCustomDiv: 'div.live-filter-target-granularity',
-          defaultText: 'Type to filter the patterns',
+          defaultText: '',
           noMatches: '<p>No matching patterns found.</p>'
         });
       });
