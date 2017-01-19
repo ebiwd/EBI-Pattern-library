@@ -1,27 +1,28 @@
 ---
 layout: default
 title: EBI Pattern library overview
-description: Document and demonstrating EBI styles
+description: Document and demonstrating EMBL-EBI styles
 group: in_local_navigation 
 order: 1
 ---
 
 {:refdef: .lead}
-This is a living guide that implements the broad range of interface functionality in the <a href="https://github.com/ebiwd/EBI-Framework">EBI Visual Framework</a>. This site will guide on how you should make your page elements look and function.
+This is a living guide that implements the broad range of interface functionality in the <a href="https://github.com/ebiwd/EBI-Framework">EMBL-EBI Visual Framework</a>. This site will guide on how you should make your page elements look and function.
 {: refdef}
 
-On the right you'll find details on patterns, and below your can read background on the pattern library.
 
 <section id="overview" data-magellan-target="overview" markdown="1">
 
-This guide does not offer prescriptive solutions for every scenario, but integrates a wide range of pull quotes, form boxes, menus, and more to show you how things should be done.
+Browse through this guide to become familiar with the EMBL-EBI website "personality" and refer to it for guidance and code examples when building and extending your site's functionality.
+
+You won't find prescriptive solutions for every scenario, but examples and guidance on a wide range of pull quotes, form boxes, menus, and more to show you how things should be done, including more complex things like analytics[_coming soon_] and [page structure](/EBI-Pattern-library/patterns/page-structure/).
 
 
 <div class="row">
   <div class="columns callout medium-10 medium-push-1">
     <h3><i class="icon icon-generic padding-right-medium" data-icon="i"></i>Quick info</h3>
 
-    <p>This is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust reliable web content faster than if you were to make it from scratch.</p>
+    <p>This is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust reliable web content faster than if you were to make it all from scratch.</p>
 
     <div class="columns medium-up-3 row " data-equalizer data-equalize-on="medium">
       <div class="column">
@@ -43,6 +44,9 @@ This guide does not offer prescriptive solutions for every scenario, but integra
 
   </div>
 </div>
+
+On the right you'll find [a list of the patterns](/EBI-Pattern-library/patterns/), and below your can read background on the pattern library.
+
 
 ## Implementing
 
