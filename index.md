@@ -161,7 +161,9 @@ Note that the <a href="//www.ebi.ac.uk/seqdb/confluence/display/WGC/Web+Guidelin
 
 Get in touch, or subscribe to the issue queue, collaboration and pull requests welcome!
 
-<a href="https://github.com/ebiwd/EBI-Pattern-library/" class="button readmore">To the GitHub repo</a>
+<a href="https://github.com/ebiwd/EBI-Pattern-library/" class="button readmore margin-bottom-none">To the GitHub repo</a>
+
+<em>or <a href="https://docs.google.com/document/d/1kNXJ4Sj5_iPgqdXPgt9xNPvS53io5znWDch7sw58Sqg/edit?usp=sharing">use this template to submit a new pattern</a></em>
 </div>
 
 </div>
