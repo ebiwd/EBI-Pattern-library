@@ -15,22 +15,19 @@ description: Oooo, pretty.
 
 <p>Using CSS3 and JavaScript animations there are many opportunities to make our sites look good and function better, but we want to take this one step at a time and get other items in order. As such, we've not included <a href="http://foundation.zurb.com/sites/docs/motion-ui.html">Foundation's Motion UI</a> CSS in the default build.</p>
 
-<p>If you'd like to use the Motion UI, you'll need to link to <code><a href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/motion-ui/dist/motion-ui.min.css">https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/motion-ui/dist/motion-ui.min.css</a></code>.</p>
+<p>If you'd like to use the Motion UI, you'll need <code><a href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/motion-ui/dist/motion-ui.min.css">//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/motion-ui/dist/motion-ui.min.css</a></code>.</p>
 
-<link rel="stylesheet" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/motion-ui/dist/motion-ui.min.css" type="text/css" media="screen">
+<link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/motion-ui/dist/motion-ui.min.css" type="text/css" media="screen">
 
-<div class="callout">
-  <h3>Example</h3>
-  <p>Here we show some text, but not all.</p>
-  <div id="description-more" data-toggler data-animate="fade-in hinge-out-from-top" data-closable="hinge-out-from-top" style="display:none;">
-    <div class="callout success">
-      <button class="close-button" aria-label="Dismiss alert" type="button" data-close data-toggle="description-more show-more show-less">
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <p>Some extra information!</p>
-    </div>
-    <a class="small hide label" id="show-less" data-toggle="description-more show-more show-less" data-toggler=".hide"><span class="badge icon icon-functional" data-icon="-"></span> Show less information</a>
+<h3>Example</h3>
+<div id="description-more" data-toggler data-animate="fade-in hinge-out-from-top" data-closable="hinge-out-from-top" style="display:none;">
+  <div class="callout success">
+    <button class="close-button" aria-label="Dismiss alert" type="button" data-close data-toggle="description-more show-more show-less">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <p>Some extra information!</p>
   </div>
-
-  <a class="small label" id="show-more" data-toggle="description-more show-more show-less" data-toggler=".hide"><span class="badge icon icon-functional" data-icon="+"></span> Show more information</a>
+  <a class="small hide label" id="show-less" data-toggle="description-more show-more show-less" data-toggler=".hide"><span class="badge icon icon-functional" data-icon="-"></span> Show less information</a>
 </div>
+
+<a class="small label" id="show-more" data-toggle="description-more show-more show-less" data-toggler=".hide"><span class="badge icon icon-functional" data-icon="+"></span> Show more information</a>
