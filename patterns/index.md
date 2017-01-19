@@ -18,39 +18,58 @@ order: 2
   </div>
 
   <div class="live-filter-target-granularity">
-    <!-- Documents -->
 
+    <!-- Documents -->
     <h3>Meta patterns</h3>
     <p>These are documentation-style patterns that affect how, where, and when you should use general patterns.</p>
-    {% for documentation in site.categories['meta-patterns'] %}
-    <div class="live-filter-target-granularity" id="{{documentation.title}}">
-      <dt><a href="{{site.baseurl}}{{documentation.url}}#component-detail">{{documentation.title|capitalize}}</a></dt>
-      <dd class="padding-left-large">{{documentation.description}}
-      {% for tag in documentation.tags %}
-        <span class="tag secondary-background">{{ tag }} </span>
+
+    {% capture documentationcollection %}
+      {% for documentation in site.categories['meta-patterns'] %}
+        NEWENTRY
+        <div class="live-filter-target-granularity" id="{{documentation.title}}">
+          <dt><a href="{{site.baseurl}}{{documentation.url}}#component-detail">{{documentation.title|capitalize}}</a></dt>
+          <dd class="padding-left-large">{{documentation.description}}
+          {% for tag in documentation.tags %}
+            <span class="tag secondary-background">{{ tag }} </span>
+          {% endfor %}
+          {% for type in documentation.types %}
+            <span class="tag secondary-background">{{ type }} </span>
+          {% endfor %}
+          </dd>
+        </div>
       {% endfor %}
-      {% for type in documentation.types %}
-        <span class="tag secondary-background">{{ type }} </span>
-      {% endfor %}
-      </dd>
-    </div>
+    {% endcapture %}
+
+    {% assign sorteddocumentation = documentationcollection | split:'NEWENTRY' | sort %}
+
+    {% for documentation in sorteddocumentation %}
+      {{ documentation }}
     {% endfor %}
 
 
     <!-- Patterns -->
     <h3>General patterns</h3>
-    {% for pattern in site.categories[page.category] %}
-    <div class="live-filter-target-granularity" id="{{pattern.title}}">
-      <dt><a href="{{site.baseurl}}{{pattern.url}}#component-detail">{{pattern.title|capitalize}}</a></dt>
-      <dd class="padding-left-large">{{pattern.description}}
-      {% for tag in pattern.tags %}
-        <span class="tag secondary-background">{{ tag }} </span>
+    {% capture patterncollection %}
+      {% for pattern in site.categories[page.category] %}
+        NEWENTRY
+        <div class="live-filter-target-granularity" id="{{pattern.title}}">
+          <dt><a href="{{site.baseurl}}{{pattern.url}}#component-detail">{{pattern.title|capitalize}}</a></dt>
+          <dd class="padding-left-large">{{pattern.description}}
+          {% for tag in pattern.tags %}
+            <span class="tag secondary-background">{{ tag }} </span>
+          {% endfor %}
+          {% for type in pattern.types %}
+            <span class="tag secondary-background">{{ type }} </span>
+          {% endfor %}
+          </dd>
+        </div>
       {% endfor %}
-      {% for type in pattern.types %}
-        <span class="tag secondary-background">{{ type }} </span>
-      {% endfor %}
-      </dd>
-    </div>
+    {% endcapture %}
+
+    {% assign sortedpatterns = patterncollection | split:'NEWENTRY' | sort %}
+
+    {% for pattern in sortedpatterns %}
+      {{ pattern }}
     {% endfor %}
   </div>
 
