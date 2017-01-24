@@ -2,7 +2,7 @@
 layout: default
 title: EBI Pattern library overview
 description: Document and demonstrating EMBL-EBI styles
-group: in_local_navigation 
+group: in_local_navigation
 order: 1
 ---
 
@@ -15,7 +15,7 @@ This is a living guide that implements the broad range of interface functionalit
 
 Browse through this guide to become familiar with the EMBL-EBI website "personality" and refer to it for guidance and code examples when building and extending your site's functionality.
 
-You won't find prescriptive solutions for every scenario, but examples and guidance on a wide range of pull quotes, form boxes, menus, and more to show you how things should be done, including more complex things like analytics[_coming soon_] and [page structure](/EBI-Pattern-library/patterns/page-structure/).
+You won't find prescriptive solutions for every scenario, but examples and guidance on a wide range of pull quotes, form boxes, menus, and more to show you how things should be done, including more complex things like analytics[_coming soon_] and [page structure](/EBI-Pattern-library/meta-patterns/page-structure/).
 
 
 <div class="row">
@@ -26,12 +26,12 @@ You won't find prescriptive solutions for every scenario, but examples and guida
 
     <div class="columns medium-up-3 row " data-equalizer data-equalize-on="medium">
       <div class="column">
-        <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/patterns/page-structure/">
+        <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/meta-patterns/page-structure/">
           <h6 class="white-color text-left">Learn about the EMBL-EBI page structure</h6>
         </a>
       </div>
       <div class="column">
-        <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/patterns/">
+        <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/meta-patterns/">
           <h6 class="white-color text-left">View all EBI Visual Framewowk patterns</h6>
         </a>
       </div>
@@ -149,7 +149,7 @@ To get started check out the structure of the <a href="sample-site">sample boile
 
 <div class="columns medium-6" markdown="1">
 
-For questions about the background of this guide or a philosophical suggestion <a href="https://github.com/ebiwd/EBI-Pattern-library/issues">post to the issue queue</a> for discussion and support. 
+For questions about the background of this guide or a philosophical suggestion <a href="https://github.com/ebiwd/EBI-Pattern-library/issues">post to the issue queue</a> for discussion and support.
 
 Note that the <a href="//www.ebi.ac.uk/seqdb/confluence/display/WGC/Web+Guidelines+committee">EBI Web Guidelines Committee</a> is responsible for the governance and direction of the patterns and framework.
 
