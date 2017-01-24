@@ -31,7 +31,7 @@ You won't find prescriptive solutions for every scenario, but examples and guida
         </a>
       </div>
       <div class="column">
-        <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/meta-patterns/">
+        <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/patterns/">
           <h6 class="white-color text-left">View all EBI Visual Framewowk patterns</h6>
         </a>
       </div>
