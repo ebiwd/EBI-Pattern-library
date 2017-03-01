@@ -1,0 +1,123 @@
+---
+layout: pattern
+title: Data tables
+categories: patterns
+tags:
+- tables
+- data visulisation
+description: Showcase a lot or a little amount of numbers, images, graphics. 
+---
+
+
+<h4>Basic data table</h4>
+<p>The basic data table can be implemented by adding two classes to the <code>table</code> tag: <code>.small</code> and <code>.data-table</code>.</p>
+
+<p>Alternativley to adding <code>.data-table</code> there are a range of utility classes that can be used to assemble the desired look and feel:</p>
+<ul>
+  <li>Smaller text: add a <code>.small</code> to the table tag, or any tr or td.</li>
+  <li>Disable tables from going 100% wide: add a <code>.width-auto</code> to the table tag.</li>
+  <li>Align text to top: add <code>.align-top</code> to the table tag or a td.</li>
+  <li>Change padding: add either of these classes to the table tage or td, <code>.padding-none</code> <code>.padding-small</code>.
+  <li>Allow images to be stretched out of proportion: add <code>.stretch</code> to the image.
+</ul>
+
+<p>Consider this <a href="https://www.ebi.ac.uk/chembl/drugstore">sample table from ChEMBL</a> which we have done with <code>table.small.data-table</code>:</p>
+
+<table class="small data-table">
+  <thead>
+    <tr role="row">
+      <th colspan="1" role="columnheader">Parent Molecule</th>
+      <th colspan="1" role="columnheader">Synonyms</th>
+      <th colspan="1" role="columnheader">Phase</th>
+      <th colspan="1" role="columnheader">Research Codes</th>
+      <th colspan="1" role="columnheader">Applicants</th>
+      <th colspan="1" role="columnheader">USAN Stem</th>
+      <th colspan="1" role="columnheader">USAN Year</th>
+      <th colspan="1" role="columnheader">First Approval</th>
+      <th colspan="1" role="columnheader">ATC Code</th>
+      <th colspan="1" role="columnheader" style="width: 190px;">Icon</th>
+    </tr>
+  </thead>
+  <tbody aria-live="polite" aria-relevant="all" role="alert">
+    <tr class="odd">
+      <td>
+        <a href="https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL566315" class="no-underline"><img alt="Compound Image Not Available" height="100px" src="https://www.ebi.ac.uk/chembl/compound/displayimage/574221"></a><br>
+        CHEMBL566315
+      </td>
+      <td>Obeticholic acid (FDA, INN, USAN)</td>
+      <td>4</td>
+      <td>DSP-1747<br>
+      INT-747</td>
+      <td>Intercept Pharmaceuticals</td>
+      <td></td>
+      <td>2008</td>
+      <td class=" sorting_1">2016</td>
+      <td>A05AA04</td>
+      <td><img alt="CHEMBL566315 compound icon" border="0" src="https://www.ebi.ac.uk/chembltools/autoicon3/7,1,0,1,0,1,0,0,0,1" usemap="#imgmap574221"><map id="imgmap574221" name="imgmap574221">
+        <area alt="Drug Type: Natural Product-derived" class="drug-icon-imgmap" coords="1,1 37,37" href="#" shape="rect" title="Drug Type: Natural Product-derived">
+        <area alt="Rule of Five: Y" class="drug-icon-imgmap" coords="38,1 74,37" href="#" shape="rect" title="Rule of Five: Y">
+        <area alt="First In Class: N" class="drug-icon-imgmap" coords="75,1 111,37" href="#" shape="rect" title="First In Class: N">
+        <area alt="Chirality: Single Stereoisomer" class="drug-icon-imgmap" coords="112,1 148,37" href="#" shape="rect" title="Chirality: Single Stereoisomer">
+        <area alt="Prodrug: N" class="drug-icon-imgmap" coords="149,1 185,37" href="#" shape="rect" title="Prodrug: N">
+        <area alt="Oral: Y" class="drug-icon-imgmap" coords="1,40 37,75" href="#" shape="rect" title="Oral: Y">
+        <area alt="Parenteral: N" class="drug-icon-imgmap" coords="38,40 74,75" href="#" shape="rect" title="Parenteral: N">
+        <area alt="Topical: N" class="drug-icon-imgmap" coords="75,40 111,75" href="#" shape="rect" title="Topical: N">
+        <area alt="Black Box: N" class="drug-icon-imgmap" coords="112,40 148,75" href="#" shape="rect" title="Black Box: N">
+        <area alt="Availability Type: Prescription-only" class="drug-icon-imgmap" coords="149,40 185,75" href="#" shape="rect" title="Availability Type: Prescription-only">
+      </map></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <a href="https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL607400" class="no-underline"><img alt="Compound Image Not Available" height="100px" src="https://www.ebi.ac.uk/chembl/compound/displayimage/609761"></a><br>CHEMBL607400
+      </td>
+      <td>Brivaracetam (FDA, INN, USAN)</td>
+      <td>4</td>
+      <td>UCB-34714</td>
+      <td>Ucb Inc<br>
+      Ubc Inc</td>
+      <td>-racetam</td>
+      <td>2005</td>
+      <td class=" sorting_1">2016</td>
+      <td>N03AX23</td>
+      <td><img alt="CHEMBL607400 compound icon" border="0" src="https://www.ebi.ac.uk/chembltools/autoicon3/1,1,0,1,0,1,1,0,0,1" usemap="#imgmap609761"><map id="imgmap609761" name="imgmap609761">
+        <area alt="Drug Type: Synthetic Small Molecule" class="drug-icon-imgmap" coords="1,1 37,37" href="#" shape="rect" title="Drug Type: Synthetic Small Molecule">
+        <area alt="Rule of Five: Y" class="drug-icon-imgmap" coords="38,1 74,37" href="#" shape="rect" title="Rule of Five: Y">
+        <area alt="First In Class: N" class="drug-icon-imgmap" coords="75,1 111,37" href="#" shape="rect" title="First In Class: N">
+        <area alt="Chirality: Single Stereoisomer" class="drug-icon-imgmap" coords="112,1 148,37" href="#" shape="rect" title="Chirality: Single Stereoisomer">
+        <area alt="Prodrug: N" class="drug-icon-imgmap" coords="149,1 185,37" href="#" shape="rect" title="Prodrug: N">
+        <area alt="Oral: Y" class="drug-icon-imgmap" coords="1,40 37,75" href="#" shape="rect" title="Oral: Y">
+        <area alt="Parenteral: Y" class="drug-icon-imgmap" coords="38,40 74,75" href="#" shape="rect" title="Parenteral: Y">
+        <area alt="Topical: N" class="drug-icon-imgmap" coords="75,40 111,75" href="#" shape="rect" title="Topical: N">
+        <area alt="Black Box: N" class="drug-icon-imgmap" coords="112,40 148,75" href="#" shape="rect" title="Black Box: N">
+        <area alt="Availability Type: Prescription-only" class="drug-icon-imgmap" coords="149,40 185,75" href="#" shape="rect" title="Availability Type: Prescription-only">
+      </map></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <a href="https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL1743034" class="no-underline"><img alt="Compound Image Not Available" height="100px" src="https://www.ebi.ac.uk/chembl/compound/displayimage/1121905"></a><br>CHEMBL1743034
+      </td>
+      <td>Ixekizumab (FDA, INN, USAN)</td>
+      <td>4</td>
+      <td>LY-2439821</td>
+      <td>Lilly<br>Eli Lilly And Co.</td>
+      <td>-mab</td>
+      <td>2010</td>
+      <td class=" sorting_1">2016</td>
+      <td></td>
+      <td><img alt="CHEMBL1743034 compound icon" border="0" src="https://www.ebi.ac.uk/chembltools/autoicon3/6,0,0,1,0,0,1,0,0,1" usemap="#imgmap1121905"><map id="imgmap1121905" name="imgmap1121905">
+        <area alt="Drug Type: Antibody" class="drug-icon-imgmap" coords="1,1 37,37" href="#" shape="rect" title="Drug Type: Antibody">
+        <area alt="Rule of Five: N" class="drug-icon-imgmap" coords="38,1 74,37" href="#" shape="rect" title="Rule of Five: N">
+        <area alt="First In Class: N" class="drug-icon-imgmap" coords="75,1 111,37" href="#" shape="rect" title="First In Class: N">
+        <area alt="Chirality: Single Stereoisomer" class="drug-icon-imgmap" coords="112,1 148,37" href="#" shape="rect" title="Chirality: Single Stereoisomer">
+        <area alt="Prodrug: N" class="drug-icon-imgmap" coords="149,1 185,37" href="#" shape="rect" title="Prodrug: N">
+        <area alt="Oral: N" class="drug-icon-imgmap" coords="1,40 37,75" href="#" shape="rect" title="Oral: N">
+        <area alt="Parenteral: Y" class="drug-icon-imgmap" coords="38,40 74,75" href="#" shape="rect" title="Parenteral: Y">
+        <area alt="Topical: N" class="drug-icon-imgmap" coords="75,40 111,75" href="#" shape="rect" title="Topical: N">
+        <area alt="Black Box: N" class="drug-icon-imgmap" coords="112,40 148,75" href="#" shape="rect" title="Black Box: N">
+        <area alt="Availability Type: Prescription-only" class="drug-icon-imgmap" coords="149,40 185,75" href="#" shape="rect" title="Availability Type: Prescription-only">
+      </map></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For further discussion on data table styling, <a href="https://github.com/ebiwd/EBI-Framework/issues/65">see this issue</a>.</p>

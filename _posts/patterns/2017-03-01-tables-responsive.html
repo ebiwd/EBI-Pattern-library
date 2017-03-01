@@ -1,0 +1,74 @@
+---
+layout: pattern
+title: Responsive tables
+categories: patterns
+tags:
+- tables
+description: Want to make your table mo-betta on small screens?
+---
+
+<p>Tables are tricky to stretch and grow, and we suggest three approaches to tackle most issues. In increasing complexity:</p>
+
+<ol>
+  <li>If it's not broke, don't fix it: sometimes defaults do fine.</li>
+  <li>Stack: If you add <code>.stack</code> the table cells will stack on smaller screens. See the example</li>
+  <li>Responsive: You can also use the grid classes to specify witdth at corresponding sizes. See the example</li>
+</ol>
+
+<h4>Stacking table</h4>
+<p>Squeeze your browser to see the effect of <code>.stack</code>.</p>
+
+<table class="hover stack">
+  <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="150">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Responsive table</h4>
+<p>Add the class <code>.responsive-table</code> to the <code>table</code> tag, and you'll be able to make use of <a href="#grid">the grid system of clases</a>, such as <code>.show-for-large</code>.</p>
+<p>Note that this requires jQuery, as it will propogate the <code>th</code> classes to each <code>td</code>.</p>
+
+<table class="responsive-table">
+  <thead>
+    <tr>
+      <th class="show-for-small-only">Compact</th>
+      <th class="show-for-large">Shown for large</th>
+      <th>Table Header</th>
+      <th>Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+  </tbody>
+</table>
+
