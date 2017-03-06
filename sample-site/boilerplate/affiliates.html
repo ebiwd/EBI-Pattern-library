@@ -249,6 +249,18 @@
               <p>We also recommend that services have an <code>/about/relationships</code> page. Such as page creates space to explain the nuance of any relationships, while also acting as truth about how the service functions with other parties.</p>
               <p>For questions about how best to integrate your relationships, you can reach out to <a href="//tsc.ebi.ac.uk/web-development">the Web Development team</a> or the <a href="//www.ebi.ac.uk/seqdb/confluence/display/WGC/Web+Guidelines+committee">Web Guidelines Committee</a>.</p>
 
+              <h4>ELIXIR Banner</h4>
+              <p>Words on when to use it go here (COMING SOON). For identified EMBL-EBI services that are part of the ELIXIR network, this will be added by default through the <code>footer.js</code> include.</p>
+              <p>If you need to tweak the apperance, either background colours or to insert your site or service name, you can do so with local CSS:</p>
+
+                <pre class="code">
+/* to change the background colour */
+.elixir-ribbon { background: rgb(255,105,41); }
+/* to use a custom name in "*THIS* is part of the ELIXIR infrastructure" */
+.elixir-banner-default-name { display: none; }
+.elixir-banner-custom-name:before { content: "MY WORDS HERE"; }
+</pre>
+
             </section>
 
           </div> <!-- /medium-9 -->
@@ -360,10 +372,12 @@
       <div id="elixir-ribbon" class="elixir-ribbon margin-bottom-none callout secondary-background" style="background-color: rgb(79,138,156);">
         <div class="row">
           <div class="float-left elixir-logo-kite"></div>
-          <h5 class="white-color padding-top-medium"><a id="show-more" data-toggle="elixir-affiliate show-more show-less" data-toggler=".readmore"  class="readmore no-underline">[Service-name] is part of the ELIXIR infrastructure</a></h5>
+          <h5 class="white-color padding-top-medium">
+            <a id="show-more" data-toggle="elixir-affiliate show-more show-less" data-toggler=".readmore"  class="readmore no-underline"><span class="elixir-banner-custom-name"></span><span class="elixir-banner-default-name">This</span> is part of the ELIXIR infrastructure</a>
+          </h5>
           <div id="elixir-affiliate"  data-toggler data-animate="hinge-in-from-top hinge-out-from-top" data-closable="hinge-out-from-top" style="display:none;">
             <span class="white-color small">
-              This service is part of the ELIXIR distributed infrastructure for life-science information.
+              This is part of the ELIXIR distributed infrastructure for life-science information.
               <a class="readmore" href="#">Learn more</a>
             </span>
             <!-- <a class="small hide" id="show-less" data-toggle="elixir-affiliate show-more show-less" data-toggler=".hide"><span class="icon icon-functional" data-icon="x"></span></a> -->
