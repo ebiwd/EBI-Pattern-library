@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The European Bioinformatics Institute &lt; EMBL-EBI</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/injectEBIFramework.js"></script>
+  <script type="text/javascript">injectEBIFramework();</script>
+</head>
+
+<body class="full-widthXX"><!-- add any of your classes or IDs -->
+  <div id="local-masthead">
+    <header>
+
+      <div class="masthead row">
+
+        <!-- local-title -->
+        <div class="columns medium-7" id="local-title">
+          <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
+        </div>
+        <!-- /local-title -->
+
+        <!-- local-nav -->
+        <nav >
+          <ul class="dropdown menu float-left" data-description="navigational">
+            <li class=""><a href="../../">Overview</a></li>
+            <li><a data-open="modal-download">Download</a></li>
+            <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
+          </ul>
+          <ul class="dropdown menu float-right" data-description="tasks">
+            <li class=""><a href="#"><span class="icon icon-functional" data-icon="l"></span> Login</a></li>
+          </ul>
+        </nav>
+        <!-- /local-nav -->
+      </div>
+
+    </header>
+
+  </div>
+
+  <div id="content" role="main" class="row">
+    <section>
+
+      <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="../../">EBI Framework</a></li>
+          <li><a href="../">Sample pages</a></li>
+          <li>
+            <span class="show-for-sr">Current: </span> Right sidebar boilerplate
+          </li>
+        </ul>
+      </nav>
+
+      <div id="main-content-area" class="row">
+        <div class="small-12 columns">
+
+          <section>
+            <h2>Selecting a not-so broken font for EMBL-EBI sites</h2>
+            <div class="row">
+              <div class="columns medium-10">
+                <p class="lead">This effort is being done in cordination with EMBL, who is looking to update the core brand font for web and print. For background, and to add feedback, <a href="https://github.com/ebiwd/EBI-Icon-fonts/issues/8" class="readmore">see this discussion</a></p>
+
+                <p><strong>Current goal:</strong> Rule out any fonts that are clearly poor choices and to identify possible combinations of font faces and weights.</p>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="columns medium-5">
+                <div class="callout">
+                  <h5>On this page</h5>
+                  <ol>
+                    <li><a href="#shortlist">The shorlist and scores</a></li>
+                    <li><a href="#samples">Sample implementations</a></li>
+                  </ol>              
+                </div>
+              </div>
+            </div>
+
+            <h3 id="shortlist" name="shortlist">Shortlist and scoring</h3>
+            <p>As of 2017-01-27 these are the shortlisted fonts -- in no particular order -- along with the various scoring factors</p>
+<table class="responsive-table hover">
+  <tr>
+    <th class="columns medium-5"></th>
+    <th class="columns medium-1 text-left">Helvetica Neue<br>(current font)</th>
+    <th class="columns medium-1 text-left">Calibri</th>
+    <th class="columns medium-1 text-left">Lato</th>
+    <th class="columns medium-1 text-left">lucida-sans</th>
+    <th class="columns medium-1 text-left">open-sans</th>
+    <th class="columns medium-1 text-left">raleway</th>
+    <th class="columns medium-1 text-left">roboto</th>
+  </tr>
+  <tr>
+    <td>A variety of weights and styles (light, ultra-light, bold, italic, etc.)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Foreign characters, non-Latin script, e.g. Greek, for scientific notations </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Good support for desktop, windows, mac, mobile</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Readable at small sizes (data tables and visualisations)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Not too radical a change from Helvetica (using a serif as the primary font is likely not an option as it would blow up too many applications)
+</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Harmonising with Helvetica (the font in the logo)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Huge bonus points for a liberal or open source license</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Nice if the font has a little personality (Helvetica, for example, is very generic and does not make our "brand" more recognisable)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Font family offers sans serif and serif font styles</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Highly legible, scannable font</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Can use the font for print and web*</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<cite>* This has obvious impacts outside of the WGC and requires coordination</cite>
+
+
+
+
+
+
+            <hr/>
+
+            <h3 id="samples" name="samples">Sample implementations</h3>
+            <p>The second option will allow you to compare two options side-by-side.</p>
+
+            <h3><a href="http://www.ebi.ac.uk/about/our-impact">Impact page</a></h3>
+            <p>Captures a good mix of editorial content under various type styles.</p> 
+
+            <div class="row">
+              <div class="option-a columns medium-6">
+                <div class="row">
+                  <div class="columns medium-6 float-left">
+                    <div class="label">Left image</div>
+                    <select name="impact-page" id="impact-page" class="image-selector clone-parent">
+                      <option value="helvetica-neue.png">helvetica-neue</option> 
+                      <option value="calibri.png">calibri</option> 
+                      <option value="lato.png">lato</option> 
+                      <option value="lucida-sans.png">lucida-sans</option> 
+                      <option value="open-sans.png">open-sans</option> 
+                      <option value="open-sans-weights.png">open-sans with weights</option> 
+                      <option value="raleway.png">raleway</option> 
+                      <option value="roboto.png">roboto</option> 
+                      <option value="super-awesome-font.png">awesome sauce</option> 
+                    </select> 
+                  </div>
+                </div>
+                <div class="image">
+                  <h5>Select a font from the list above</h5>
+                </div>
+              </div>
+
+              <div class="option-b columns medium-6">
+                <div class="row">
+                  <div class="columns medium-6 float-right">
+                    <div class="label float-right">Right image</div>
+                    <select name="impact-page" id="impact-page" class="image-selector clone-child">
+                    </select>
+                  </div>
+                </div>
+                <div class="image">
+                  <h5 class="text-right">Select a font from the list above</h5>                  
+                </div>
+              </div>
+            </div>
+
+
+            <script type="text/javascript">
+              $('.clone-child').html($('.clone-parent').html());
+            </script>
+            <script type="text/javascript">
+              // allow the user to swap images around
+              $('.image-selector').on('change', function(){
+                var selectedImage = $(this).val();
+
+                selectedImage = "<img src='images/impact-page/" + selectedImage + "' />";
+
+                $(this).parent().parent().parent().find('.image').html(selectedImage);
+                
+                // enable zooming and sync changes between the two images
+                wheelzoom($(this).parent().parent().parent().find('.image img'));
+
+                var observerA = new MutationObserver(function(mutations) {
+                  mutations.forEach(function(mutationRecord) {
+                    var newSize = $(mutationRecord.target).css('background-size');
+                    var newPosition = $(mutationRecord.target).css('background-position');
+                    $('.option-b .image img').css('background-size',newSize);
+                    $('.option-b .image img').css('background-position',newPosition);
+                  });    
+                });
+
+                var observerB = new MutationObserver(function(mutations) {
+                  mutations.forEach(function(mutationRecord) {
+                    var newSize = $(mutationRecord.target).css('background-size');
+                    var newPosition = $(mutationRecord.target).css('background-position');
+                    $('.option-a .image img').css('background-size',newSize);
+                    $('.option-a .image img').css('background-position',newPosition);
+                  });    
+                });
+
+                var target = $('.option-b .image img')[0];
+                observerB.observe(target, { attributes : true, attributeFilter : ['style'] });
+
+                var target = $('.option-a .image img')[0];
+                observerA.observe(target, { attributes : true, attributeFilter : ['style'] });
+
+              });
+
+
+
+
+            </script>
+
+            <!-- image zooming -->
+            <script src="wheelzoom-master/wheelzoom.js"></script>
+            <script type="text/javascript">
+
+              // wheelzom reference
+              // assign wheelzoom
+              // wheelzoom(document.querySelectorAll('img'));
+
+              // assign and set the zoom percent
+              // wheelzoom(document.querySelectorAll('img'), {zoom:0.05});
+
+              // zooming out can be triggered by calling 'wheelzoom.reset'
+              // document.querySelector('img').dispatchEvent(new CustomEvent('wheelzoom.reset'));
+
+              // wheelzoom can be removed from an element by calling 'wheelzoom.destroy'
+              // document.querySelector('img').dispatchEvent(new CustomEvent('wheelzoom.destroy'));                
+            </script>
+
+
+
+<!--             <div class="row">
+
+              <div class="columns medium-12 large-6 clone-parent">
+                <ul class="accordion" data-accordion >
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Helvetica Neue (the current font)</a>
+                    <div class="accordion-content" data-tab-content >
+                      <img src="images/impact-page/helvetica-neue.png" />
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Calibri</a>
+                    <div class="accordion-content" data-tab-content >
+                      <img src="images/impact-page/calibri.png" />
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">lato</a>
+                    <div class="accordion-content" data-tab-content >
+                      <img src="images/impact-page/lato.png" />
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">lucida-sans</a>
+                    <div class="accordion-content" data-tab-content >
+                      <img src="images/impact-page/lucida-sans.png" />
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">open-sans</a>
+                    <div class="accordion-content" data-tab-content >
+                      <img src="images/impact-page/open-sans.png" />
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">raleway</a>
+                    <div class="accordion-content" data-tab-content >
+                      <img src="images/impact-page/raleway.png" />
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">roboto</a>
+                    <div class="accordion-content" data-tab-content >
+                      <img src="images/impact-page/roboto.png" />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+ -->
+  <!--             <div class="columns medium-6 clone-child show-for-large-only">
+              </div>
+
+            </div>
+
+ -->
+
+
+
+          </section>
+
+        </div> <!-- /small-12 -->
+
+      </div>
+
+    </section>
+    <!-- End suggested layout containers -->
+
+  </div>
+
+
+
+</body>
+</html>
