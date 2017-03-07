@@ -4,50 +4,97 @@ title: Search
 categories: patterns
 tags:
 - search
-description: Add a local search to your project.
+description: Use these patterns to add search your project or subsite. 
 ---
 
-<p>Use this format to search your project or subsite.</p>
-
-<p>Note when your page contains an element with the id of <code>#local-search</code> or <code>#ebi_search</code>, the class <code>.no-global-search</code> will be added to the <code>body</code> tag and the local-masthead search will be disabled, as has happened on this page.</p>
 
 <div class="row">
-  <div class="columns medium-6 medium-push-3">
+  <div class="columns medium-12">
     <!-- local-search -->
-    <!-- if you do not have a local-search, delete the following form -->
-    <form id="local-search" name="local-search" action="[search-action]" method="post">
-      <h4>Search this project</h4>
-      <fieldset>
-        <div class="input-group">
-          <input type="text" name="first" id="local-searchbox">
-          <div class="input-group-button">
-            <input type="submit" name="submit" value="1" class="button icon icon-functional">
+
+
+    <h3>Search in local masthead</h3>
+    <p>You may place your service search in the local masthead using this pattern. This is the most widely used approach, if you do so be sure to include the id <code>#local-search</code> on your <code>form</code> element.</p>
+
+    <p>When your page contains an element with the id of <code>#local-search</code> or <code>#ebi_search</code>, the class <code>.no-global-search</code> will be added to the <code>body</code> tag and the black bar (gloabl-masthead) search will be disabled, as has happened on this page.</p>
+
+
+
+    <div id="local-masthead" class="meta-background-color meta-background-image columns">
+      <header>
+
+        <div class="masthead row">
+
+          <!-- local-title -->
+          <div class="columns medium-7" id="local-title">
+            <h1><a href="#" title="Back to EBI Pattern library homepage">Sample masthead</a></h1>
           </div>
+          <!-- /local-title -->
+          <div class="columns medium-5">
+            <form id="local-search" name="local-search" action="[search-action]" method="post">
+              <fieldset>
+                <div class="input-group margin-bottom-none">
+                  <input type="text" name="first" id="local-searchbox" placeholder="Search this service" class="input-group-field">
+                  <div class="input-group-button">
+                    <input type="submit" name="submit" value="1" class="button icon icon-functional">
+                  </div>
+                </div>
+                <small class="">
+                  <!-- If your search is more complex than just a keyword search, you can link to an Advanced Search -->
+                  <!-- <span class="adv"><a href="../search" id="adv-search" title="Advanced">Advanced</a></span> | -->
+                  <!-- Include some example searchterms - keep them short and few. -->
+                  <a href="[search-url-1]">[search-1]</a> 
+                  <a href="[search-url-1]">[search-2]</a> 
+                  <a href="[search-url-1]">[search-3]</a> 
+                </small>
+              </fieldset>
+            </form>
+            <!-- /local-search -->
+          </div>
+
         </div>
-        <small class="">
-          <!-- If your search is more complex than just a keyword search, you can link to an Advanced Search -->
-          <span class="adv"><a href="../search" id="adv-search" title="Advanced">Advanced</a></span>
-          |
-          <!-- Include some example searchterms - keep them short and few. -->
-          <a href="#" data-toggle="search-example-dropdown">Examples</a>
-        </small>
-        <div class="dropdown-pane" id="search-example-dropdown" data-dropdown data-options="hoverPane:true;" data-hover="true">
-          <ul>
-            <li><a href="[search-url-1]">[search-text-1]</a></li>
-            <li><a href="[search-url-1]">[search-text-2]</a></li>
-            <li><a href="[search-url-1]">[search-text-3]</a></li>
-          </ul>
-        </div>
-        <!-- if you're not using the JS addons
-        Examples:
-        <ul>
-          <li><a href="[search-url-1]">[search-text-1]</a></li>
-          <li><a href="[search-url-1]">[search-text-2]</a></li>
-          <li><a href="[search-url-1]">[search-text-3]</a></li>
-        </ul>
-        -->
-      </fieldset>
-    </form>
-    <!-- /local-search -->
+
+      </header>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="columns medium-12">
+
+
+    <h3 class="padding-top-large">Standalone search</h3>
+
+    <p>If you want to place your site search inside your main content, use this pattern it's much the same as the above.</p>
+
+    <div class="row">
+      <div class="columns medium-5 medium-push-2 callout">
+        <form id="content-search" name="content-search" action="[search-action]" method="post">
+          <h4>Search this project</h4>
+          <fieldset>
+            <div class="input-group margin-bottom-none">
+              <input type="text" name="first" id="content-searchbox" class="input-group-field">
+              <div class="input-group-button">
+                <input type="submit" name="submit" value="1" class="button icon icon-functional">
+              </div>
+            </div>
+            <small class="">
+              <!-- If your search is more complex than just a keyword search, you can link to an Advanced Search -->
+              <span class="adv"><a href="../search" id="adv-search" title="Advanced">Advanced</a></span>
+              |
+              <!-- Include some example searchterms - keep them short and few. -->
+              <a href="[search-url-1]">[search-1]</a> 
+              <a href="[search-url-1]">[search-2]</a> 
+              <a href="[search-url-1]">[search-3]</a> 
+            </small>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+
   </div>
 </div>
