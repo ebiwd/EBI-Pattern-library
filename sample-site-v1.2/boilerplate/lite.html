@@ -35,7 +35,10 @@
 
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation.css" type="text/css" media="all">
+  <!-- <link rel="stylesheet" href="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation.css" type="text/css" media="all"> -->
+  <link rel="stylesheet" href="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation-lite.min.css" type="text/css" media="all">
+  <!-- <link rel="stylesheet" href="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation-extras.min.css" type="text/css" media="all"> -->
+
   <link rel="stylesheet" href="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/ebi-global.css" type="text/css" media="all">
   <link rel="stylesheet" href="https://www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.2/fonts.css" type="text/css" media="all">
 
@@ -46,9 +49,9 @@
 
   <!-- If you have a custom header image or colour -->
   <!--
-  -->
   <meta name="ebi:localmasthead-color" content="#000">
-  <meta name="ebi:localmasthead-image" content="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/backgrounds/embl-ebi-background.jpg">
+  <meta name="ebi:localmasthead-image" content="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/images/backgrounds/embl-ebi-background.jpg">
+  -->
 
     <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
   <!-- also inform ES so we can host your colour palette file -->
@@ -126,14 +129,15 @@
 
           <!-- local-title -->
           <div class="columns medium-12" id="local-title">
-            <h1><a href="../" title="Back to [service-name] homepage">EBI Framework</a></h1>
+            <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
+
           </div>
           <!-- /local-title -->
 
           <!-- local-nav -->
               <nav >
                 <ul class="dropdown menu float-left" data-description="navigational">
-                  <li class=""><a href="../">Overview</a></li>
+                  <li class=""><a href="../../">Overview</a></li>
                   <li><a data-open="modal-download">Download</a></li>
                   <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
                 </ul>
@@ -154,90 +158,148 @@
       <section>
 
         <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
-        <!-- <nav aria-label="You are here:" role="navigation">
+        <nav aria-label="You are here:" role="navigation">
           <ul class="breadcrumbs">
-            <li><a href="../">EBI Framework</a></li>
+            <li><a href="../../">EBI Framework</a></li>
+            <li><a href="../">Sample pages</a></li>
             <li>
-              <span class="show-for-sr">Current: </span> Framework sample pages
+              <span class="show-for-sr">Current: </span> Blank boilerplate
             </li>
           </ul>
-        </nav> -->
+        </nav>
 
         <div id="main-content-area" class="row">
-          <div class="small-12 medium-9 columns">
+          <div class="columns">
+            <section>
+              <h2>EBI Visual Framework, lite</h2>
+              <p>Load just the basic styling and skip formatting for things like tabs, tables, and custom JS.</p>
+            </section>
 
-            <h3>Framework sample pages</h3>
-            <p class="lead">These demonstrate a range of ways you can make use of the EBI styles and framework.</p>
+            <section>
+              <h3>What's omitted</h3>
+              <ul>
+                <li>jQuery</li>
+                <li>foundation.js (92.7KB)</li>
+                <li>foundationExtendEBI.js</li>
+                <li>foundation.css</li>
+              </ul>
 
-            <hr/>
-
-            <h4 id="boilerplate">Boilerplates</h4>
-            <p>You can use these as templates for your code.</p>
-            <ol>
-              <li><a href="boilerplate/blank.html">Blank</a><br/>
-                big, empty space between header and footer</li>
-              <li><a href="boilerplate/ultra-wide.html">Ultra wide</a><br/>
-                for content with large table or graphics that benefit from using as much screen space as they can get</li>
-              <li><a href="boilerplate/right-sidebar.html">Right sidebar</a><br/>
-                for content-driven pages deeper in your site's hierarchy, the sidebar could contain secondary navigation</li>
-              <li><a href="boilerplate/search-results.html">Search results</a><br/>
-                an example page with filters or facets for your results in a left-hand sidebar, and a right-hand sidebar for global results</li>
-              <li><a href="boilerplate/no-jquery.html">No jQuery or Foundation JS</a><br/>
-                You won't benefit from many of the reusable components, but here's a bare bones visual implentation.</li>
-              <li><a href="boilerplate/jquery-update.html">Latest jQuery</a><br/>
-                Want to use jQuery 2.x?</li>
-              <li><a href="boilerplate/lite.html">Lite version</a><br/>
-                Load just the basic styling and skip formatting for things like tabs, tables, and custome JS.</li>
-              <li><a href="boilerplate/bootstrap.html">Bootstrap</a><br/>
-                If you're a Bootstrap user unable or not interested in using the bundled Foundation Framework CSS+JS, here we bunndle the bare-bones lite version with Bootstrap.</li>
-              <li><a href="boilerplate/injection.html">Inject the styles</a><br/>
-                If you don't care about performace, we can inject CSS, JS, and HTML for you.</li>
-            </ol>
-
-            <h4>Sample Level 1 implementations</h4>
-            <p>Examples of services aiming for full compliance.</p>
-            <ol>
-              <li><a href="front_page.html">EBI Homepage</a> <br/>
-                Porting the EBI Homepage.</li>
-              <li><a href="research.html">Research page</a> <span class="label">Drupal</span><br/>
-                Porting the EBI Research page.</li>
-              <li><a href="brochure.html">Brochure page</a> <br/>
-                A high-impact brochure-style page for technical hiring.</li>
-              <li><a href="https://github.com/ebiwd/EBI-Framework/commit/a49d3668f2b80058be8c277d875c8b06f47a7237">Expression Atlas</a> <span class="label">Bootstrap</span><br/>
-                Here we show a sample migration of a service, note that the service's use of bootstrap does not cause issue.</li>
-            </ol>
-
-            <!--
-            <h4>Sample Level 3 implementations</h4>
-            <p>These examples show implementations of sites making use of only part of the EBI visual guidelines or technical framework.</p>
-            <ol>
-              <li><a href="">TO COME - Bootstrap</a><br/>
-                For services aiming for full visual compliance but not using the Foundation Framework base.</li>
-              <li><a href="">TO COME - No JS</a><br/>
-                Using the Foundation base framework with JavaScript or jQuery.</li>
-            </ol>
-            -->
-
-          </div> <!-- /medium-9 -->
+              <h3>What's extra</h3>
+              <ul>
+                <li>foundation-lite.min.css (26.8KB)</li>
+              </ul>
 
 
-          <div class="small-12 medium-3 columns sidebar" data-sticky-container>
+            </section>
 
-            <div class="sticky" data-sticky data-anchor="main-content-area"  data-options="marginTop:4;">
-              <h4>See also</h4>
-              <p>These resources will help you engage and understand the EBI Framework.</p>
-              <div class="">
-                <ul class="menu vertical">
-                  <li class=""><a href="https://github.com/ebiwd/EBI-Framework">GitHub repository</a></li>
-                  <li class=""><a href="https://github.com/ebiwd/EBI-Framework/issues">Issue queue</a></li>
-                  <li class=""><a class="active" href="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/sample-site/">Sample pages</a></li>
-                  <li class=""><a href="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/fonts/index.html">Icon gallery</a></li>
-                </ul>
-              </div>
-            </div>
 
-          </div> <!-- /medium-3 -->
+            <section>
 
+              <h3>Result</h3>
+
+              <h4>Tables</h4>
+              <table class="">
+                <thead>
+                  <tr role="row">
+                    <th colspan="1" role="columnheader">Parent Molecule</th>
+                    <th colspan="1" role="columnheader">Synonyms</th>
+                    <th colspan="1" role="columnheader">Phase</th>
+                    <th colspan="1" role="columnheader">Research Codes</th>
+                    <th colspan="1" role="columnheader">Applicants</th>
+                    <th colspan="1" role="columnheader">USAN Stem</th>
+                    <th colspan="1" role="columnheader">USAN Year</th>
+                    <th colspan="1" role="columnheader">First Approval</th>
+                    <th colspan="1" role="columnheader">ATC Code</th>
+                    <th colspan="1" role="columnheader" style="width: 190px;">Icon</th>
+                  </tr>
+                </thead>
+                <tbody aria-live="polite" aria-relevant="all" role="alert">
+                  <tr class="odd">
+                    <td>
+                      <a href="https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL566315" class="no-underline"><img alt="Compound Image Not Available" height="100px" src="https://www.ebi.ac.uk/chembl/compound/displayimage/574221"></a><br>
+                      CHEMBL566315
+                    </td>
+                    <td>Obeticholic acid (FDA, INN, USAN)</td>
+                    <td>4</td>
+                    <td>DSP-1747<br>
+                    INT-747</td>
+                    <td>Intercept Pharmaceuticals</td>
+                    <td></td>
+                    <td>2008</td>
+                    <td class=" sorting_1">2016</td>
+                    <td>A05AA04</td>
+                    <td><img alt="CHEMBL566315 compound icon" border="0" src="https://www.ebi.ac.uk/chembltools/autoicon3/7,1,0,1,0,1,0,0,0,1" usemap="#imgmap574221"><map id="imgmap574221" name="imgmap574221">
+                      <area alt="Drug Type: Natural Product-derived" class="drug-icon-imgmap" coords="1,1 37,37" href="#" shape="rect" title="Drug Type: Natural Product-derived">
+                      <area alt="Rule of Five: Y" class="drug-icon-imgmap" coords="38,1 74,37" href="#" shape="rect" title="Rule of Five: Y">
+                      <area alt="First In Class: N" class="drug-icon-imgmap" coords="75,1 111,37" href="#" shape="rect" title="First In Class: N">
+                      <area alt="Chirality: Single Stereoisomer" class="drug-icon-imgmap" coords="112,1 148,37" href="#" shape="rect" title="Chirality: Single Stereoisomer">
+                      <area alt="Prodrug: N" class="drug-icon-imgmap" coords="149,1 185,37" href="#" shape="rect" title="Prodrug: N">
+                      <area alt="Oral: Y" class="drug-icon-imgmap" coords="1,40 37,75" href="#" shape="rect" title="Oral: Y">
+                      <area alt="Parenteral: N" class="drug-icon-imgmap" coords="38,40 74,75" href="#" shape="rect" title="Parenteral: N">
+                      <area alt="Topical: N" class="drug-icon-imgmap" coords="75,40 111,75" href="#" shape="rect" title="Topical: N">
+                      <area alt="Black Box: N" class="drug-icon-imgmap" coords="112,40 148,75" href="#" shape="rect" title="Black Box: N">
+                      <area alt="Availability Type: Prescription-only" class="drug-icon-imgmap" coords="149,40 185,75" href="#" shape="rect" title="Availability Type: Prescription-only">
+                    </map></td>
+                  </tr>
+                  <tr class="even">
+                    <td>
+                      <a href="https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL607400" class="no-underline"><img alt="Compound Image Not Available" height="100px" src="https://www.ebi.ac.uk/chembl/compound/displayimage/609761"></a><br>CHEMBL607400
+                    </td>
+                    <td>Brivaracetam (FDA, INN, USAN)</td>
+                    <td>4</td>
+                    <td>UCB-34714</td>
+                    <td>Ucb Inc<br>
+                    Ubc Inc</td>
+                    <td>-racetam</td>
+                    <td>2005</td>
+                    <td class=" sorting_1">2016</td>
+                    <td>N03AX23</td>
+                    <td><img alt="CHEMBL607400 compound icon" border="0" src="https://www.ebi.ac.uk/chembltools/autoicon3/1,1,0,1,0,1,1,0,0,1" usemap="#imgmap609761"><map id="imgmap609761" name="imgmap609761">
+                      <area alt="Drug Type: Synthetic Small Molecule" class="drug-icon-imgmap" coords="1,1 37,37" href="#" shape="rect" title="Drug Type: Synthetic Small Molecule">
+                      <area alt="Rule of Five: Y" class="drug-icon-imgmap" coords="38,1 74,37" href="#" shape="rect" title="Rule of Five: Y">
+                      <area alt="First In Class: N" class="drug-icon-imgmap" coords="75,1 111,37" href="#" shape="rect" title="First In Class: N">
+                      <area alt="Chirality: Single Stereoisomer" class="drug-icon-imgmap" coords="112,1 148,37" href="#" shape="rect" title="Chirality: Single Stereoisomer">
+                      <area alt="Prodrug: N" class="drug-icon-imgmap" coords="149,1 185,37" href="#" shape="rect" title="Prodrug: N">
+                      <area alt="Oral: Y" class="drug-icon-imgmap" coords="1,40 37,75" href="#" shape="rect" title="Oral: Y">
+                      <area alt="Parenteral: Y" class="drug-icon-imgmap" coords="38,40 74,75" href="#" shape="rect" title="Parenteral: Y">
+                      <area alt="Topical: N" class="drug-icon-imgmap" coords="75,40 111,75" href="#" shape="rect" title="Topical: N">
+                      <area alt="Black Box: N" class="drug-icon-imgmap" coords="112,40 148,75" href="#" shape="rect" title="Black Box: N">
+                      <area alt="Availability Type: Prescription-only" class="drug-icon-imgmap" coords="149,40 185,75" href="#" shape="rect" title="Availability Type: Prescription-only">
+                    </map></td>
+                  </tr>
+                  <tr class="odd">
+                    <td>
+                      <a href="https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL1743034" class="no-underline"><img alt="Compound Image Not Available" height="100px" src="https://www.ebi.ac.uk/chembl/compound/displayimage/1121905"></a><br>CHEMBL1743034
+                    </td>
+                    <td>Ixekizumab (FDA, INN, USAN)</td>
+                    <td>4</td>
+                    <td>LY-2439821</td>
+                    <td>Lilly<br>Eli Lilly And Co.</td>
+                    <td>-mab</td>
+                    <td>2010</td>
+                    <td class=" sorting_1">2016</td>
+                    <td></td>
+                    <td><img alt="CHEMBL1743034 compound icon" border="0" src="https://www.ebi.ac.uk/chembltools/autoicon3/6,0,0,1,0,0,1,0,0,1" usemap="#imgmap1121905"><map id="imgmap1121905" name="imgmap1121905">
+                      <area alt="Drug Type: Antibody" class="drug-icon-imgmap" coords="1,1 37,37" href="#" shape="rect" title="Drug Type: Antibody">
+                      <area alt="Rule of Five: N" class="drug-icon-imgmap" coords="38,1 74,37" href="#" shape="rect" title="Rule of Five: N">
+                      <area alt="First In Class: N" class="drug-icon-imgmap" coords="75,1 111,37" href="#" shape="rect" title="First In Class: N">
+                      <area alt="Chirality: Single Stereoisomer" class="drug-icon-imgmap" coords="112,1 148,37" href="#" shape="rect" title="Chirality: Single Stereoisomer">
+                      <area alt="Prodrug: N" class="drug-icon-imgmap" coords="149,1 185,37" href="#" shape="rect" title="Prodrug: N">
+                      <area alt="Oral: N" class="drug-icon-imgmap" coords="1,40 37,75" href="#" shape="rect" title="Oral: N">
+                      <area alt="Parenteral: Y" class="drug-icon-imgmap" coords="38,40 74,75" href="#" shape="rect" title="Parenteral: Y">
+                      <area alt="Topical: N" class="drug-icon-imgmap" coords="75,40 111,75" href="#" shape="rect" title="Topical: N">
+                      <area alt="Black Box: N" class="drug-icon-imgmap" coords="112,40 148,75" href="#" shape="rect" title="Black Box: N">
+                      <area alt="Availability Type: Prescription-only" class="drug-icon-imgmap" coords="149,40 185,75" href="#" shape="rect" title="Availability Type: Prescription-only">
+                    </map></td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+
+            </section>
+          </div>
         </div>
 
       </section>
@@ -279,7 +341,7 @@
   <!--
   <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.10.2.min.js"><\/script>')</script>
   -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
   <!-- Your custom JavaScript file scan go here... change names accordingly -->
   <!--
   <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/plugins.js"></script>
@@ -290,11 +352,11 @@
   <script defer="defer" src="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/script.js"></script>
 
   <!-- The Foundation theme JavaScript -->
+  <!--
   <script src="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/js/foundation.js"></script>
   <script src="https://wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/foundationExtendEBI.js"></script>
   <script type="text/JavaScript">$(document).foundation();</script>
   <script type="text/JavaScript">$(document).foundationExtendEBI();</script>
-<!--
    -->
 
 
