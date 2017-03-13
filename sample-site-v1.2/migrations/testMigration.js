@@ -6,7 +6,7 @@
   4) A handful of minor CSS edits may be needed for any Service-specific oddities
     Originally authored on 2016-05-16
     For assistance contact Ken Hawkins in Webdev
-        or post to Github https://github.com/ebiwd/EBI-Framework/issues
+        or post to Github //github.com/ebiwd/EBI-Framework/issues
 
   To run, copy-paste the below line into your browser's console:
   jQuery('head').append('<script defer="defer" src="//ebiwd.github.io/EBI-Pattern-library/sample-site/migrations/testMigration.js"></script>\n');
@@ -51,7 +51,7 @@ function testMigration(steppingTimeSpeed) {
   }, steppingTime());
 
   setTimeout(function(){
-    jQuery('head').append('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>\n');
+    jQuery('head').append('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>\n');
     console.log('jQuery: Updating to jQuery 1.10. This is version (or newer) is only necessary if you plan to use Foundation\'s JS components.');
     console.log('------------------\n');
   }, steppingTime());
@@ -93,7 +93,7 @@ function testMigration(steppingTimeSpeed) {
     // do not use a colour palette on certain services
     if (window.location.pathname.split('/')[1] === 'arrayexpress') {
       console.log(' - I have your site as one that has it\'s own special colours, I won\'t do anything.');
-      console.log(' - Consider using the standard colour implementation format: https://github.com/ebiwd/EBI-Framework/blob/gh-pages/css/colour-template.css');
+      console.log(' - Consider using the standard colour implementation format: //github.com/ebiwd/EBI-Framework/blob/gh-pages/css/colour-template.css');
       console.log('------------------\n');
       return;
     }
