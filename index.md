@@ -24,7 +24,7 @@ You won't find prescriptive solutions for every scenario, but examples and guida
 
     <p>This is a collection of JS, CSS, icons, coding conventions, and templated components that will help you build robust reliable web content faster than if you were to make it all from scratch.</p>
 
-    <div class="columns medium-up-3 row " data-equalizer data-equalize-on="medium">
+    <div class="columns medium-up-3 row" data-equalizer data-equalize-on="medium">
       <div class="column">
         <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/meta-patterns/page-structure/">
           <h6 class="white-color text-left">Learn about the EMBL-EBI page structure</h6>
@@ -32,7 +32,7 @@ You won't find prescriptive solutions for every scenario, but examples and guida
       </div>
       <div class="column">
         <a data-equalizer-watch class="industry-background button" href="/EBI-Pattern-library/patterns/">
-          <h6 class="white-color text-left">View all EBI Visual Framewowk patterns</h6>
+          <h6 class="white-color text-left">View all EBI Visual Framework patterns</h6>
         </a>
       </div>
       <div class="column">
