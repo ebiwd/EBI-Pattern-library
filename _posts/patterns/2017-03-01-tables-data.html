@@ -10,20 +10,21 @@ description: Showcase a lot or a little amount of numbers, images, graphics.
 
 
 <h4>Basic data table</h4>
-<p>The basic data table can be implemented by adding two classes to the <code>table</code> tag: <code>.small</code> and <code>.data-table</code>.</p>
+<p>The basic data table can be implemented by adding two classes to the <code>table</code> tag: <code>.small</code> and <code>.data-table</code>. A third tag that might be useful is <code>.no-stripe</code> to remove the zebra striping.</p>
 
 <p>Alternativley to adding <code>.data-table</code> there are a range of utility classes that can be used to assemble the desired look and feel:</p>
 <ul>
   <li>Smaller text: add a <code>.small</code> to the table tag, or any tr or td.</li>
   <li>Disable tables from going 100% wide: add a <code>.width-auto</code> to the table tag.</li>
   <li>Align text to top: add <code>.align-top</code> to the table tag or a td.</li>
+  <li>Remove striping: add <code>.no-stripe</code> to the table tag.</li>
   <li>Change padding: add either of these classes to the table tage or td, <code>.padding-none</code> <code>.padding-small</code>.
   <li>Allow images to be stretched out of proportion: add <code>.stretch</code> to the image.
 </ul>
 
-<p>Consider this <a href="https://www.ebi.ac.uk/chembl/drugstore">sample table from ChEMBL</a> which we have done with <code>table.small.data-table</code>:</p>
+<p>Consider this <a href="https://www.ebi.ac.uk/chembl/drugstore">sample table from ChEMBL</a> which we have done with <code>table.small.data-table.no-stripe</code>:</p>
 
-<table class="small data-table">
+<table class="small data-table no-stripe">
   <thead>
     <tr role="row">
       <th colspan="1" role="columnheader">Parent Molecule</th>
