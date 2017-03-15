@@ -153,11 +153,8 @@
                     <fieldset class=" ">
                       <!-- <legend><h4 class="white-color">Find a gene, protein or chemical</h4></legend> -->
                       <div class="margin-bottom-none small-collapse">
-                        <div class="columns medium-7  margin-bottom-none">
-                          <input id="query" class="margin-bottom-none" title="EB-eye Search" tabindex="1" type="text" name="query" value="" size="35" maxlength="2048" placeholder="Find a gene, protein or chemical"/>
-                        </div>
-                        <div class="columns medium-4 margin-bottom-small">
-                          <select class="margin-bottom-none">
+                        <div class="columns medium-3 margin-bottom-small">
+                          <select class="margin-bottom-none" style="opacity: .8">
                             <option value="everything">Search everything</option>
                             <optgroup label="Science search">
                               <option value="temp">Genomes &amp; metagenomes</option>
@@ -166,7 +163,7 @@
                               <option value="temp">Small molecules</option>
                               <option value="temp">Gene expression</option>
                               <option value="temp">Molecular interactions</option>
-                              <option value="temp">Reactions, pathways & diseases</option>
+                              <option value="temp">Reactions, pathways &amp; diseases</option>
                               <option value="temp">Protein families</option>
                               <option value="temp">Literature</option>
                             </optgroup>
@@ -177,6 +174,9 @@
                             </optgroup>
                           </select>
                         </div>
+                        <div class="columns medium-8  margin-bottom-none">
+                          <input id="query" class="margin-bottom-none" title="EB-eye Search" tabindex="1" type="text" name="query" value="" size="35" maxlength="2048" placeholder="Find a gene, protein or chemical"/>
+                        </div>
                         <div class="columns medium-1 margin-bottom-none">
                           <input id="search_submit" class="button icon icon-functional margin-bottom-none" tabindex="2" type="submit" name="submit1" value="1" style="line-height:.9"/>
                         </div>
@@ -184,14 +184,14 @@
                         <input type="hidden" name="requestFrom" value="ebi_index" />
                       </div>
                     </fieldset>
-                    <fieldset class="">
-                      <span id="example">
-                        Example searches: <a class="secondary tag" href="/ebisearch/search.ebi?db=allebi&amp;requestFrom=ebi_index&amp;query=blast">blast</a> <a class="secondary tag" href="/ebisearch/search.ebi?db=allebi&amp;query=keratin&amp;requestFrom=ebi_index">keratin</a> <a class="secondary tag" href="/ebisearch/search.ebi?db=allebi&amp;query=bfl1&amp;requestFrom=ebi_index">bfl1</a>
-                      </span>
+                    <fieldset>
+                      <div id="example" class="medium-push-3 medium-9 columns small">
+                        Example searches: <a class="" href="/ebisearch/search.ebi?db=allebi&amp;requestFrom=ebi_index&amp;query=blast">blast</a> <a class="" href="/ebisearch/search.ebi?db=allebi&amp;query=keratin&amp;requestFrom=ebi_index">keratin</a> <a class="" href="/ebisearch/search.ebi?db=allebi&amp;query=bfl1&amp;requestFrom=ebi_index">bfl1</a>
+                      </div>
                     </fieldset>
                   </form>
                 </div>
-                <div class="columns medium-5 show-for-medium">
+                <div class="columns medium-4 show-for-medium">
                   <span class="tag secondary-background">Deposit data</span>
                   <div class="">
                     <p>Share your scientific data with the world.</p>
