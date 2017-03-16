@@ -13,11 +13,38 @@ description: Build an arangement of buttons as a clickable matrix.
 
 <p>Wrap a group of <a href="badges">Tile badges</a> in a <code>div.button-grid</code>.</p>
 
-<div class="button-grid">
-  <a class="button primary columns medium-12" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/EMBL_EBI_Annual_Scientific_Report_2014_Low.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2014</a>
-  <a class="button secondary small columns medium-6" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/EMBL_EBI_Annual_Report_2013_hi_3.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2013</a>
-  <a class="button secondary small columns medium-6" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/EMBL_EBI_ASR_2012_lo-rez.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2012</a>
-  <a class="button secondary small columns medium-4" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/Annual%20report 2011 final low-res.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2011</a>
-  <a class="button secondary small columns medium-4" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/Annual_Scientific_Report_low_res.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2010</a>
-  <a class="button secondary small columns medium-4" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/ASR%2009_smallest_file_size_complete.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2009</a>
+<div class="row">
+  <div class="columns medium-7 medium-push-2">
+    <div class="button-grid">
+      <a class="button primary columns medium-12" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/EMBL_EBI_Annual_Scientific_Report_2014_Low.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2014</a>
+      <a class="button secondary small columns medium-6" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/EMBL_EBI_Annual_Report_2013_hi_3.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2013</a>
+      <a class="button secondary small columns medium-6" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/EMBL_EBI_ASR_2012_lo-rez.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2012</a>
+      <a class="button secondary small columns medium-4" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/Annual%20report 2011 final low-res.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2011</a>
+      <a class="button secondary small columns medium-4" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/Annual_Scientific_Report_low_res.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2010</a>
+      <a class="button secondary small columns medium-4" href="/sites/ebi.ac.uk/files/groups/external_relations/Documents/ASR%2009_smallest_file_size_complete.pdf"><span class="icon icon-fileformats" data-icon="p"></span> 2009</a>
+    </div>
+  </div>
 </div>
+
+<h3 class="padding-top-xlarge">Large button grid</h3>
+
+<p>This is a variant on the above pattern that also uses <a href="http://foundation.zurb.com/sites/docs/equalizer.html">Foundation's Equalizer</a>.</p>
+
+<div class="row button-grid" data-equalizer data-equalize-on="medium" id="large-button-grid">
+  <div class="column medium-3 small-6 text-center padding-bottom-large"> <a class="button medium-12 columns" data-equalizer-watch href="#"><h3 class="icon icon-functional white-color" data-icon="="></h3> <h5 class="white-color">Download</h5></a></div>
+  <div class="column medium-3 small-6 text-center padding-bottom-large"> <a class="button medium-12 columns" data-equalizer-watch href="#"><h3 class="icon icon-species white-color" data-icon="H"></h3> <h5 class="white-color">Organisims</h5></a></div>
+  <div class="column medium-3 small-6 text-center padding-bottom-large"> <a class="button medium-12 columns" data-equalizer-watch href="#"><h3 class="icon icon-conceptual white-color" data-icon="o"></h3> <h5 class="white-color">Ontologies</h5></a></div>
+  <div class="column medium-3 small-6 text-center padding-bottom-large"> <a class="button medium-12 columns" data-equalizer-watch href="#"><h3 class="icon icon-conceptual white-color" data-icon="o"></h3> <h5 class="white-color">Pathways</h5></a></div>
+  <div class="column medium-3 small-6 text-center padding-bottom-large"> <a class="button medium-12 columns training-background" data-equalizer-watch href="#"><h3 class="icon icon-generic white-color" data-icon="\"></h3> <h5 class="white-color">Request<br/>Complex</h5></a></div>
+  <div class="column medium-3 small-6 text-center padding-bottom-large"> <a class="button medium-12 columns industry-background" data-equalizer-watch href="#"><h3 class="icon icon-generic white-color" data-icon="t"></h3> <h5 class="white-color">Training</h5></a></div>
+  <div class="column medium-3 small-6 text-center padding-bottom-large"> <a class="button medium-12 columns industry-background" data-equalizer-watch href="#"><h3 class="icon icon-generic white-color" data-icon="?"></h3> <h5 class="white-color">Documentation</h5></a></div>
+  <div class="column medium-3 small-6 text-center padding-bottom-large"> <a class="button medium-12 columns industry-background" data-equalizer-watch href="#"><h3 class="icon icon-generic white-color" data-icon="P"></h3> <h5 class="white-color">Citation</h5></a></div>
+</div>
+
+<script>
+// Ignore this hack
+// It's because we're using the equalizer inside tabs and we need to re-evaluate heights once the tab is shown :(
+setTimeout(function(){
+  $(window).trigger('resize');
+}, 1000);
+</script>
