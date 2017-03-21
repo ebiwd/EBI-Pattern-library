@@ -1,5 +1,5 @@
 ---
-layout: pattern
+layout: meta-pattern
 title: Helper classes
 categories: meta-patterns
 tags:

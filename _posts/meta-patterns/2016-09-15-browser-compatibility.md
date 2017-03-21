@@ -1,5 +1,5 @@
 ---
-layout: pattern
+layout: meta-pattern
 title: Browser compatibility
 categories: meta-patterns
 tags:

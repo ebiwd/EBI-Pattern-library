@@ -1,5 +1,5 @@
 ---
-layout: pattern
+layout: meta-pattern
 title: Accessibility
 categories: meta-patterns
 tags:

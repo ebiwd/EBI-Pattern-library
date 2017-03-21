@@ -1,5 +1,5 @@
 ---
-layout: pattern
+layout: meta-pattern
 title: Search guidelines
 categories: meta-patterns
 type:

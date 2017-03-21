@@ -1,5 +1,5 @@
 ---
-layout: pattern
+layout: meta-pattern
 title: Sample pages
 categories: meta-patterns
 group: in_local_navigation

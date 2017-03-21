@@ -1,5 +1,5 @@
 ---
-layout: pattern
+layout: meta-pattern
 title: Page structure
 categories: meta-patterns
 group: in_local_navigation
