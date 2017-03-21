@@ -1,15 +1,18 @@
 ---
 layout: meta-pattern
-title: Browser compatibility
+title: Browser and device compatibility
 categories: meta-patterns
 tags:
 - usability
-description: What do you need to support
+- devices
+description: What browsers, mobile phones, tablet, and ponies you need to support
 ---
 
-<p>For browser support, aim for content and functionality to be unobstructed on browsers released within the last five years and have JavaScript enabled; this is represents virtually all users of the EMBL-EBI site (in excess of 99.9%).</p>
-<p>As a guiding rule, test for compatibility on any browser or device that represents more than 2% of the usage of <a href="http://www.ebi.ac.uk">www.ebi.ac.uk</a>.</p>
-<p>As <a href="http://people.opera.com/howcome/2006/phd/#h-30">intended</a> by the CSS specification, not all browsers, devices, or users render content to look exactly the same. Our aim is to create an accessible and visually consistent design across a broad range of clients, not pixel-prefect designs. Further, we build atop the basic functionality, adding <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive-enhancement</a> features to newer classes of browsers and devices.</p>
+For browser support, aim for content and functionality to be unobstructed on browsers released within the last five years and have JavaScript enabled; this is represents virtually all users of the EMBL-EBI site (in excess of 99.9%).
+
+As a guiding rule, test for compatibility on any browser or device that represents more than 2% of the usage of <a href="http://www.ebi.ac.uk">www.ebi.ac.uk</a>.
+
+As <a href="http://people.opera.com/howcome/2006/phd/#h-30">intended</a> by the CSS specification, not all browsers, devices, or users render content to look exactly the same. Our aim is to create an accessible and visually consistent design across a broad range of clients, not pixel-prefect designs. Further, we build atop the basic functionality, adding <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive-enhancement</a> features to newer classes of browsers and devices.
 
 <div class="callout warning">
 
@@ -20,7 +23,7 @@ description: What do you need to support
 </div>
 
 
-<p>As of this writing (21/10/2015), currently supported desktop browsers and their usage:</p>
+As of this writing (21/10/2015), currently supported desktop browsers and their usage:
 
 <table>
   <tbody>
