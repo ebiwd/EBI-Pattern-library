@@ -1,8 +1,8 @@
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %} {{ page.title }} &lt; {% endif %} {{ site.name }} &lt; EMBL-EBI</title>
-  <meta name="description" content="EMBL-EBI"><!-- Describe what this page is about -->
-  <meta name="keywords" content="bioinformatics, europe, institute"><!-- A few keywords that relate to the content of THIS PAGE (not the whol project) -->
+  <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{% endif %}"><!-- Describe what this page is about -->
+  <meta name="keywords" content="EBI, Pattern library, EBI Framework"><!-- A few keywords that relate to the content of THIS PAGE (not the whol project) -->
   <meta name="author" content="EMBL-EBI"><!-- Your [project-name] here -->
   <meta name="HandheldFriendly" content="true" />
   <meta name="MobileOptimized" content="width" />
@@ -12,8 +12,8 @@
   <!-- Add information on the life cycle of this page -->
   <meta name="ebi:owner" content="Web Development"> <!-- Who should be contacted about changes -->
   <meta name="ebi:review-cycle" content="180"> <!-- In days, how often should the content be reviewed -->
-  <meta name="ebi:last-review" content="2016-10-30"> <!-- The last time the content was reviewed -->
-  <meta name="ebi:expiry" content="2018-10-01"> <!-- When this content is no longer relevant -->
+  <meta name="ebi:last-review" content="2017-03-21"> <!-- The last time the content was reviewed -->
+  <meta name="ebi:expiry" content="2019-03-21"> <!-- When this content is no longer relevant -->
 
   <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch -->
   <link rel="dns-prefetch" href="//ebi.ac.uk" />
