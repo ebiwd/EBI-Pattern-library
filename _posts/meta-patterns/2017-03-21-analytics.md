@@ -158,4 +158,4 @@ For further help, drop Web Development an e-mail <a href="mailto:www-dev@ebi.ac.
 Further items are planned in this series:
   1. User events: With [JS events](https://docs.google.com/document/d/1TuGMtbGcw3EOeFNGqc4ZP_faKJ7Fb65Weqa8b3WV0Go/edit#heading=h.l4372agxzzgh) we can greater insight into what users are clicking on under which conditions.
   2. Understanding success: if analytics is the answers, what are the questions? Closing the loop between what users are doing and how your content attempts to enable goals... Core content models.
-  3. Digesting reports: How we can tie reporting API into our content models for custom dashboards of success and failure metrics.
+  3. Digesting reports: How we can tie reporting API into our content models for [custom dashboards](https://docs.google.com/presentation/d/1k8m44Gc_sgOZvtQh5IuKRp5MR0oUqRpa1OBlFZ1hpdE/edit#slide=id.p) of success and failure metrics.
