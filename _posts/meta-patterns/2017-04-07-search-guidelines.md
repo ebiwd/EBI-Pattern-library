@@ -6,34 +6,41 @@ type:
 - guidance
 tags:
 - search
-description: The search guidelines specify the essentials of making sure data and web content are properly indexed internally by the EB-eye Search Engine as well as externally by general search engines like Google, Bing, Yahoo and more.
+description: These guideline and recommendations help users to use all the search services at EMBl-EBI with consistency and fewer interface-driven complexities. This speeds development and increase the overall user experience (UX).
 ---
 {% include notice-review.html %}
 
-### <a name="WhyshouldIusethesearchguidelines" id="WhyshouldIusethesearchguidelines"></a> Why should I use the search guidelines?
+### <a name="globalvslocal" id="globalvslocal"></a> Global search vs Local search
 
-The guiding principle behind those guideline and recommendations is that we want our users to be able to use all the search services at the EBI without the feeling that they switch to a complete new world every time they use a new search service. We also aim at improving the general user search experience.
+Global search is a search that searches all EBI resources indexed by the EB-eye. Local search uses whatever search technology the local service has developed or uses.
+
+On the main corporate EBI pages, the search box appears in the global header and all searches are directed to EB-eye.
+
+<img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/about_us_header.png" alt="Global search box" title="Global search box" width="970" height="172">
+
+For an EBI service that has its own search requirement, a large search box should be included in the main header and the search box in the global header disappears. All searches in the search box search the <strong>local</strong> resource and return a list of results from this resource.
+
+<img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/interpro_header.png" alt="Local search" title="Local search" width="975" height="159">
+
+Any filters or facets that this search provides should appear on the left hand menu.
+
+<img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/ebeye_search_result.png" alt="Global search results" title="Global search results" width="985" height="694">
 
 
+The local search should also perform a query using the EB-eye on all EBI resources and present those Global results on the right hand side of the results page. Each global result category will have a designated icon to facilitate quick visual recognition
 
-<p><a name="globalvslocal" id="globalvslocal"></a></p>
-<h4>Global search vs Local search</h4>
-<p>Global search is a search that searches all EBI resources indexed by the EB-eye. Local search uses whatever search technology the local service has developed or uses.</p>
-<p>On the main corporate EBI pages, the search box appears in the global header and all searches are directed to EB-eye.</p>
-<p><img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/about_us_header.png" alt="Global search box" title="Global search box" width="970" height="172" style="border: 0px;"></p>
-<p>For an EBI service that has its own search requirement, a large search box should be included in the main header and the search box in the global header disappears. All searches in the search box search the <strong>local</strong> resource and return a list of results from this resource.</p>
-<p><img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/interpro_header.png" alt="Local search" title="Local search" width="975" height="159" style="border: 0px;"></p>
-<p>Any filters or facets that this search provides should appear on the left hand menu.</p>
-<p><img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/ebeye_search_result.png" alt="Global search results" title="Global search results" width="985" height="694" style="border: 0px;"></p>
-<p>The local search should also perform a query using the EB-eye on all EBI resources and present those Global results on the right hand side of the results page. Each global result category will have a designated icon to facilitate quick visual recognition.</p>
-<p><img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/interpro_search_results.png" alt="Local search results" title="Local search results" width="977" height="696" style="border: 0px;"></p>
-<p><a name="how" id="how"></a></p>
-<p><a name="patterns" id="patterns"></a></p>
-<h2><a name="ImprovingthesearchexperienceforyourusersGeneralSearchPatterns" id="ImprovingthesearchexperienceforyourusersGeneralSearchPatterns"></a> Improving the search experience for your users - General Search Patterns</h2>
-<p>Search is usually the primary or secondary means of navigating a website. This is particularly true for the EBI with the huge amount of biological data available. Search is the only way users can access some of this information and they need to feel like they are always heading in the right direction.</p>
-<p>&nbsp;</p>
-<p>Several studies and books have been written on the subject of search and this list of guideline and recommendations simply represents a summary of what any search developer/designer at the EBI should know or at least be aware of. The different topics detailled here are only general patterns and don't specify any specific design implementions for these pattern. The search design patterns belong to the more general design styleguides document. To know more on the subject of search best practice and search patterns we recommend e following readings:</p>
-<p>Books:</p>
+<img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/interpro_search_results.png" alt="Local search results" title="Local search results" width="977" height="696">
+
+<a name="how" id="how"></a>
+
+<a name="patterns" id="patterns"></a>
+<a name="ImprovingthesearchexperienceforyourusersGeneralSearchPatterns" id="ImprovingthesearchexperienceforyourusersGeneralSearchPatterns"></a> General Search Patterns: Improving the search experience for your users
+
+Search is usually the primary or secondary means of navigating a website. This is particularly true for the EBI with the huge amount of biological data available. Search is the only way users can access some of this information and they need to feel like they are always heading in the right direction.
+
+Several studies and books have been written on the subject of search and this list of guideline and recommendations simply represents a summary of what any search developer/designer at the EBI should know or at least be aware of. The different topics detailled here are only general patterns and don't specify any specific design implementions for these pattern. The search design patterns belong to the more general design styleguides document. To know more on the subject of search best practice and search patterns we recommend e following readings:
+
+Books:
 <ul>
 <li>Search Patterns - Peter Morville, Jeffery Callender (<a href="http://searchpatterns.org/" rel="nofollow">http://searchpatterns.org/</a>)</li>
 <li>Search User Interfaces - Marti A. Hearst (<a href="http://searchuserinterfaces.com/" rel="nofollow">http://searchuserinterfaces.com/</a>)</li>
@@ -70,16 +77,22 @@ Advanced search usually co-exists with a normal search box and offers additional
 <p>When dealing with structured data, as it is often the case in bioinformatics, faceted navigation can be very beneficial. Faceted search has become a popular technique in commercial search applications, particularly for online retailers and libraries, because it allows users to explore by filtering available information. This can be a powerful technique for filtering results based on specific criteria (e.g. organisms, publication dates...), but it requires significant investments (Implementation, compute power...) so it should be used only if it adds a clear value for improving findability.</p>
 <p>When it's relevant for the data, sorting results can be used as another form of filter to help users refine their query (e.g. sorting by dates).</p>
 <p>Another technique (gaining in popularity) consists of showing the users new topics or examples of searches that are related to their initial query. These suggestions are usually derived from the content of the result pages but more complex algorithms can take into account the users's previous searches or even their general profile if such information is available. Just like faceted search, this requires significant investments and can potentially have undesirable effects (i.e. This rely heavily on the quality of the suggestions).</p>
-<h3><a name="Helpusersrecovergracefully" id="Helpusersrecovergracefully"></a> Help users recover gracefully</h3>
-<p>People use the search to find answers to questions or to retrieve data. So, the worse that can happen is for the interface not to return any result. Avoiding this is really important to keep the user's trust.</p>
-<p>One solution to solve or at least limit this problem, is to expand the initial query to match additional documents. Query expansion involves techniques such as:</p>
-<ul>
-<li>Finding synonyms of words, and searching for the synonyms as well</li>
-<li>Finding all the various morphological forms of words by stemming each word in the search query</li>
-<li>Fixing spelling errors and automatically searching for the corrected form or suggesting it in the results</li>
-<li>Re-weighting the terms in the original query</li>
-</ul>
-<p>However, it's important to notify the user if their initial query has been changed without asking them first, as this could lead to incorrect interpretation of the results.</p>
-<p>Sometimes users also misuse the search interface and try to search with inappropriate query input (e.g. binary data, full dna sequences). In these situations, a good practice is to give them some hints about why the search can't work and possibly reference additional resources which could be more appropriate for the requested type of search.</p>
-<h3><a name="Presentingresult" id="Presentingresult"></a> Presenting result</h3>
-<p>For guidance on how to present results to the users, please consult the <a href="//www.ebi.ac.uk/seqdb/confluence/display/Delta/The%2BEBI%2BWeb%2BStyle%2BGuide" title="The EBI Web Style Guide">EBI style guide</a>.</p>
+
+### <a name="Helpusersrecovergracefully" id="Helpusersrecovergracefully"></a> Help users recover gracefully
+
+People use the search to find answers to questions or to retrieve data. So, the worse that can happen is for the interface not to return any result. Avoiding this is really important to keep the user's trust.
+
+One solution to solve or at least limit this problem, is to expand the initial query to match additional documents. Query expansion involves techniques such as:
+
+ - Finding synonyms of words, and searching for the synonyms as well
+ - Finding all the various morphological forms of words by stemming each word in the search query
+ - Fixing spelling errors and automatically searching for the corrected form or suggesting it in the results
+ - Re-weighting the terms in the original query
+
+However, it's important to notify the user if their initial query has been changed without asking them first, as this could lead to incorrect interpretation of the results.
+
+Sometimes users also misuse the search interface and try to search with inappropriate query input (e.g. binary data, full dna sequences). In these situations, a good practice is to give them some hints about why the search can't work and possibly reference additional resources which could be more appropriate for the requested type of search.
+
+### <a name="Presentingresult" id="Presentingresult"></a> Presenting result
+
+For guidance on how to present results to the users, see the <a class="readmore" href="//ebiwd.github.io/EBI-Pattern-library/sample-site/boilerplate/search-results.html">search result boilerplate page</a>
