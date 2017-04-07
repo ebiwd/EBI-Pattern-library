@@ -1,32 +1,30 @@
 ---
 layout: meta-pattern
-title: Search guidelines
+title: EBI Search indexing
 categories: meta-patterns
 type:
 - guidance
 tags:
 - search
-description: The search guidelines specify the essentials of making sure data and web content are properly indexed internally by the EB-eye Search Engine as well as externally by general search engines like Google, Bing, Yahoo and more.
+description: The EBI provides a global search service across most of the data sources available at the institute.
 ---
+{% include notice-review.html %}
 
-<h2><a name="WhyshouldIusethesearchguidelines" id="WhyshouldIusethesearchguidelines"></a> Why should I use the search guidelines?</h2>
-<p>The guiding principle behind those guideline and recommendations is that we want our users to be able to use all the search services at the EBI without the feeling that they switch to a complete new world every time they use a new search service. We also aim at improving the general user search experience.</p>
-<p>These guidelines have been written for the data providers as well as the people in charge of maintaining the content for the various web pages publicly available at the EBI.</p>
-<p>The guidelines also list some general advice and suggestions that can be used to improve the user experience when searching with any search engine at the EBI and help our users to quickly reach the information they are looking for.</p>
-<p><a name="searchglossary" id="searchglossary"></a></p>
-<h3><a name="Glossaryoftermsusedinthesearchguidelines" id="Glossaryoftermsusedinthesearchguidelines"></a> Glossary of terms used in the search guidelines</h3>
-<ul>
-<li><strong>Document</strong>: Lucene term<br>
-A document is a virtual document consisting of a set of fields. A document can have several fields with the same name.</li>
-<li><strong>Field</strong>: Lucene term<br>
-Part of a Document (see above). A field is a &lt;<em>name, content</em>&gt; pair. The name provides metadata, e.g. row name in a database or the different parts of a web page or email (header, body, ...). The content contains the actual data. Both parts of a field are indexed but the <em>name</em> is only available as structural information, i.e. one can search for something with a specific <em>field-name</em> but a <em>field-name</em> usually will not appear in the search result.</li>
-<li><strong>Domain</strong>: EB-eye term<br>
-A data source, most of the times a database. For example: UniProtKB, PDBe, ...</li>
-<li><strong>Domain tree, hierarchy</strong>: EB-eye term<br>
-All domains in the EB-eye are organised in a tree. Nodes of the tree are for example <em>Protein Sequences</em> or <em>Small Molecules</em>. Leaves of the tree are for example <em>UniProtKB</em> (parent <em>Protein Sequences</em>) or <em>ChEBI </em>(parent <em>Small Molecules</em>)</li>
-<li><strong>Data provider</strong>: EB-eye term<br>
-A group/person who provides the data for a domain.</li>
-</ul>
+<a name="searchglossary" id="searchglossary"></a>
+
+### <a name="Glossaryoftermsusedinthesearchguidelines" id="Glossaryoftermsusedinthesearchguidelines"></a> Glossary of terms used in the search guidelines
+
+- <strong>Document</strong>: Lucene term
+  A document is a virtual document consisting of a set of fields. A document can have several fields with the same name.</li>
+- <strong>Field</strong>: Lucene term
+  Part of a Document (see above). A field is a &lt;<em>name, content</em>&gt; pair. The name provides metadata, e.g. row name in a database or the different parts of a web page or email (header, body, ...). The content contains the actual data. Both parts of a field are indexed but the <em>name</em> is only available as structural information, i.e. one can search for something with a specific <em>field-name</em> but a <em>field-name</em> usually will not appear in the search result.
+- <strong>Domain</strong>: EB-eye term
+  A data source, most of the times a database. For example: UniProtKB, PDBe, ...
+- <strong>Domain tree, hierarchy</strong>: EB-eye term
+  All domains in the EB-eye are organised in a tree. Nodes of the tree are for example <em>Protein Sequences</em> or <em>Small Molecules</em>. Leaves of the tree are for example <em>UniProtKB</em> (parent <em>Protein Sequences</em>) or <em>ChEBI </em>(parent <em>Small Molecules</em>)
+- <strong>Data provider</strong>: EB-eye term
+  A group/person who provides the data for a domain.
+
 <ul>
 <li><strong>SERP</strong>: search engine results page</li>
 <li><strong>SEO</strong>: search engine optimisation</li>
@@ -48,7 +46,6 @@ A group/person who provides the data for a domain.</li>
  <tr>
   <th>Information needed for the EB-eye indexer</th>
   <th>Description
-  <!--&lt;th -->
   </th>
   <th>Example</th>
  </tr>
@@ -108,18 +105,8 @@ In some areas it might be useful to display entries in another layout. However, 
 <li>Links should always be <span style="text-decoration: underline;">underlined</span>.</li>
 <li>Different fonts should be used sparsely and consistently! E.g. only links should be underlined, only searched terms should be bold, if at all.</li>
 </ul>
-<p><a name="globalvslocal" id="globalvslocal"></a></p>
-<h4>Global search vs Local search</h4>
-<p>Global search is a search that searches all EBI resources indexed by the EB-eye. Local search uses whatever search technology the local service has developed or uses.</p>
-<p>On the main corporate EBI pages, the search box appears in the global header and all searches are directed to EB-eye.</p>
-<p><img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/about_us_header.png" alt="Global search box" title="Global search box" width="970" height="172" style="border: 0px;"></p>
-<p>For an EBI service that has its own search requirement, a large search box should be included in the main header and the search box in the global header disappears. All searches in the search box search the <strong>local</strong> resource and return a list of results from this resource.</p>
-<p><img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/interpro_header.png" alt="Local search" title="Local search" width="975" height="159" style="border: 0px;"></p>
-<p>Any filters or facets that this search provides should appear on the left hand menu.</p>
-<p><img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/ebeye_search_result.png" alt="Global search results" title="Global search results" width="985" height="694" style="border: 0px;"></p>
-<p>The local search should also perform a query using the EB-eye on all EBI resources and present those Global results on the right hand side of the results page. Each global result category will have a designated icon to facilitate quick visual recognition.</p>
-<p><img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styleguide/images/interpro_search_results.png" alt="Local search results" title="Local search results" width="977" height="696" style="border: 0px;"></p>
-<p><a name="how" id="how"></a></p>
+
+
 <h3><a name="HowtogettheEBeyesearchenginetoindexyourdata" id="HowtogettheEBeyesearchenginetoindexyourdata"></a> How to get the EB-eye search engine to index your data</h3>
 <p>EB-eye can parse and index data files of different formats but also defines its own XML format (<a href="//www.ebi.ac.uk/ebisearch/XML4dbDumps.xsd">XML4dbDumps</a>). This can be used for databases that currently don't have a flat file or an XML formatted dump and where there is no requirement to dump the whole database in a specified format.</p>
 <p>As a rule of thumb:</p>
@@ -300,118 +287,3 @@ These cross-references can point to either internal databases that are indexed b
 <p>The default layout displays for each entry the id, name and descriptions followed by the entry links and cross-references links. Correctly defining this information ensures coherence of the result display. Therefore name and description should be stored in the index. If no obvious name or ID can be provided data providers should define a meaningful name and ID. Data without ID and name will be only indexed, if a data provider can conclusively argue why she cannot provide them.</p>
 <p>Links pointing to data have to be carefully defined. An important link is the ID field link which will redirect to the corresponding data provider web site. The entry links should be checked as well and reviewed by the data providers to make sure they are correct. Obviously, all links should resolve to a valid web page. EB-eye does not check whether the link to behind an ID is valid. However, EB-eye check for every cross reference whether the site behind the cross reference exists. Obviously, EB-eye cannot check whether the content is valid.</p>
 <p>Sometimes the default layout is not appropriate to display the results. In such cases, data providers should contact the EB-eye team to discuss a possibly custom layout. For every layout default or custom, the simplicity of the layout should be one of the main objectives. Thus, only the information which is really needed to allow the user to decide whether he should visit the original site should be included.</p>
-<p><a name="patterns" id="patterns"></a></p>
-<h2><a name="ImprovingthesearchexperienceforyourusersGeneralSearchPatterns" id="ImprovingthesearchexperienceforyourusersGeneralSearchPatterns"></a> Improving the search experience for your users - General Search Patterns</h2>
-<p>Search is usually the primary or secondary means of navigating a website. This is particularly true for the EBI with the huge amount of biological data available. Search is the only way users can access some of this information and they need to feel like they are always heading in the right direction.</p>
-<p>&nbsp;</p>
-<p>Several studies and books have been written on the subject of search and this list of guideline and recommendations simply represents a summary of what any search developer/designer at the EBI should know or at least be aware of. The different topics detailled here are only general patterns and don't specify any specific design implementions for these pattern. The search design patterns belong to the more general design styleguides document. To know more on the subject of search best practice and search patterns we recommend e following readings:</p>
-<p>Books:</p>
-<ul>
-<li>Search Patterns - Peter Morville, Jeffery Callender (<a href="http://searchpatterns.org/" rel="nofollow">http://searchpatterns.org/</a>)</li>
-<li>Search User Interfaces - Marti A. Hearst (<a href="http://searchuserinterfaces.com/" rel="nofollow">http://searchuserinterfaces.com/</a>)</li>
-</ul>
-<p>Blogs:</p>
-<ul>
-<li>Information Interaction (<a href="http://isquared.wordpress.com/" rel="nofollow">http://isquared.wordpress.com/</a>)</li>
-<li>The TwigKit Blog (<a href="http://twigkit.com/blog/" rel="nofollow">http://twigkit.com/blog/</a>)</li>
-</ul>
-<p>To categorise this summary of recommentations, one can identify 4 principles that will guide the users search experience.</p>
-<h3><a name="Helpusersformulatetheirquery" id="Helpusersformulatetheirquery"></a> Help users formulate their query</h3>
-<p>Every search requires input, but its always easier for the users to pick something from a list than it is to pull it out of thin air.</p>
-<p>So, in general it is a good idea to give users some suggestions to help them get on the right foot. One way to achieve this is by using auto-completion. Autocomplete involves the search predicting a word or phrase that the user wants to type in without the user actually typing it in completely. Depending on the context, this can be based on most common search queries or simply on spelling suggestions. Every suggestion must result in one or more result hits and it is good practice to match the typed letters to the suggestions.</p>
-<p>Another approach to searching data that is commonly used by a lot of people, and biologists in particular, is reusing saved searches. Indeed, scientists working on specific topics use the bookmark functionality of their web browser to save their search to be able to quickly come back to it later. That's why having bookmarkable result pages is an important aspect of the search experience that should not be overlooked.</p>
-<p>Sometimes, but not very often, a simple search is not enough and users need a more advanced search interface to input their query. These intermediate to expert users need full control over the search engine. Such users typically have more than superficial knowledge about the items they are searching for. They may know the type of items and are set to search for a specific item they know or may not know exists.<br>
-Advanced search usually co-exists with a normal search box and offers additional functionality</p>
-<ul>
-<li>to control how the combined list of search terms is interpreted by the search engine (e.g. boolean operator AND, OR, NOT...)</li>
-<li>to define the scope of the search (e.g. limit the search to particular item types or item properties)</li>
-<li>and sometimes to allow users to control the way the results are presented (e.g. paging size, fields...)</li>
-</ul>
-<p>However, depending on the type of data and the target audience, it's important to decide whether the advanced search is supposed to be a user-friendly query builder for novices or a power tool for experts because this will strongly influence the design of the search.</p>
-<h3><a name="Helpusersanalyseandreviewtheresults" id="Helpusersanalyseandreviewtheresults"></a> Help users analyse and review the results</h3>
-<p>Once the users have submitted their initial query, they should be presented with a list of results to review.</p>
-<p>People start analyzing the results by quickly scanning the page. Studies have shown that the top 3 results will draw 80% of the attention. So, it's important to make sure the best results appear first and most effort should be put toward optimizing the search algorithms. Depending on the context (i.e. data), these should take into account the relevancy (e.g. identifiers) as well as the timeliness (e.g. publication dates) of the results.</p>
-<p>Another important aspect to take into consideration is the visual appearance of the results. The most important part of the result the user will look at first is the title. It is usually the link to the resource and for that reason must be descriptive, but not too long (7-12 words). Highlighting the matching terms in the results is also a good practice as it can help the eye quickly parse the results for important words.</p>
-<p>It doesn't always make sense to offer thumbnails (or any visual elements), but if such an addition to search enhances the results, its worth considering. The same apply to custom interfaces based on the query type (e.g. a general search returning database specific results along side web results could use different rendering for both types).</p>
-<p>In general, users don't like to dig into large quantities of information when conducting a search. It's better to display as little as possible per search result while still communicating the full idea of what each full entry will contain on it.</p>
-<p>It's sometimes useful to structure the results by grouping them by similarity (e.g. images, videos, databases...).</p>
-<p>Users can also benefit from federated searches, with multiple databases or collections being searched simultaneously and a single page summarising the results. But, note that this type of search adds some complexity that can be daunting for the users if not presented properly.</p>
-<p>In particular contexts, and very often with bioinformatics data, the user's goal is not to retrieve the data but to perform an analysis with these data. In these situations, using actionable results (e.g. launch analysis tools buttons) has been proven to improve the user experience. However, one must be careful with the visual representation and the number actions included in the results. It's very important for the users to understand straight away what these actions are and what will happen if they use them. They can also easily be overwhelmed by an inferface clutered with unnecessary actions.</p>
-<h3><a name="Helpusersrefineorreformulatetheirquery" id="Helpusersrefineorreformulatetheirquery"></a> Help users refine or reformulate their query</h3>
-<p>After reviewing the results, users may find the answer they are looking for, click on one of the results for more information, give up unsuccessfully, or — what often happens — try a slightly different search. It's important to give them the opportunity to refine or even reformulate their initial query. In general, the result pages should always contain a search box, possibly including the initial search terms for manual query refinement.</p>
-<p>When dealing with structured data, as it is often the case in bioinformatics, faceted navigation can be very beneficial. Faceted search has become a popular technique in commercial search applications, particularly for online retailers and libraries, because it allows users to explore by filtering available information. This can be a powerful technique for filtering results based on specific criteria (e.g. organisms, publication dates...), but it requires significant investments (Implementation, compute power...) so it should be used only if it adds a clear value for improving findability.</p>
-<p>When it's relevant for the data, sorting results can be used as another form of filter to help users refine their query (e.g. sorting by dates).</p>
-<p>Another technique (gaining in popularity) consists of showing the users new topics or examples of searches that are related to their initial query. These suggestions are usually derived from the content of the result pages but more complex algorithms can take into account the users's previous searches or even their general profile if such information is available. Just like faceted search, this requires significant investments and can potentially have undesirable effects (i.e. This rely heavily on the quality of the suggestions).</p>
-<h3><a name="Helpusersrecovergracefully" id="Helpusersrecovergracefully"></a> Help users recover gracefully</h3>
-<p>People use the search to find answers to questions or to retrieve data. So, the worse that can happen is for the interface not to return any result. Avoiding this is really important to keep the user's trust.</p>
-<p>One solution to solve or at least limit this problem, is to expand the initial query to match additional documents. Query expansion involves techniques such as:</p>
-<ul>
-<li>Finding synonyms of words, and searching for the synonyms as well</li>
-<li>Finding all the various morphological forms of words by stemming each word in the search query</li>
-<li>Fixing spelling errors and automatically searching for the corrected form or suggesting it in the results</li>
-<li>Re-weighting the terms in the original query</li>
-</ul>
-<p>However, it's important to notify the user if their initial query has been changed without asking them first, as this could lead to incorrect interpretation of the results.</p>
-<p>Sometimes users also misuse the search interface and try to search with inappropriate query input (e.g. binary data, full dna sequences). In these situations, a good practice is to give them some hints about why the search can't work and possibly reference additional resources which could be more appropriate for the requested type of search.</p>
-<h3><a name="Presentingresult" id="Presentingresult"></a> Presenting result</h3>
-<p>For guidance on how to present results to the users, please consult the <a href="//www.ebi.ac.uk/seqdb/confluence/display/Delta/The%2BEBI%2BWeb%2BStyle%2BGuide" title="The EBI Web Style Guide">EBI style guide</a>.</p>
-<p><a name="seo" id="seo"></a></p>
-<h2>How do I make my data more search engine friendly?: Search Engine Optimization (SEO)</h2>
-<p>Search Engine Optimization (SEO) is a term that has grown increasingly popular over the last couple of years. Basically, it's the process of increasing exposure of the online content of a web site in Search Engine Result Pages (SERPs).</p>
-<p>SEO is a vast topic and a lot of books have already been written about that subject. The goal of these guidelines, however, is provide recommendations and solutions to improve the visibility of web sites. There is no method better than another, but following these recommendations should help increase online content exposure in most SERPs.</p>
-<h3><a name="SEOrecommendations" id="SEOrecommendations"></a> SEO recommendations</h3>
-<p>The relevance between a search term and the search engines indexed content is decided by the content itself. If it is rich and of good quality then it will rank better. References from other sites are another very important factor used by most search engines to validate the credibility and authority of a web site.</p>
-<p>Most search engines have well defined guidelines and recommendations regarding SEO:</p>
-<table>
-<tbody>
- <tr>
-  <td>Google</td>
-  <td><a href="http://www.google.com/support/webmasters/bin/answer.py?answer=35769&amp;&amp;hl=en" rel="nofollow">http://www.google.com/support/webmasters/bin/answer.py?answer=35769&amp;&amp;hl=en</a> <br>
-  <a href="http://www.google.com/webmasters/docs/search-engine-optimization-starter-guide.pdf" rel="nofollow">http://www.google.com/webmasters/docs/search-engine-optimization-starter-guide.pdf</a></td>
- </tr>
- <tr>
-  <td>Bing</td>
-  <td><a href="http://onlinehelp.microsoft.com/en-us/bing/hh204434.aspx" rel="nofollow">http://onlinehelp.microsoft.com/en-us/bing/hh204434.aspx</a></td>
- </tr>
- <tr>
-  <td>Yahoo</td>
-  <td><a href="http://styleguide.yahoo.com/resources/optimize-search-engines/seo-basics" rel="nofollow">http://styleguide.yahoo.com/resources/optimize-search-engines/seo-basics</a></td>
- </tr>
-</tbody>
-</table>
-<p>They all describe the same basic principles.</p>
-<p><a name="content" id="content"></a></p>
-<h4><a name="ContentguidelinesforSEO" id="ContentguidelinesforSEO"></a> Content guidelines for SEO</h4>
-<ul>
-<li>Make a site with a clear, fairly flat, hierarchy (i.e. each page should only be one to three clicks away from the default page) and text links, preferably using simple and static URLs. Complicated URLs (e.g. long URLs with multiple variables) and URLs that change frequently are difficult to index as link destinations.</li>
-<li>Make sure that each page is accessible by at least one static text link. If you decide to use dynamic pages (i.e., the URL contains a "?" character), be aware that not every search engine spider crawls dynamic pages as well as static pages. It helps to keep the parameters short and the number of them few.</li>
-<li>Keep the links on a given page to a reasonable number and make sure they aren't broken.</li>
-<li>Limit all pages to a reasonable size (e.g. Bing recommends covering one topic per page. An HTML page with no images should be under 150 KB)</li>
-<li>Use only well-formed HTML code in your pages (Use validating tools like the W3C Markup Validation Service).</li>
-<li>Add a semantic information to the structure of your code by using appropriate HTML tags like headers or paragraphs (e.g. &lt;h1&gt;, &lt;h2&gt;, &lt;p&gt; instead of &lt;br/&gt;...)</li>
-<li>Create unique, <br>
-ief but descriptive (keyword-rich) text for the &lt;title&gt; (Page title contents are displayed in search results) for each page.</li>
-<li>Use the &lt;meta&gt; description attribute tags to provide a summary of the page (Search engine might use it a snippets for the page).</li>
-<li>Use ALT attributes and make sure they are descriptive and accurate.</li>
-<li>In the visible page text, include keywords users might choose as search query terms to find the information on your site.</li>
-<li>Don't load pages with irrelevant keywords</li>
-<li>Avoid hidden text and hidden links</li>
-<li>Try to use text instead of images to display important names, content, or links. Don't put text you want indexed within images.</li>
-<li>Add a Sitemap.xml file with links that point to the important parts of the web site.</li>
-<li>Use Rich Snippets whenever possible (e.g. Images of protein structures as Thing, Training courses, conferences and workshops as Event and Group leader and senior staff pages as Person). Rich Snippets lets you mark up a much wider range of item types on your pages, using a vocabulary that Google, Microsoft, and Yahoo! can all understand (For more information, refer to the Google <a href="http://www.google.com/support/webmasters/bin/answer.py?answer=99170&amp;&amp;hl=en" rel="nofollow">Rich Snippets</a>documentation)</li>
-</ul>
-<p><a name="technical" id="technical"></a></p>
-<h4><a name="TechnicalrecommendationsforSEO" id="TechnicalrecommendationsforSEO"></a> Technical recommendations for SEO</h4>
-<ul>
-<li>Make use of the robots.txt file. You can use this file to prevent web crawlers from crawling specific files, directories or irrelevant pages (e.g. search results pages).</li>
-<li>Monitor your site's performance and optimize load times</li>
-<li>Test your web site to make sure it appears correctly in different browsers</li>
-<li>Use a text browser (e.g. Lynx) to examine your site, because most search engine spiders see your site as text browsers would (Most search engines don't like Javascript, cookies, session IDs, frames, DHTML or Flash)</li>
-<li>If you site uses AJAX, make sure it supports either <a href="http://code.google.com/web/ajaxcrawling/" rel="nofollow">Google's AJAX crawling scheme</a> with HTML snapshots or use <a href="http://en.wikipedia.org/wiki/Hijax" rel="nofollow">Hijax</a> and progessive enhancement</li>
-</ul>
-<p><a name="discovery" id="discovery"></a></p>
-<h4><a name="Howtoinfluencediscovery" id="Howtoinfluencediscovery"></a> How to influence discovery</h4>
-<ul>
-<li>Use the free Webmaster Tools available for most of the main search engines to get a better control of the indexing.</li>
-<li>Promote new content (e.g. using social media), but avoid artificial backlinks (e.g. spams, cloaking, redirects, automated queries)</li>
-</ul>
