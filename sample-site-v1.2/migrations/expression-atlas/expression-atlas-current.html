@@ -1,11 +1,10 @@
 <!-- 
-NOTE: This web page:
 
-1) Began as a copy and past of the source from http://www.ebi.ac.uk/gxa/experiments/E-MTAB-4401?_specific=on&queryFactorType=ORGANISM_PART&queryFactorValues=leaf&geneQuery=&exactMatch=true 
+NOTE: This code is a copy and past of the source from http://www.ebi.ac.uk/gxa/experiments/E-MTAB-4401?_specific=on&queryFactorType=ORGANISM_PART&queryFactorValues=leaf&geneQuery=&exactMatch=true
 
-2) Was edited to integrate the refreshed EBI compliance themes. Navigate up a directory to get a link to an annotated diff of the changes.
+Code copied on 2016-05-06.
 
--->
+ -->
 
 <!DOCTYPE html>
 
@@ -13,14 +12,14 @@ NOTE: This web page:
 
 
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="eng" class="no-js">
+<html xmlns="//www.w3.org/1999/xhtml" lang="eng" class="no-js">
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta content="en-GB" http-equiv="Content-Language" />
     <meta content="_top" http-equiv="Window-target" />
-    <meta content="http://www.unspam.com/noemailcollection/" name="no-email-collection" />
+    <meta content="//www.unspam.com/noemailcollection/" name="no-email-collection" />
     <meta name="google-site-verification" content="4xV6HGqtqbEXtsFgcZGrPUSwcHb03eNNu7B_fFuwdUU" />
 
     
@@ -41,81 +40,40 @@ NOTE: This web page:
 
     <!-- compliance style start -->
 
-    <meta name="description" content="EMBL-EBI" /><!-- Describe what this page is about -->
-    <meta name="keywords" content="bioinformatics, europe, institute" /><!-- A few keywords that relate to the content of THIS PAGE (not the whol project) -->
-    <meta name="author" content="EMBL-EBI" /><!-- Your [project-name] here -->
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="EMBL-EBI" />
+    <!-- Describe what this page is about -->
+    <meta name="keywords" content="bioinformatics, atlas, gxa, ebi, functional, genomics" />
+    <!-- A few keywords that relate to the content of THIS PAGE (not the whol project) -->
+    <meta name="author" content="EMBL-EBI" />
+    <!-- Your [project-name] here -->
+
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#70BDBD" /> <!-- Android Chrome mobile browser tab color -->
 
-    <!-- Add information on the life cycle of this page -->
-    <meta name="ebi:owner" content="John Doe" /> <!-- Who should be contacted about changes -->
-    <meta name="ebi:review-cycle" content="30" /> <!-- In days, how often should the content be reviewed -->
-    <meta name="ebi:last-review" content="2015-12-20" /> <!-- The last time the content was reviewed -->
-    <meta name="ebi:expiry" content="2016-01-20" /> <!-- When this content is no longer relevant -->
-
-    <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch -->
-    <link rel="dns-prefetch" href="//embl.de" />
-
-    <!-- If you have custom icon, replace these as appropriate.
-       You can generate them at realfavicongenerator.net -->
-    <link rel="icon" type="image/x-icon" href="https://ebiwd.github.io/EBI-Framework/images/logos/EMBL-EBI/favicons/favicon.ico" />
-    <link rel="icon" type="image/png" href="https://ebiwd.github.io/EBI-Framework/images/logos/EMBL-EBI/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="192×192" href="https://ebiwd.github.io/EBI-Framework/images/logos/EMBL-EBI/favicons/android-chrome-192x192.png" /> <!-- Android (192px) -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://ebiwd.github.io/EBI-Framework/images/logos/EMBL-EBI/favicons/apple-icon-114x114.png" /> <!-- For iPhone 4 Retina display (114px) -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://ebiwd.github.io/EBI-Framework/images/logos/EMBL-EBI/favicons/apple-icon-72x72.png" /> <!-- For iPad (72px) -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ebiwd.github.io/EBI-Framework/images/logos/EMBL-EBI/favicons/apple-icon-144x144.png" /> <!-- For iPad retinat (144px) -->
-    <link rel="apple-touch-icon-precomposed" href="https://ebiwd.github.io/EBI-Framework/images/logos/EMBL-EBI/favicons/apple-icon-57x57.png" /> <!-- For iPhone (57px) -->
-    <link rel="mask-icon" href="https://ebiwd.github.io/EBI-Framework/images/logos/EMBL-EBI/favicons/safari-pinned-tab.svg" color="#ffffff" /> <!-- Safari icon for pinned tab -->
-    <meta name="msapplication-TileColor" content="#2b5797" /> <!-- MS Icons -->
-    <meta name="msapplication-TileImage" content="https://ebiwd.github.io/EBI-Framework/images/logos/EMBL-EBI/favicons/mstile-144x144.png" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
     <!-- CSS: implied media=all -->
     <!-- CSS concatenated and minified via ant build script-->
-    <link rel="stylesheet" href="https://ebiwd.github.io/EBI-Framework/libraries/foundation-6/css/foundation.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://ebiwd.github.io/EBI-Framework/css/ebi-global.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://ebiwd.github.io/EBI-Framework/fonts/fonts.css" type="text/css" media="all" />
 
-    <!-- Use this CSS file for any custom styling -->
-    <!--
-    <link rel="stylesheet" href="css/custom.css" type="text/css" media="all" />
-    -->
+    <link type="text/css" rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/boilerplate-style.css">
+    <link type="text/css" rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/ebi-global.css">
+    <link type="text/css" rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/ebi-visual.css">
+    <link type="text/css" rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/984-24-col-fluid.css">
+    <link type="text/css" rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/theme-embl-petrol.css">
 
-    <!-- If you have a custom header image or colour -->
-    <!--
-    <meta name="ebi:localmasthead-color" content="#000" />
-    <meta name="ebi:localmasthead-image" content="https://ebiwd.github.io/EBI-Framework/images/backgrounds/embl-ebi-background.jpg" />
-    -->
-
-    <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
-    <!-- also inform ES so we can host your colour palette file -->
-    <link rel="stylesheet" href="https://ebiwd.github.io/EBI-Framework/sample-site/migrations/expression-atlas/expression-atlas-colours.css" type="text/css" media="all" />
-
-    <!-- for production the above can be replaced with -->
-    <!--
-    <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/mini/ebi-fluid-embl.css" />
-    -->
+    <style type="text/css">
+        /* You have the option of setting a maximum width for your page, and making sure everything is centered */
+        /* body { max-width: 1600px; margin: 0 auto; } */
+    </style>
 
     <!-- end CSS-->
 
+    <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+         Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+         For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
 
-    <!-- All JavaScript at the bottom, except for Modernizr -->
-    <script src="https://ebiwd.github.io/EBI-Framework/libraries/modernizr/modernizr.custom.49274.js"></script>
-
-    <style type="text/css">
-    /* Compatibility between unique aspects of this service and the EBI theme */
-    /* This should be baked into the service theme */
-    body .tag-editor {
-        border: none;
-        width: 80%;
-        padding: .42rem 1%;
-        display: inline-block;
-        margin: 0;
-    }
-    .gxaBody form label { margin-right: 0; display: inline-block; }
-    </style>
-
+    <!-- Full build -->
+    <script src="//www.ebi.ac.uk/web_guidelines/js/libs/modernizr.minified.2.1.6.js"></script>
 
     <!-- compliance style end -->
     
@@ -130,11 +88,11 @@ NOTE: This web page:
     <link rel="stylesheet" type="text/css" href="/gxa/resources/js/lib/jquery-tageditor-1.0.20/jquery.tag-editor.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/gxa/resources/css/ae-autocomplete.css" media="screen" />
 
-    <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json2/20150503/json2.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/json2/20150503/json2.min.js"></script>
 
-    <script language="javascript" type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script language="javascript" type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script language="javascript" type="text/javascript" src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="//code.jquery.com/jquery-migrate-1.4.0.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
     <script language="JavaScript" type="text/javascript" src="/gxa/resources/js/lib/jquery-caret/jquery.caret.js"></script>
     <script language="JavaScript" type="text/javascript" src="/gxa/resources/js/lib/jquery-tageditor-1.0.20/jquery.tag-editor.js"></script>
@@ -159,7 +117,7 @@ NOTE: This web page:
 
 </head>
 
-<body class="gxaBody full-width">
+<body class="gxaBody">
 
 <div id="skip-to">
     <ul>
@@ -175,58 +133,37 @@ NOTE: This web page:
 
     
 
-  <div data-sticky-container>
-    <div id="local-masthead" data-sticky data-sticky-on="disabled" data-top-anchor="180" data-btm-anchor="300000">
-      <header>
 
-        <div id="global-masthead" class="clearfix">
-          <!--This has to be one line and no newline characters-->
-          <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><span class="ebi-logo"></span></a>
+<header>
 
-          <nav>
-            <div class="row">
-              <ul id="global-nav" class="menu">
+    <div id="global-masthead" class="masthead grid_24">
+        <!--This has to be one line and no newline characters-->
+        <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><img
+                src="//www.ebi.ac.uk/web_guidelines/images/logos/EMBL-EBI/EMBL_EBI_Logo_white.png"
+                alt="EMBL European Bioinformatics Institute"></a>
+
+        <nav>
+            <ul id="global-nav">
                 <!-- set active class as appropriate -->
-                <li id="home-mobile" class=""><a href="//www.ebi.ac.uk"></a></li>
-                <li id="home"><a href="//www.ebi.ac.uk"><i class="icon icon-generic" data-icon="H"></i> EMBL-EBI</a></li>
-                <li id="services" class="active"><a href="//www.ebi.ac.uk/services"><i class="icon icon-generic" data-icon="("></i> Services</a></li>
-                <li id="research"><a href="//www.ebi.ac.uk/research"><i class="icon icon-generic" data-icon=")"></i> Research</a></li>
-                <li id="training"><a href="//www.ebi.ac.uk/training"><i class="icon icon-generic" data-icon="t"></i> Training</a></li>
-                <li id="about"><a href="//www.ebi.ac.uk/about"><i class="icon icon-generic" data-icon="i"></i> About us</a></li>
-                <li id="search">
-                  <a href="#" data-toggle="search-global-dropdown"><i class="icon icon-functional" data-icon="1"></i> <span class="show-for-small-only">Search</span></a>
-                  <div id="search-global-dropdown" class="dropdown-pane" data-dropdown data-options="closeOnClick:true;">
-                    <form id="global-search" name="global-search" action="/ebisearch/search.ebi" method="GET">
-                      <fieldset>
-                        <div class="input-group">
-                          <input type="text" name="query" id="global-searchbox" class="input-group-field" placeholder="Search all of EMBL-EBI">
-                          <div class="input-group-button">
-                            <input type="submit" name="submit" value="Search" class="button">
-                            <input type="hidden" name="db" value="allebi" checked="checked">
-                            <input type="hidden" name="requestFrom" value="global-masthead" checked="checked">
-                          </div>
-                        </div>
-                      </fieldset>
-                    </form>
-                  </div>
-                </li>
-                <li class="float-right show-for-medium embl-selector">
-                  <button class="button" type="button" data-toggle="embl-dropdown">Hinxton</button>
-                  <div id="embl-dropdown" class="dropdown-pane" data-dropdown data-options="closeOnClick:true;">
-                    to come.
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
+                <li class="first active" id="services"><a href="//www.ebi.ac.uk/services">Services</a></li>
+                <li id="research"><a href="//www.ebi.ac.uk/research">Research</a></li>
+                <li id="training"><a href="//www.ebi.ac.uk/training">Training</a></li>
+                <li id="industry"><a href="//www.ebi.ac.uk/industry">Industry</a></li>
+                <li id="about" class="last"><a href="//www.ebi.ac.uk/about">About us</a></li>
+            </ul>
+        </nav>
 
-        </div>
+    </div>
 
-        <div class="masthead row">
+    <div id="local-masthead" class="masthead grid_24 nomenu" style="background-color: #E1EEE9">
 
-          <!-- local-title -->
-          <div class="columns medium-8" id="local-title">
+        <!-- local-title -->
+        <!-- NB: for additional title style patterns, see http://frontier.ebi.ac.uk/web/style/patterns -->
 
+        <!-- apply grid_12 alpha class if you have a local search box in the header...
+        <div class="grid_12 alpha" id="local-title">
+        -->
+        <div class="grid_12 alpha" id="local-title">
             <h1 style="color: #000000; text-shadow: 0px 0px #E1EEE9">
                 <a href="/gxa" title="Back to Expression Atlas homepage">
                     <img src="/gxa/resources/images/ExpressionAtlas_logo_web.png"
@@ -235,91 +172,88 @@ NOTE: This web page:
                 </a>
             </h1>
 
-            <!-- <h1><a href="../../" title="Back to [service-name] homepage"><div class="hexagon"><i class="icon icon-generic" data-icon=":"></i></div> EBI Framework</a></h1>     -->
+        </div>
 
-          </div>
-          <!-- /local-title -->
+        <!-- /local-title -->
 
-          <!-- local-search -->
-          <div class="columns medium-4" id="">
+        <!-- local-search -->
+        <!-- NB: if you do not have a local-search, delete the following div, and drop the class="grid_12 alpha" class from local-title above -->
 
-                <fieldset>
-                </fieldset>
-
+        <div class="grid_12 omega">
             <form method="get" action="query" name="local-search" id="local-search">
 
                 <fieldset>
 
-                  <input id="local-searchbox" name="geneQuery" value="" maxlength="900" placeholder="(enter gene query)"/>
-                  <input id="submit-searchbox" type="submit" name="submit" value="1" class="button icon icon-functional">
-                  <small class="examples">
-                    <!-- Include some example searchterms - keep them short and few. -->
-                    Examples:
-                        <a href="/gxa/query?geneQuery=ASPM">ASPM</a>,
-                        <a href="/gxa/query?geneQuery=apoptosis">Apoptosis</a>,
-                        <a href="/gxa/query?geneQuery=ENSMUSG00000021789">ENSMUSG00000021789</a>,
-                        <a href="/gxa/query?geneQuery=%22zinc+finger%22">"zinc finger"</a>
-                  </small>
-                  <!-- if you're not using the JS addons
-                  Examples:
-                  <ul>
-                    <li><a href="[search-url-1]">[search-text-1]</a></li>
-                    <li><a href="[search-url-1]">[search-text-2]</a></li>
-                    <li><a href="[search-url-1]">[search-text-3]</a></li>
-                  </ul>
-                  -->
+                    <div class="left">
+                        <label>
+                            <input id="local-searchbox" name="geneQuery" value="" maxlength="900" placeholder="(enter gene query)"/>
+                        </label>
+                    </div>
+                    <div class="left">
+                        <!-- Include some example searchterms - keep them short and few! -->
+                        <span class="examples">Examples:
+                                        <a href="/gxa/query?geneQuery=ASPM">ASPM</a>,
+                                        <a href="/gxa/query?geneQuery=apoptosis">Apoptosis</a>,
+                                        <a href="/gxa/query?geneQuery=ENSMUSG00000021789">ENSMUSG00000021789</a>,
+                                        <a href="/gxa/query?geneQuery=%22zinc+finger%22">"zinc finger"</a></span>
+                    </div>
+
+                    <div class="right" style="position: relative; top: -30px;">
+                        <input id="submit-searchbox" class="submit" type="submit" value="Search"/>
+                        <!-- If your search is more complex than just a keyword search, you can link to an Advanced Search,
+                             with whatever features you want available -->
+                        <!--
+                        <span class="adv"><a title="Advanced" id="adv-search" href="../search">Advanced</a></span>
+                        -->
+                    </div>
+
                 </fieldset>
 
             </form>
-          </div>
-          <!-- /local-search -->
-
-          <!-- local-nav -->
-              <nav >
-                <ul class="dropdown menu float-left" data-description="navigational">
-                    <li id="gxaLocalNavHome" class="first active">
-                        <a href="/gxa" title="Expression Atlas homepage">Home</a>
-                    </li>
-                    <li id="gxaLocalNavRelease-notes">
-                        <a href="/gxa/release-notes.html" title="Release notes">Release notes</a>
-                    </li>
-                    <li id="gxaLocalNavFAQ">
-                        <a href="/gxa/FAQ.html" title="FAQs">FAQs</a>
-                    </li>
-                    <li id="gxaLocalNavDownload">
-                        <a href="/gxa/download.html" title="Download">Download</a>
-                    </li>
-                    <li id="gxaLocalNavHelp">
-                        <a href="/gxa/help/index.html"
-                           title="Help pages">Help</a>
-                    </li>
-                    <li id="gxaLocalNavAbout" class="last">
-                        <a href="/gxa/about.html"
-                           title="About Expression Atlas">About</a>
-                    </li>
-                    <!--
-                    <li class="last"><a href="#">About [service-name]</a></li>
-                    -->
-                    <!-- If you need to include functional (as opposed to purely navigational) links in your local menu,
-                         add them here, and give them a class of "functional". Remember: you'll need a class of "last" for
-                         whichever one will show up last...
-                         For example: -->
-                </ul>
-                <ul class="menu float-right">
-                    <li class="" style=""><a id="feedback-link" href="feedback-form" class=""
-                                                   data-icon=""><i class="icon icon-generic" data-icon="\"></i> Feedback</a></li>
-                </ul>
-              </nav>
-          <!-- /local-nav -->
-
         </div>
 
-      </header>
+        <!-- /local-search -->
 
-      </div>
-  </div>
+        <!-- gxaLocalNav -->
 
+        <nav>
+            <ul class="grid_24" id="gxaLocalNav">
+                <li id="gxaLocalNavHome" class="first active">
+                    <a href="/gxa" title="Expression Atlas homepage">Home</a>
+                </li>
+                <li id="gxaLocalNavRelease-notes">
+                    <a href="/gxa/release-notes.html" title="Release notes">Release notes</a>
+                </li>
+                <li id="gxaLocalNavFAQ">
+                    <a href="/gxa/FAQ.html" title="FAQs">FAQs</a>
+                </li>
+                <li id="gxaLocalNavDownload">
+                    <a href="/gxa/download.html" title="Download">Download</a>
+                </li>
+                <li id="gxaLocalNavHelp">
+                    <a href="/gxa/help/index.html"
+                       title="Help pages">Help</a>
+                </li>
+                <li id="gxaLocalNavAbout" class="last">
+                    <a href="/gxa/about.html"
+                       title="About Expression Atlas">About</a>
+                </li>
+                <!--
+                <li class="last"><a href="#">About [service-name]</a></li>
+                -->
+                <!-- If you need to include functional (as opposed to purely navigational) links in your local menu,
+                     add them here, and give them a class of "functional". Remember: you'll need a class of "last" for
+                     whichever one will show up last...
+                     For example: -->
+                <li class="functional last" style="float: right"><a id="feedback-link" href="feedback-form" class="icon icon-generic"
+                                               data-icon="\">Feedback</a></li>
+            </ul>
+        </nav>
 
+        <!-- /gxaLocalNav -->
+
+    </div>
+</header>
 
 <style>
     fieldset {
@@ -486,7 +420,7 @@ NOTE: This web page:
 
 
 
-    <div id="content" class="row" role="main">
+    <div id="content" class="grid_24 clearfix" role="main">
         
 
 
@@ -505,8 +439,8 @@ NOTE: This web page:
 
 <link rel="stylesheet" href="/gxa/resources/css/experiment-header.css" />
 
-<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
+<script language="JavaScript" type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
 
 <link rel="stylesheet" href="/gxa/resources/css/customized-bootstrap-3.3.5.css" />
 <script src="/gxa/resources/js/lib/bootstrap-3.3.5.min.js"></script>
@@ -525,8 +459,7 @@ NOTE: This web page:
 
     <div id="helpContentTooltip" style="display: none;"></div>
 
-    <div calss="row">
-    <div class="columns medium-9">
+    <div class="grid_18">
         
 
 
@@ -551,7 +484,7 @@ NOTE: This web page:
 
 
 <div id="experimentDescription">
-    <a id="goto-experiment" class="thick-link" href="http://www.ebi.ac.uk:80/gxa/experiments/E-MTAB-4401">Transcription profiling by high throughput sequencing of different tissues from Brachypodium distachyon (Bd21 inbred line)</a>
+    <a id="goto-experiment" class="thick-link" href="//www.ebi.ac.uk:80/gxa/experiments/E-MTAB-4401">Transcription profiling by high throughput sequencing of different tissues from Brachypodium distachyon (Bd21 inbred line)</a>
     
 </div>
 <div id="experimentOrganisms">Organism(s):
@@ -563,7 +496,7 @@ NOTE: This web page:
 
     <div id="experimentReferences">Reference(s):
         
-                    <span><a class="pubmed-id" href="http://europepmc.org/abstract/MED/22443345"
+                    <span><a class="pubmed-id" href="//europepmc.org/abstract/MED/22443345"
                              title="View publication in PubMed" target='_blank'>22443345</a>
                         <a class="pubmed-genequery" style="cursor: pointer" data-pubmed-id="22443345" title="Filter by text-mined genes/proteins in reference publication">(Filter by genes in paper)</a>
                         &nbsp;&nbsp;&nbsp;
@@ -627,14 +560,14 @@ NOTE: This web page:
 
     </div>
 
-    <div class="columns medium-3">
+    <div class="grid_6">
         <table style="width: auto; float: right;">
             <tbody>
                 <tr>
                     <td>
                         <a id="display-ae" title="View experiment in ArrayExpress"
                            
-                           href="http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-4401">
+                           href="//www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-4401">
                             <img src="/gxa/resources/images/ae-logo-64.png"/></a>
                     </td>
 
@@ -706,7 +639,7 @@ NOTE: This web page:
                                     
                                     
                                         <a id="download-expressions" title="Download all expressions for the experiment"
-                                           href="http://www.ebi.ac.uk:80/gxa/experiments/E-MTAB-4401.tsv?accessKey=&geneQuery=&cutoff=-0.1">
+                                           href="//www.ebi.ac.uk:80/gxa/experiments/E-MTAB-4401.tsv?accessKey=&geneQuery=&cutoff=-0.1">
                                             <img src="/gxa/resources/images/download_blue_small_normalized.png"/>
                                         </a>
                                     
@@ -718,8 +651,6 @@ NOTE: This web page:
                 </tr>
             </tbody>
         </table>
-    </div>
-
     </div>
 
     <!-- Modal -->
@@ -845,18 +776,18 @@ NOTE: This web page:
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.17.0/URI.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.17.0/URI.min.js"></script>
 
 <link rel="stylesheet" href="/gxa/resources/css/experiment.css" />
 
-<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css" />
+<script language="JavaScript" type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css" />
 
-<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
 <script language="JavaScript" type="text/javascript" src="/gxa/resources/js/geneDistribution.js"></script>
 
 <section>
-    <div class="columns medium-10">
+    <div class="grid_20">
         
 
 
@@ -983,10 +914,8 @@ NOTE: This web page:
 </section>
 
 <section class="gxaSection">
-    <div class="row">
-        <div class="columns medium-12" id="gxaExperimentPageHeatmapAnatomogram">
-            
-        </div>
+    <div class="grid_24" id="gxaExperimentPageHeatmapAnatomogram">
+        
     </div>
 </section>
 
@@ -1047,7 +976,7 @@ NOTE: This web page:
         {
             
             "config": {
-                "atlasHost": "http://www.ebi.ac.uk",
+                "atlasHost": "//www.ebi.ac.uk",
                 "contextRoot": "/gxa",
                 "experimentAccession": "E-MTAB-4401",
                 "geneQuery": "",
@@ -1221,7 +1150,7 @@ NOTE: This web page:
             <p class="address">EMBL-EBI, Wellcome Trust Genome Campus, Hinxton, Cambridgeshire, CB10 1SD, UK &nbsp;
                 &nbsp; +44 (0)1223 49 44 44</p>
 
-            <p class="legal">Copyright &copy; EMBL-EBI 2013 | EBI is an outstation of the <a href="http://www.embl.org">European
+            <p class="legal">Copyright &copy; EMBL-EBI 2013 | EBI is an outstation of the <a href="//www.embl.org">European
                 Molecular Biology Laboratory</a> | <a href="/about/privacy">Privacy</a> | <a href="/about/cookies">Cookies</a>
                 | <a href="/about/terms-of-use">Terms of use</a></p>
         </section>
@@ -1230,41 +1159,8 @@ NOTE: This web page:
 
 </footer>
 
-  <!-- JavaScript -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <!--
-  <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.10.2.min.js"><\/script>')</script>
-  -->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-  <!-- Your custom JavaScript file scan go here... change names accordingly -->
-  <!--
-  <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/plugins.js"></script>
-  <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/script.js"></script>
-  -->
-  <script defer="defer" src="https://ebiwd.github.io/EBI-Framework/js/cookiebanner.js"></script>
-  <script defer="defer" src="https://ebiwd.github.io/EBI-Framework/js/foot.js"></script>
-  <script defer="defer" src="https://ebiwd.github.io/EBI-Framework/js/script.js"></script>
-
-  <!-- The Foundation theme JavaScript -->
-  <script src="https://ebiwd.github.io/EBI-Framework/libraries/foundation-6/js/foundation.js"></script>
-  <script src="https://ebiwd.github.io/EBI-Framework/js/foundationExtendEBI.js"></script>
-  <script type="text/JavaScript">$(document).foundation();</script>
-  <script type="text/JavaScript">$(document).foundationExtendEBI();</script>
-<!--
-   -->
-
-  
-  <!-- Google Analytics details... -->
-  <!-- Change UA-XXXXX-X to be your site's ID -->
-  <!--
-  <script>
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
-  -->
+<script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/cookiebanner.js"></script>
+<script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/foot.js"></script>
 
 <script type="text/javascript">
 
@@ -1275,7 +1171,7 @@ NOTE: This web page:
         var ga = document.createElement('script');
         ga.type = 'text/javascript';
         ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.src = ('https:' == document.location.protocol ? '//ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
     })();
