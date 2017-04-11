@@ -294,7 +294,7 @@ function testMigration(steppingTimeSpeed) {
 
   setTimeout(function(){
     // Update global-mastehad
-    var newGloablMasthead = '<div id="global-masthead" class="clearfix">\n\
+    var newGloablMasthead = '<div id="masthead-black-bar" class="clearfix masthead-black-bar">\n\
       <!--This has to be one line and no newline characters-->\n\
       <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><span class="ebi-logo"></span></a>\n\
       <nav>\n\
@@ -317,7 +317,7 @@ function testMigration(steppingTimeSpeed) {
                       <div class="input-group-button">\n\
                         <input type="submit" name="submit" value="Search" class="button">\n\
                         <input type="hidden" name="db" value="allebi" checked="checked">\n\
-                        <input type="hidden" name="requestFrom" value="global-masthead" checked="checked">\n\
+                        <input type="hidden" name="requestFrom" value="masthead-black-bar" checked="checked">\n\
                       </div>\n\
                     </div>\n\
                   </fieldset>\n\
@@ -335,17 +335,17 @@ function testMigration(steppingTimeSpeed) {
       </nav>\n\
     </div>\n';
 
-    jQuery('#global-masthead').remove();
-    jQuery('#local-masthead').prepend(newGloablMasthead);
-    console.log('Removing old global nav and inserting new. It now goes inside the #local-masthead wrapper.');
+    jQuery('#masthead-black-bar').remove();
+    jQuery('#masthead').prepend(newGloablMasthead);
+    console.log('Removing old global nav and inserting new. It now goes inside the #masthead wrapper.');
     console.log('Note: I\'ve made the EMBL-EBI tab .active, you can set whichever you\'d like to be active.');
     console.log('------------------\n');
   }, steppingTime());
 
   setTimeout(function(){
-    jQuery('#local-masthead').removeClass().addClass('meta-background-image');
-    jQuery('#local-masthead').attr({'data-sticky': true, 'data-sticky-on': 'large', 'data-top-anchor': 180, 'data-btm-anchor': 300000});
-    jQuery('#local-masthead').wrap('<div data-sticky-container />');
+    jQuery('#masthead').removeClass().addClass('meta-background-image');
+    jQuery('#masthead').attr({'data-sticky': true, 'data-sticky-on': 'large', 'data-top-anchor': 180, 'data-btm-anchor': 300000});
+    jQuery('#masthead').wrap('<div data-sticky-container />');
     console.log('Updating local-navigation to be sticky (You\'ll need to invoke Foundation JS later)');
     console.log('------------------\n');
   }, steppingTime());
@@ -353,8 +353,8 @@ function testMigration(steppingTimeSpeed) {
   // setTimeout(function(){
   //   // if the search box is missing #local-search
   //   if (jQuery('#local-search').length == 0) {
-  //     if (jQuery('#local-masthead .medium-6.last').length == 1) {
-  //       jQuery('#local-masthead .medium-6.last').attr('id', 'local-search');
+  //     if (jQuery('#masthead .medium-6.last').length == 1) {
+  //       jQuery('#masthead .medium-6.last').attr('id', 'local-search');
   //       console.log('%c Local search: It looks like it\'s missing #local-search. I\'ll add it.', 'background: green; color: yellow; background: 000;');
   //       console.log('------------------\n');
   //     }
@@ -362,8 +362,8 @@ function testMigration(steppingTimeSpeed) {
   // }, steppingTime());
 
   setTimeout(function(){
-    jQuery('#local-masthead #local-title, #local-masthead #local-search.medium-6, #local-masthead .medium-6.last').wrapAll('<div class="masthead row"/>');
-    console.log('Local title and search: wrapping in a new div with classes .masthead.row');
+    jQuery('#masthead #local-title, #masthead #local-search.medium-6, #masthead .medium-6.last').wrapAll('<div class="masthead-inner row"/>');
+    console.log('Local title and search: wrapping in a new div with classes .masthead-inner.row');
     console.log('------------------\n');
   }, steppingTime());
 
@@ -380,9 +380,9 @@ function testMigration(steppingTimeSpeed) {
   }, steppingTime());
 
   setTimeout(function(){
-    var localNavTabs = jQuery('#local-masthead > nav').detach();
-    jQuery('div.masthead.row').append(localNavTabs);
-    console.log(' - moved the local nav tabs inside the new .masthead.row div');
+    var localNavTabs = jQuery('#masthead > nav').detach();
+    jQuery('div.masthead-inner.row').append(localNavTabs);
+    console.log(' - moved the local nav tabs inside the new .masthead-inner.row div');
   }, steppingTime());
 
   setTimeout(function(){
@@ -413,7 +413,7 @@ function testMigration(steppingTimeSpeed) {
       return newelement;
     };
 
-    console.log('Local-search: The local-search in the local-masthead has an updated structure. I\'ve rearanged as follows:');
+    console.log('Local-search: The local-search in the masthead has an updated structure. I\'ve rearanged as follows:');
 
     $('#local-search div.left').removeClass().addClass('input-group');
     console.log(' - div.left is now div.input-group');

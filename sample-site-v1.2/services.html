@@ -31,8 +31,8 @@
   <!-- Your [project-name] here -->
 
   <!-- If you have a custom header image or colour -->
-  <meta name="ebi:localmasthead-color" content="#000" />
-  <meta name="ebi:localmasthead-image" content="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/backgrounds/services-green-4.jpg" />
+  <meta name="ebi:masthead-color" content="#000" />
+  <meta name="ebi:masthead-image" content="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/backgrounds/services-green-4.jpg" />
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -79,8 +79,8 @@
 
 
       <div data-sticky-container="" class="sticky-container">
-        <div id="local-masthead" class="meta-background-image" data-sticky="true" data-sticky-on="large" data-top-anchor="180" data-btm-anchor="300000">
-          <div id="global-masthead" class="clearfix">
+        <div id="masthead" class="masthead" class="meta-background-image" data-sticky="true" data-sticky-on="large" data-top-anchor="180" data-btm-anchor="300000">
+          <div id="masthead-black-bar" class="clearfix masthead-black-bar">
             <!--This has to be one line and no newline characters-->
             <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><span class="ebi-logo"></span></a>
             <nav>
@@ -103,7 +103,7 @@
                             <div class="input-group-button">
                               <input type="submit" name="submit" value="Search" class="button">
                               <input type="hidden" name="db" value="allebi" checked="checked">
-                              <input type="hidden" name="requestFrom" value="global-masthead" checked="checked">
+                              <input type="hidden" name="requestFrom" value="masthead-black-bar" checked="checked">
                             </div>
                           </div>
                         </fieldset>
@@ -119,7 +119,7 @@
             </nav>
           </div>
 
-          <div class="masthead row">
+          <div class="masthead-inner row">
             <div class="columns medium-12" id="local-title">
               <h1>Bioinformatics services</h1>
               <!-- <h4>Developed in collaboration with our colleagues worldwide, our services let you share data, perform complex queries and analyse the results in different ways. </h4> -->

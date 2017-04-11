@@ -47,8 +47,8 @@
   -->
 
   <!-- If you have a custom header image or colour -->
-  <meta name="ebi:localmasthead-color" content="#111" />
-  <!-- <meta name="ebi:localmasthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/backgrounds/embl-ebi-background.jpg" /> -->
+  <meta name="ebi:masthead-color" content="#111" />
+  <!-- <meta name="ebi:masthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/backgrounds/embl-ebi-background.jpg" /> -->
 
     <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
   <!-- also inform ES so we can host your colour palette file -->
@@ -73,10 +73,10 @@
   </div>
 
   <div data-sticky-container>
-    <div id="local-masthead" data-sticky data-sticky-on="disabled" data-top-anchor="180" data-btm-anchor="300000">
+    <div id="masthead" class="masthead" data-sticky data-sticky-on="disabled" data-top-anchor="180" data-btm-anchor="300000">
       <header>
 
-        <div id="global-masthead" class="clearfix" style="padding-top: 0;">
+        <div id="masthead-black-bar" class="clearfix masthead-black-bar" style="padding-top: 0;">
           <!--This has to be one line and no newline characters-->
           <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><span class="ebi-logo"></span></a>
 
@@ -100,7 +100,7 @@
                           <div class="input-group-button">
                             <input type="submit" name="submit" value="Search" class="button">
                             <input type="hidden" name="db" value="allebi" checked="checked">
-                            <input type="hidden" name="requestFrom" value="global-masthead" checked="checked">
+                            <input type="hidden" name="requestFrom" value="masthead-black-bar" checked="checked">
                           </div>
                         </div>
                       </fieldset>
@@ -117,16 +117,16 @@
 
         </div>
 
-        <div class="masthead row" style="padding-top:0;">
+        <div class="masthead-inner row" style="padding-top:0;">
 
           <!-- local-title -->
           <div class="columns medium-12" id="local-title">
 
-            <div class="local-masthead-background" style="position: relative; z-index: 3">
+            <div class="masthead-background" style="position: relative; z-index: 3">
               <iframe src="https://ebiwd.github.io/EBI-Search-index-visulisation/force.html" style="border:0; width: 800px; height: 315px; float: right; overflow: hidden;" scrolling="no"></iframe>
             </div>
 
-            <div class="local-masthead-content" style="">
+            <div class="masthead-content" style="">
               <div class="small" style="position: relative;z-index: 5;left: 82%;top: 3rem;width: 260px;">
                 Visulisation: EBI Search is an indes of biological resources, sites, and enables scientific queries. <a href="#" class="readmore" style="text-decoration:underline;">Learn more</a>
               </div>

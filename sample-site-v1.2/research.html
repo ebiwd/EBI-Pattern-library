@@ -75,8 +75,8 @@
 
 
       <div data-sticky-container="" class="sticky-container">
-        <div id="local-masthead" class="meta-background-image" data-sticky="true" data-sticky-on="large" data-top-anchor="180" data-btm-anchor="300000">
-          <div id="global-masthead" class="clearfix">
+        <div id="masthead" class="masthead" class="meta-background-image" data-sticky="true" data-sticky-on="large" data-top-anchor="180" data-btm-anchor="300000">
+          <div id="masthead-black-bar" class="clearfix masthead-black-bar">
             <!--This has to be one line and no newline characters-->
             <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><span class="ebi-logo"></span></a>
             <nav>
@@ -99,7 +99,7 @@
                             <div class="input-group-button">
                               <input type="submit" name="submit" value="Search" class="button">
                               <input type="hidden" name="db" value="allebi" checked="checked">
-                              <input type="hidden" name="requestFrom" value="global-masthead" checked="checked">
+                              <input type="hidden" name="requestFrom" value="masthead-black-bar" checked="checked">
                             </div>
                           </div>
                         </fieldset>
@@ -115,7 +115,7 @@
             </nav>
           </div>
 
-          <div class="masthead row">
+          <div class="masthead-inner row">
             <div class="columns medium-12" id="local-title">
               <h1>Research</h1>
               <h4>A unique environment for research</h4></div>
@@ -534,7 +534,7 @@
                             background: none;
                           }
 
-                          body.section-research #local-masthead.meta-background-image {
+                          body.section-research #masthead.meta-background-image {
                             background-position: 100% 100%;
                             background-size: initial;
                             background-image: url("//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/backgrounds/research-green-2.jpg");

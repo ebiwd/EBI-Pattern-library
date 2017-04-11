@@ -28,6 +28,6 @@ a.label,
 .button:focus,
 .button:active { background: rgba(0,124,130,.9); }
 
-div#local-masthead { background-color: #E1EEE9; }
-#local-masthead .masthead h1, #local-masthead .masthead h4, #local-masthead .masthead p, #local-masthead .masthead a, #local-masthead .masthead small { color: #444; }
+div#masthead { background-color: #E1EEE9; }
+#masthead .masthead-inner h1, #masthead .masthead-inner h4, #masthead .masthead-inner p, #masthead .masthead-inner a, #masthead .masthead-inner small { color: #444; }
 /* end */

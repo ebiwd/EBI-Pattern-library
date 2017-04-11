@@ -47,8 +47,8 @@
   -->
 
   <!-- If you have a custom header image or colour -->
-  <meta name="ebi:localmasthead-color" content="#111" />
-  <!-- <meta name="ebi:localmasthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/backgrounds/embl-ebi-background.jpg" /> -->
+  <meta name="ebi:masthead-color" content="#111" />
+  <!-- <meta name="ebi:masthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/backgrounds/embl-ebi-background.jpg" /> -->
 
     <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
   <!-- also inform ES so we can host your colour palette file -->
@@ -78,10 +78,10 @@
   </div>
 
   <div data-sticky-container>
-    <div id="local-masthead" data-sticky data-sticky-on="disabled" data-top-anchor="180" data-btm-anchor="300000">
+    <div id="masthead" class="masthead" data-sticky data-sticky-on="disabled" data-top-anchor="180" data-btm-anchor="300000">
       <header style="height: 430px; overflow: hidden;">
 
-        <div id="global-masthead" class="clearfix" style="padding-top: 0;">
+        <div id="masthead-black-bar" class="clearfix masthead-black-bar" style="padding-top: 0;">
           <!--This has to be one line and no newline characters-->
           <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><span class="ebi-logo"></span></a>
 
@@ -105,7 +105,7 @@
                           <div class="input-group-button">
                             <input type="submit" name="submit" value="Search" class="button">
                             <input type="hidden" name="db" value="allebi" checked="checked">
-                            <input type="hidden" name="requestFrom" value="global-masthead" checked="checked">
+                            <input type="hidden" name="requestFrom" value="masthead-black-bar" checked="checked">
                           </div>
                         </div>
                       </fieldset>
@@ -122,7 +122,7 @@
 
         </div>
 
-        <div class="local-masthead-background" style="position: relative; z-index: 1;  height: 400px; opacity: .7;">
+        <div class="masthead-background" style="position: relative; z-index: 1;  height: 400px; opacity: .7;">
           <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/wide-imagery/TCell_largenews_EBI.jpg" style="width: 100%;  " />
         </div>
         <div class="with-overlay" style="position: relative; z-index: 2; top: -400px; height: 400px; ">
@@ -130,14 +130,14 @@
           </div>
         </div>
 
-        <div class="masthead row" style="padding-top:0; position: relative; z-index: 3; top: -830px; margin-bottom: -430px; text-shadow: 1px 1px 3px #000;">
+        <div class="masthead-inner row" style="padding-top:0; position: relative; z-index: 3; top: -830px; margin-bottom: -430px; text-shadow: 1px 1px 3px #000;">
 
 
 
           <!-- local-title -->
           <div class="columns medium-12" id="local-title" style="overflow: hidden;margin: 0;">
 
-            <div class="local-masthead-content" style="">
+            <div class="masthead-content" style="">
               <div class=" small " style="position: absolute;
     right: 31px;
     top: 60px;

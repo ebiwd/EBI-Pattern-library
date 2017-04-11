@@ -84,8 +84,8 @@ NOTE: This web page:
 
     <!-- If you have a custom header image or colour -->
     <!--
-    <meta name="ebi:localmasthead-color" content="#000" />
-    <meta name="ebi:localmasthead-image" content="//ebiwd.github.io/EBI-Framework/images/backgrounds/embl-ebi-background.jpg" />
+    <meta name="ebi:masthead-color" content="#000" />
+    <meta name="ebi:masthead-image" content="//ebiwd.github.io/EBI-Framework/images/backgrounds/embl-ebi-background.jpg" />
     -->
 
     <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
@@ -174,10 +174,10 @@ NOTE: This web page:
 
 
   <div data-sticky-container>
-    <div id="local-masthead" data-sticky data-sticky-on="disabled" data-top-anchor="180" data-btm-anchor="300000">
+    <div id="masthead" class="masthead" data-sticky data-sticky-on="disabled" data-top-anchor="180" data-btm-anchor="300000">
       <header>
 
-        <div id="global-masthead" class="clearfix">
+        <div id="masthead-black-bar" class="clearfix masthead-black-bar">
           <!--This has to be one line and no newline characters-->
           <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><span class="ebi-logo"></span></a>
 
@@ -201,7 +201,7 @@ NOTE: This web page:
                           <div class="input-group-button">
                             <input type="submit" name="submit" value="Search" class="button">
                             <input type="hidden" name="db" value="allebi" checked="checked">
-                            <input type="hidden" name="requestFrom" value="global-masthead" checked="checked">
+                            <input type="hidden" name="requestFrom" value="masthead-black-bar" checked="checked">
                           </div>
                         </div>
                       </fieldset>
@@ -220,7 +220,7 @@ NOTE: This web page:
 
         </div>
 
-        <div class="masthead row">
+        <div class="masthead-inner row">
 
           <!-- local-title -->
           <div class="columns medium-8" id="local-title">
