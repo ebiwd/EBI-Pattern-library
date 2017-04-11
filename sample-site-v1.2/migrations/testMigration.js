@@ -295,8 +295,6 @@ function testMigration(steppingTimeSpeed) {
   setTimeout(function(){
     // Update global-mastehad
     var newGloablMasthead = '<div id="masthead-black-bar" class="clearfix masthead-black-bar">\n\
-      <!--This has to be one line and no newline characters-->\n\
-      <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><span class="ebi-logo"></span></a>\n\
       <nav>\n\
         <div class="row">\n\
           <ul id="global-nav" class="menu">\n\
