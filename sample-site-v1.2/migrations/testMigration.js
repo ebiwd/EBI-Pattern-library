@@ -301,14 +301,14 @@ function testMigration(steppingTimeSpeed) {
         <div class="row">\n\
           <ul id="global-nav" class="menu">\n\
             <!-- set active class as appropriate -->\n\
-            <li id="home-mobile" class=""><a href="//www.ebi.ac.uk"></a></li>\n\
-            <li id="home" class="active"><a href="//www.ebi.ac.uk"><i class="icon icon-generic" data-icon="H"></i> EMBL-EBI</a></li>\n\
-            <li id="services"><a href="//www.ebi.ac.uk/services"><i class="icon icon-generic" data-icon="("></i> Services</a></li>\n\
-            <li id="research"><a href="//www.ebi.ac.uk/research"><i class="icon icon-generic" data-icon=")"></i> Research</a></li>\n\
-            <li id="training"><a href="//www.ebi.ac.uk/training"><i class="icon icon-generic" data-icon="t"></i> Training</a></li>\n\
-            <li id="about"><a href="//www.ebi.ac.uk/about"><i class="icon icon-generic" data-icon="i"></i> About us</a></li>\n\
-            <li id="search">\n\
-              <a href="#" data-toggle="search-global-dropdown"><i class="icon icon-functional" data-icon="1"></i> <span class="show-for-small-only">Search</span></a>\n\
+            <li class="home-mobile"><a href="//www.ebi.ac.uk"></a></li>\n\
+            <li class="home active"><a href="//www.ebi.ac.uk">EMBL-EBI</a></li>\n\
+            <li class="services"><a href="//www.ebi.ac.uk/services">Services</a></li>\n\
+            <li class="research"><a href="//www.ebi.ac.uk/research">Research</a></li>\n\
+            <li class="training"><a href="//www.ebi.ac.uk/training">Training</a></li>\n\
+            <li class="about"><a href="//www.ebi.ac.uk/about">About us</a></li>\n\
+            <li class="search">\n\
+              <a href="#" data-toggle="search-global-dropdown"><span class="show-for-small-only">Search</span></a>\n\
               <div id="search-global-dropdown" class="dropdown-pane" data-dropdown data-options="closeOnClick:true;">\n\
                 <form id="global-search" name="global-search" action="/ebisearch/search.ebi" method="GET">\n\
                   <fieldset>\n\
