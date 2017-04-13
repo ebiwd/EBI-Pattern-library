@@ -219,29 +219,40 @@
           </div> <!-- /medium-7 -->
 
           <div class="small-12 medium-2 medium-pull-7 columns">
-
             <section>
-              <h5>Facets</h5>
               <div>
-                <ul class="menu vertical">
+                <ul class="simple vertical menu facets">
+                  <legend><h5>Sub-categories</h5></legend>
                   <li><a href="#">Facet One</a></li>
                   <li><a href="#">Facet Two</a></li>
-                  <ul class="nested menu vertical">
-                    <li><a href="#">Sub-facet One</a></li>
-                    <li><a href="#">Sub-facet Two</a></li>
-                    <li><a href="#">Sub-facet Three</a></li>
-                    <li><a href="#">Sub-facet Four</a></li>
-                  </ul>
+                  <li>Sub-facets
+                    <ul class="simple menu">
+                      <li><a href="#">Sub-facet One</a></li>
+                      <li><a href="#">Sub-facet Two</a></li>
+                      <li><a href="#">Sub-facet Three</a></li>
+                      <li><a href="#">Sub-facet Four</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">Facet Three</a></li>
                   <li><a href="#">Facet Four</a></li>
+
+                  <legend><h5>Facets</h5></legend>
+                  <li><span class="facet"><input id="checkbox12" type="checkbox"><label for="checkbox12">Multi-filter 1</label></span></li>
+                  <li><span class="facet"><input id="checkbox13" type="checkbox"><label for="checkbox13">Multi-filter 2</label></span></li>
+                  <li><span class="facet"><input id="checkbox14" type="checkbox"><label for="checkbox14">Multi-filter 3</label></span></li>
+                  <li><span class="facet"><input id="checkbox15" type="checkbox"><label for="checkbox15">Multi-filter 4</label></span></li>
+
+                  <legend><h5>Binary facets</h5></legend>
+                  <li><span class="facet"><input id="radio12" name="binary" type="radio"><label for="radio12">Single-filter 1</label></span></li>
+                  <li><span class="facet"><input id="radio13" name="binary" type="radio"><label for="radio13">Single-filter 2</label></span></li>
+                  <li><span class="facet"><input id="radio14" name="binary" type="radio"><label for="radio14">Single-filter 3</label></span></li>
+                  <li><span class="facet"><input id="radio15" name="binary" type="radio"><label for="radio15">Single-filter 4</label></span></li>
                 </ul>
               </div>
             </section>
-
           </div> <!-- /medium-7 -->
 
           <div class="small-12 medium-3 columns sidebar" data-sticky-container>
-
             <h4>Right sidebar</h4>
             <p>This is a sample item with a vertical menu.</p>
             <ul class="menu vertical">
