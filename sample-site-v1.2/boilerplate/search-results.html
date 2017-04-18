@@ -50,21 +50,11 @@
   <meta name="ebi:masthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/images/backgrounds/embl-ebi-background.jpg" />
   -->
 
-    <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
+  <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
   <!-- also inform ES so we can host your colour palette file -->
   <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/theme-embl-petrol.css" type="text/css" media="all" />
 
-  <!-- for production the above can be replaced with -->
-  <!--
-  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/mini/ebi-fluid-embl.css" />
-  -->
-
   <!-- end CSS-->
-
-
-
-
-
 </head>
 
 <body class="level2"><!-- add any of your classes or IDs -->
@@ -77,13 +67,31 @@
     </ul>
   </div>
 
-  <div data-sticky-container>
-    <div id="masthead" class="masthead" data-sticky data-sticky-on="large" data-top-anchor="content:top" data-btm-anchor="content:bottom">
+<style type="text/css">
+.masthead.compact-for-data header .masthead-inner {
+  padding-top: .5rem;
+}
+.masthead.compact-for-data header .masthead-inner div#local-title {
+  margin-bottom: 0;
+}
+.masthead.compact-for-data header .masthead-inner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  margin-top: -.5rem;
+}
+.masthead.compact-for-data header .masthead-inner form {
+  margin-top: -1rem;
+}
+.masthead.compact-for-data header .masthead-inner nav {
+  margin-top: .75rem;
+  clear: none;
+}
+</style>
+
+  <div xdata-sticky-container>
+    <div id="masthead" class="masthead compact-for-data" xdata-sticky data-sticky-on="large" xdata-top-anchor="content:top" xdata-btm-anchor="content:bottom">
       <header>
-
         <div id="masthead-black-bar" class="clearfix masthead-black-bar">
-
-
 
           <nav>
             <div class="row">
@@ -119,19 +127,16 @@
               </ul>
             </div>
           </nav>
-
         </div>
 
         <div class="masthead-inner row">
-
           <!-- local-title -->
-          <div class="columns medium-7" id="local-title">
+          <div class="columns medium-7 large-3" id="local-title">
             <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
-
           </div>
           <!-- /local-title -->
 
-          <div class="column medium-5">
+          <div class="column medium-5 large-3 large-push-6">
             <form id="ebi_search" action="/ebisearch/search.ebi">
               <fieldset>
                 <div class="input-group margin-bottom-none margin-top-large">
@@ -143,42 +148,35 @@
                   </div>
                 </div>
               </fieldset>
-              <p id="example" class="small">
+              <!-- <p id="example" class="small">
                 Examples: <a href="/ebisearch/search.ebi?db=allebi&amp;requestFrom=ebi_index&amp;query=blast">blast</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=keratin&amp;requestFrom=ebi_index">keratin</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=bfl1&amp;requestFrom=ebi_index">bfl1</a>
                 <a class="float-right" href="#"><span class="icon icon-generic" data-icon="("></span> advanced search</a>
-              </p>
+              </p> -->
             </form>
-
           </div>
 
-
           <!-- local-nav -->
-          <nav >
-            <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
-              <li><a href="../../">Overview</a></li>
-              <li><a data-open="modal-download">Download</a></li>
-              <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
-            </ul>
-            <ul class="dropdown menu float-right" data-description="tasks">
-              <li><a href="#"><span class="icon icon-functional" data-icon="l"></span> Login</a></li>
-            </ul>
-          </nav>
-
-          <!-- /local-nav -->
-
+          <div class="column large-6 large-pull-3">
+            <nav>
+              <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
+                <li><a href="../../">Overview</a></li>
+                <li><a data-open="modal-download">Download</a></li>
+                <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
+              </ul>
+              <ul class="dropdown menu float-right" data-description="tasks">
+                <li><a href="#"><span class="icon icon-functional" data-icon="l"></span> Login</a></li>
+              </ul>
+            </nav>
+            <!-- /local-nav -->
+          </div>
         </div>
-
       </header>
-
-      </div>
+    </div>
   </div>
 
-
   <div id="content" role="main" class="row">
-
       <!-- Suggested layout containers -->
       <section>
-
         <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
         <nav aria-label="You are here:" role="navigation">
           <ul class="breadcrumbs">
@@ -193,17 +191,14 @@
         <div id="main-content-area" class="row">
           <div class="small-12 columns">
             <h2>Search results</h2>
-            <p>Showing X results from a total of Y (page 1 of 13). You can also use the <a href="#">advanced search</a>.</p>
+            <p class="small">Showing X results from a total of Y (page 1 of 13). You can also use the <a href="#">advanced search</a>.</p>
           </div>
 
           <div class="small-12 medium-7 medium-push-2 columns">
-
             <section>
-
               <p>Your results go here in whatever format is most suitable: list, table, tiled images... etc</p>
               <p>You may wish to precede them with pagination and details of which page out of how many this is.</p>
             </section>
-
             <ul class="pagination" role="navigation" aria-label="Pagination">
               <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
               <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
@@ -215,7 +210,6 @@
               <li><a href="#" aria-label="Page 13">13</a></li>
               <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
             </ul>
-
           </div> <!-- /medium-7 -->
 
           <div class="small-12 medium-2 medium-pull-7 columns">
@@ -261,22 +255,19 @@
               <li><a class="active" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/sample-site/">Active link</a></li>
               <li><a href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/fonts/index.html">Sample link</a></li>
             </ul>
-
           </div> <!-- /medium-3 -->
 
         </div>
 
       </section>
       <!-- End suggested layout containers -->
-
     </div>
-
 
     <footer>
       <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
 <!--
       <div id="local-footer" class="local-footer">
-        <div class="row">
+        <div class="slim">
           <span class="reference">How to reference this page: ...</span>
         </div>
       </div>
@@ -284,22 +275,16 @@
       <!-- End optional local footer -->
 
       <div id="global-footer" class="global-footer">
-
         <nav id="global-nav-expanded" class="global-nav-expanded row">
           <!-- Footer will be automatically inserted by footer.js -->
         </nav>
-
         <section id="ebi-footer-meta" class="ebi-footer-meta row">
           <!-- Footer meta will be automatically inserted by footer.js -->
         </section>
-
       </div>
-
     </footer>
 
-
   <!-- JavaScript -->
-
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <!--
   <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.10.2.min.js"><\/script>')</script>
@@ -311,17 +296,12 @@
   <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/script.js"></script>
   -->
 
-
   <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/script.js"></script>
-
   <!-- The Foundation theme JavaScript -->
   <script src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/js/foundation.js"></script>
   <script src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/foundationExtendEBI.js"></script>
   <script type="text/JavaScript">$(document).foundation();</script>
   <script type="text/JavaScript">$(document).foundationExtendEBI();</script>
-<!--
-   -->
-
 
   <!-- Google Analytics details... -->
   <!-- Change UA-XXXXX-X to be your site's ID -->
@@ -333,6 +313,5 @@
     });
   </script>
   -->
-
 </body>
 </html>

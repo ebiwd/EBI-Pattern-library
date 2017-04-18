@@ -43,31 +43,18 @@
   <!--
     <link rel="stylesheet" href="css/custom.css" type="text/css" media="all" />
   -->
-
   <!-- If you have a custom header image or colour -->
   <!--
   <meta name="ebi:masthead-color" content="#000" />
   <meta name="ebi:masthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/images/backgrounds/embl-ebi-background.jpg" />
   -->
-
-    <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
+  <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
   <!-- also inform ES so we can host your colour palette file -->
   <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/theme-embl-petrol.css" type="text/css" media="all" />
-
-  
-  <!--
-  
-  -->
-
   <!-- end CSS-->
-
-
-  
-  
-
 </head>
 
-<body class="level2 full-width"><!-- add any of your classes or IDs -->
+<body class="level2"><!-- add any of your classes or IDs -->
   <div id="skip-to">
     <ul>
       <li><a href="#content">Skip to main content</a></li>
@@ -76,15 +63,32 @@
       <li><a href="#global-nav-expanded">Skip to expanded EBI global navigation menu (includes all sub-sections)</a></li>
     </ul>
   </div>
+  <style type="text/css">
+  .masthead.compact-for-data header .masthead-inner {
+    padding-top: .5rem;
+  }
+  .masthead.compact-for-data header .masthead-inner div#local-title {
+    margin-bottom: 0;
+  }
+  .masthead.compact-for-data header .masthead-inner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    margin-top: -.5rem;
+  }
+  .masthead.compact-for-data header .masthead-inner form {
+    margin-top: -1rem;
+  }
+  .masthead.compact-for-data header .masthead-inner nav {
+    margin-top: .75rem;
+    clear: none;
+  }
 
-  <div data-sticky-container>
-    <div id="masthead" class="masthead" data-sticky data-sticky-on="large" data-top-anchor="content:top" data-btm-anchor="content:bottom">
+  </style>
+
+  <div>
+    <div id="masthead" class="masthead compact-for-data">
       <header>
-
         <div id="masthead-black-bar" class="clearfix masthead-black-bar">
-          
-          
-
           <nav>
             <div class="row">
               <ul id="global-nav" class="menu">
@@ -119,41 +123,31 @@
               </ul>
             </div>
           </nav>
-
         </div>
 
-        <div class="masthead-inner row">
-
+        <div class="masthead-inner row expanded">
           <!-- local-title -->
-          <div class="columns medium-12" id="local-title">
+          <div class="float-left inline-block padding-left-large" id="local-title">
             <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
-
           </div>
           <!-- /local-title -->
-
           <!-- local-nav -->
-              <nav >
-                <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
-                  <li><a href="../../">Overview</a></li>
-                  <li><a data-open="modal-download">Download</a></li>
-                  <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
-                </ul>
-              </nav>
+          <nav class="float-left columns medium-7 large-8">
+            <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
+              <li><a href="../../">Overview</a></li>
+              <li><a data-open="modal-download">Download</a></li>
+              <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
+            </ul>
+          </nav>
           <!-- /local-nav -->
-
         </div>
-
       </header>
-
-      </div>
+    </div>
   </div>
 
-
-  <div id="content" role="main" class="row">
-
+  <div id="content" role="main" class="row expanded">
       <!-- Suggested layout containers -->
       <section>
-
         <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
         <!-- <nav aria-label="You are here:" role="navigation">
           <ul class="breadcrumbs">
@@ -164,107 +158,93 @@
           </ul>
         </nav> -->
 
-        <div id="main-content-area" class="row">
+        <div id="main-content-area" class="row expanded">
           <div class="small-12 medium-9 columns">
-
             <h3>Wide screen layouts</h3>
             <p class="lead">Here we've used a very wide table to demonstarte how you might accomodate larger content.</p>
-            <p>To activate the flexible layout, add <code>.full-width</code> to your <code>body</code> tag.</p>
+            <p>To activate the flexible layout, add <code>.expanded</code> to any <code>div.rows</code> that you would like to be full width.</p>
             <p>If your content is a table, be sure to also <a href="../../index.html">have a look at the table guidance</a>.</p>
-
-            <div class="callout warning">
-
-              <p>Note: Wider screen layout offers a lot of poteintal and we hope to add many more features as we better understand the problem space. Ideas welcome!</p>
-
-            </div>
-
-            <hr/>
-
           </div> <!-- /medium-9 -->
 
-
           <div class="small-12 medium-3 columns sidebar">
-
+            <h4>See also</h4>
+            <p>These resources will help you engage and understand the EBI Framework.</p>
             <div>
-              <h4>See also</h4>
-              <p>These resources will help you engage and understand the EBI Framework.</p>
-              <div>
-                <ul class="menu vertical">
-                  <li><a href="//github.com/ebiwd/EBI-Framework">GitHub repository</a></li>
-                  <li><a href="//github.com/ebiwd/EBI-Framework/issues">Issue queue</a></li>
-                  <li><a class="active" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/sample-site/">Sample pages</a></li>
-                  <li><a href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/fonts/index.html">Icon gallery</a></li>
-                </ul>
-              </div>
+              <ul class="menu vertical">
+                <li><a href="//github.com/ebiwd/EBI-Framework">GitHub repository</a></li>
+                <li><a href="//github.com/ebiwd/EBI-Framework/issues">Issue queue</a></li>
+                <li><a class="active" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/sample-site/">Sample pages</a></li>
+                <li><a href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/fonts/index.html">Icon gallery</a></li>
+              </ul>
             </div>
 
           </div> <!-- /medium-3 -->
 
         </div> <!-- /row -->
 
-        <div class="row">
+        <div class="row expanded">
           <div class="columns medium-12">
             <table class="scroll">
              <col span=58 >
              <tr>
-              <td></td>
-              <td>cabinet</td>
-              <td>cable</td>
-              <td>cake</td>
-              <td>calculate</td>
-              <td>calculation</td>
-              <td>call</td>
-              <td>call back</td>
-              <td>called</td>
-              <td>call for</td>
-              <td>call off</td>
-              <td>call up</td>
-              <td>calm</td>
-              <td>calm down</td>
-              <td>calmly</td>
-              <td>camera</td>
-              <td>camp</td>
-              <td>campaign</td>
-              <td>camping</td>
-              <td>can 1</td>
-              <td>can 2</td>
-              <td>cancel</td>
-              <td>cancer</td>
-              <td>candidate</td>
-              <td>candy</td>
-              <td>cannot</td>
-              <td>cap</td>
-              <td>capable</td>
-              <td>capacity</td>
-              <td>capital</td>
-              <td>captain</td>
-              <td>capture</td>
-              <td>car</td>
-              <td>card</td>
-              <td>cardboard</td>
-              <td>care</td>
-              <td>career</td>
-              <td>care for</td>
-              <td>careful</td>
-              <td>carefully</td>
-              <td>careless</td>
-              <td>carelessly</td>
-              <td>carpet</td>
-              <td>carrot</td>
-              <td>carry</td>
-              <td>carry on</td>
-              <td>carry out</td>
-              <td>case</td>
-              <td>cash</td>
-              <td>cast</td>
-              <td>castle</td>
-              <td>cat</td>
-              <td>catch</td>
-              <td>catch up</td>
-              <td>category</td>
-              <td>cause</td>
-              <td>CD</td>
-              <td>cease</td>
+              <th></th>
+              <th>cabinet</th>
+              <th>cable</th>
+              <th>cake</th>
+              <th>calculate</th>
+              <th>calculation</th>
+              <th>call</th>
+              <th>call back</th>
+              <th>called</th>
+              <th>call for</th>
+              <th>call off</th>
+              <th>call up</th>
+              <th>calm</th>
+              <th>calm down</th>
+              <th>calmly</th>
+              <th>camera</th>
+              <th>camp</th>
+              <th>campaign</th>
+              <th>camping</th>
+              <th>can 1</th>
+              <th>can 2</th>
+              <th>cancel</th>
+              <th>cancer</th>
+              <th>candidate</th>
+              <th>candy</th>
+              <th>cannot</th>
+              <th>cap</th>
+              <th>capable</th>
+              <th>capacity</th>
+              <th>capital</th>
+              <th>captain</th>
+              <th>capture</th>
+              <th>car</th>
+              <th>card</th>
+              <th>cardboard</th>
+              <th>care</th>
+              <th>career</th>
+              <th>care for</th>
+              <th>careful</th>
+              <th>carefully</th>
+              <th>careless</th>
+              <th>carelessly</th>
+              <th>carpet</th>
+              <th>carrot</th>
+              <th>carry</th>
+              <th>carry on</th>
+              <th>carry out</th>
+              <th>case</th>
+              <th>cash</th>
+              <th>cast</th>
+              <th>castle</th>
+              <th>cat</th>
+              <th>catch</th>
+              <th>catch up</th>
+              <th>category</th>
+              <th>cause</th>
+              <th>CD</th>
+              <th>cease</th>
              </tr>
              <tr height=15 style='height:15.0pt'>
               <td height=15 style='height:15.0pt'>a</td>
@@ -1397,8 +1377,8 @@
   <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/plugins.js"></script>
   <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/script.js"></script>
   -->
-  
-  
+
+
   <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/script.js"></script>
 
   <!-- The Foundation theme JavaScript -->
