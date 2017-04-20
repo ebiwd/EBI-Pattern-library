@@ -65,104 +65,87 @@
     </ul>
   </div>
 
+  <header id="masthead-black-bar" class="clearfix masthead-black-bar">
+    <nav class="row">
+      <ul id="global-nav" class="menu">
+        <!-- set active class as appropriate -->
+        <li class="home-mobile"><a href="//www.ebi.ac.uk"></a></li>
+        <li class="home active"><a href="//www.ebi.ac.uk">EMBL-EBI</a></li>
+        <li class="services"><a href="//www.ebi.ac.uk/services">Services</a></li>
+        <li class="research"><a href="//www.ebi.ac.uk/research">Research</a></li>
+        <li class="training"><a href="//www.ebi.ac.uk/training">Training</a></li>
+        <li class="about"><a href="//www.ebi.ac.uk/about">About us</a></li>
+        <li class="search">
+          <a href="#" data-toggle="search-global-dropdown"><span class="show-for-small-only">Search</span></a>
+          <div id="search-global-dropdown" class="dropdown-pane" data-dropdown data-options="closeOnClick:true;">
+          <!-- The dropdown menu will be programatically added by script.js -->
+          </div>
+        </li>
+        <li class="float-right show-for-medium embl-selector">
+          <button class="button float-right" type="button" data-toggle="embl-dropdown">Hinxton</button>
+          <!-- The dropdown menu will be programatically added by script.js -->
+        </li>
+      </ul>
+    </nav>
+  </header>
   <div data-sticky-container>
     <div id="masthead" class="masthead" data-sticky data-sticky-on="large" data-top-anchor="content:top" data-btm-anchor="content:bottom">
-      <header>
-
-        <div id="masthead-black-bar" class="clearfix masthead-black-bar">
-          <nav>
-            <div class="row">
-              <ul id="global-nav" class="menu">
-                <!-- set active class as appropriate -->
-                <li class="home-mobile"><a href="//www.ebi.ac.uk"></a></li>
-                <li class="home active"><a href="//www.ebi.ac.uk">EMBL-EBI</a></li>
-                <li class="services"><a href="//www.ebi.ac.uk/services">Services</a></li>
-                <li class="research"><a href="//www.ebi.ac.uk/research">Research</a></li>
-                <li class="training"><a href="//www.ebi.ac.uk/training">Training</a></li>
-                <li class="about"><a href="//www.ebi.ac.uk/about">About us</a></li>
-                <li class="search">
-                  <a href="#" data-toggle="search-global-dropdown"><span class="show-for-small-only">Search</span></a>
-                  <div id="search-global-dropdown" class="dropdown-pane" data-dropdown data-options="closeOnClick:true;">
-                  <!-- The dropdown menu will be programatically added by script.js -->
-                  </div>
-                </li>
-                <li class="float-right show-for-medium embl-selector">
-                  <button class="button float-right" type="button" data-toggle="embl-dropdown">Hinxton</button>
-                  <!-- The dropdown menu will be programatically added by script.js -->
-                </li>
-              </ul>
-            </div>
-          </nav>
-
+      <div class="masthead-inner row">
+        <!-- local-title -->
+        <div class="columns medium-7" id="local-title">
+          <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
         </div>
+        <!-- /local-title -->
 
-        <div class="masthead-inner row">
-
-          <!-- local-title -->
-          <div class="columns medium-7" id="local-title">
-            <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
-
-          </div>
-          <!-- /local-title -->
-
-          <div class="column medium-5">
-            <form id="ebi_search" action="/ebisearch/search.ebi">
-              <fieldset>
-                <div class="input-group margin-bottom-none margin-top-large">
-                  <input id="query" class="input-group-field" title="EB-eye Search" tabindex="1" type="text" name="query" value="" size="35" maxlength="2048" placeholder="Search service" />
-                  <div class="input-group-button">
-                    <input id="search_submit" class="button icon icon-functional" tabindex="2" type="submit" name="submit1" value="1" />
-                    <input id="allebi" type="hidden" name="db" value="allebi" checked="checked" />
-                    <input type="hidden" name="requestFrom" value="ebi_index" />
-                  </div>
-                </div>
-              </fieldset>
-              <p id="example" class="small">
-                Examples: <a href="/ebisearch/search.ebi?db=allebi&amp;requestFrom=ebi_index&amp;query=blast">blast</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=keratin&amp;requestFrom=ebi_index">keratin</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=bfl1&amp;requestFrom=ebi_index">bfl1</a>
-                <a class="float-right" href="#"><span class="icon icon-generic" data-icon="("></span> advanced search</a>
-              </p>
-            </form>
-
-          </div>
-
-
-          <!-- local-nav -->
-          <nav >
-            <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
-              <li><a href="../../">Overview</a></li>
-              <li><a data-open="modal-download">Download</a></li>
-              <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
-            </ul>
-            <ul class="dropdown menu float-right" data-description="tasks">
-              <li><a href="#"><span class="icon icon-functional" data-icon="l"></span> Login</a></li>
-<!--               <li data-toggle="example-dropdown-1-menu"><a href="#"> <img src="//www.elixir-europe.org/global/images/elixir-logo-transparent-ultrasmall.png" alt="Part of the ELIXIR distributed infrastructure for life-science information." style="height: 1rem;"> Part of the ELIXIR infrastructure</a></li>
-              <div class="dropdown-pane callout row medium-collapse" id="example-dropdown-1-menu" data-dropdown data-hover="true" data-hover-pane="true">
-                <div>
-                  <a href="#" class="no-underline">
-                    <div class="small">This service is part of the ELIXIR distributed infrastructure for life-science information</div>
-                  </a>
-                  <a class="button readmore tiny elixir-background" href="#">Learn more</a>
+        <div class="column medium-5">
+          <form id="ebi_search" action="/ebisearch/search.ebi">
+            <fieldset>
+              <div class="input-group margin-bottom-none margin-top-large">
+                <input id="query" class="input-group-field" title="EB-eye Search" tabindex="1" type="text" name="query" value="" size="35" maxlength="2048" placeholder="Search service" />
+                <div class="input-group-button">
+                  <input id="search_submit" class="button icon icon-functional" tabindex="2" type="submit" name="submit1" value="1" />
+                  <input id="allebi" type="hidden" name="db" value="allebi" checked="checked" />
+                  <input type="hidden" name="requestFrom" value="ebi_index" />
                 </div>
               </div>
- -->
-
-            </ul>
-          </nav>
-
-          <!-- /local-nav -->
-
+            </fieldset>
+            <p id="example" class="small">
+              Examples: <a href="/ebisearch/search.ebi?db=allebi&amp;requestFrom=ebi_index&amp;query=blast">blast</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=keratin&amp;requestFrom=ebi_index">keratin</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=bfl1&amp;requestFrom=ebi_index">bfl1</a>
+              <a class="float-right" href="#"><span class="icon icon-generic" data-icon="("></span> advanced search</a>
+            </p>
+          </form>
         </div>
-
-      </header>
-
+        <!-- local-nav -->
+        <nav >
+          <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
+            <li><a href="../../">Overview</a></li>
+            <li><a data-open="modal-download">Download</a></li>
+            <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
+          </ul>
+          <ul class="dropdown menu float-right" data-description="tasks">
+            <li><a href="#"><span class="icon icon-functional" data-icon="l"></span> Login</a></li>
+<!--               <li data-toggle="example-dropdown-1-menu"><a href="#"> <img src="//www.elixir-europe.org/global/images/elixir-logo-transparent-ultrasmall.png" alt="Part of the ELIXIR distributed infrastructure for life-science information." style="height: 1rem;"> Part of the ELIXIR infrastructure</a></li>
+            <div class="dropdown-pane callout row medium-collapse" id="example-dropdown-1-menu" data-dropdown data-hover="true" data-hover-pane="true">
+              <div>
+                <a href="#" class="no-underline">
+                  <div class="small">This service is part of the ELIXIR distributed infrastructure for life-science information</div>
+                </a>
+                <a class="button readmore tiny elixir-background" href="#">Learn more</a>
+              </div>
+            </div>
+-->
+          </ul>
+        </nav>
+        <!-- /local-nav -->
       </div>
+    </div>
   </div>
 
 
-  <div id="content" role="main" class="row">
+  <div id="content">
 
       <!-- Suggested layout containers -->
-      <section>
+      <section id="main-content-area" class="row" role="main">
 
         <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
         <nav aria-label="You are here:" role="navigation">
@@ -287,13 +270,54 @@
         </div>
 
       </section>
-      <!-- End suggested layout containers -->
-
+      <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
+      <div id="local-footer" class="local-footer">
+        <div class="row padding-top-large padding-bottom-large">
+          <div class="columns medium-6 ">
+            <p class="label secondary-color padding-left-large columns small-12">A member of </p>
+            <a title="Go to the wwPDB homepage" href="//www.wwpdb.org" target="_wwpdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/wwPDB/wwpdb.png" alt="wwPDB" class="columns small-2" /></a>
+            <a title="Go to EMDataBank homepage" href="//emdatabank.org/" target="_empdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/EMDataBank/EMDataBank.png" alt="EMDataBank" class="columns small-2" /></a>
+            <a title="Go to wwPDB Foundation homepage" href="//foundation.wwpdb.org/" target="_wwpdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/wwPDB/wwpdb-2016.png" alt="wwPDB Foundation" class="columns small-2" /></a>
+            <div class="columns small-12"><a class="small readmore" href="#/relationshops">Learn more about our funding and collaboration</a></div>
+          </div>
+          <div class="columns medium-6 ">
+            <p class="label secondary-color padding-left-large columns small-12">Funded in part by </p>
+            <a title="Go to the wwPDB homepage" href="//www.wwpdb.org" target="_wwpdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/wwPDB/wwpdb.png" alt="wwPDB" class="columns small-2" /></a>
+            <a title="Go to EMDataBank homepage" href="//emdatabank.org/" target="_empdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/EMDataBank/EMDataBank.png" alt="EMDataBank" class="columns small-2" /></a>
+            <a title="Go to wwPDB Foundation homepage" href="//foundation.wwpdb.org/" target="_wwpdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/wwPDB/wwpdb-2016.png" alt="wwPDB Foundation" class="columns small-2" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- End optional local footer -->
     </div>
-
+    <!-- End suggested layout containers / #content -->
 
     <footer>
-      <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
+      <div id="elixir-ribbon" class="elixir-ribbon margin-bottom-none callout secondary-background" style="background-color: rgb(79,138,156);">
+        <div class="row">
+          <div class="float-left elixir-logo-kite"></div>
+          <h5 class="white-color padding-top-medium">
+            <a id="show-more" data-toggle="elixir-affiliate show-more show-less" data-toggler=".readmore"  class="readmore no-underline"><span class="elixir-banner-custom-name"></span><span class="elixir-banner-default-name">This</span> is part of the ELIXIR infrastructure</a>
+          </h5>
+          <div id="elixir-affiliate"  data-toggler data-animate="hinge-in-from-top hinge-out-from-top" data-closable="hinge-out-from-top" style="display:none;">
+            <span class="white-color small">
+              This is part of the ELIXIR distributed infrastructure for life-science information.
+              <a class="readmore" href="#">Learn more</a>
+            </span>
+            <!-- <a class="small hide" id="show-less" data-toggle="elixir-affiliate show-more show-less" data-toggler=".hide"><span class="icon icon-functional" data-icon="x"></span></a> -->
+          </div>
+
+        </div>
+      </div>
+      <div id="global-footer" class="global-footer">
+        <nav id="global-nav-expanded" class="global-nav-expanded row">
+          <!-- Footer will be automatically inserted by footer.js -->
+        </nav>
+        <section id="ebi-footer-meta" class="ebi-footer-meta row">
+          <!-- Footer meta will be automatically inserted by footer.js -->
+        </section>
+      </div>
+    </footer>
 
       <style>
       .breadcrumbs li.elixir-badge:not(:last-child):after {
@@ -322,60 +346,8 @@
         margin-right: 1rem;
       }
       </style>
-
-
-      <div id="local-footer" class="local-footer">
-
-        <div class="row padding-top-large padding-bottom-large">
-          <div class="columns medium-6 ">
-            <p class="label secondary-color padding-left-large columns small-12">A member of </p>
-            <a title="Go to the wwPDB homepage" href="//www.wwpdb.org" target="_wwpdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/wwPDB/wwpdb.png" alt="wwPDB" class="columns small-2" /></a>
-            <a title="Go to EMDataBank homepage" href="//emdatabank.org/" target="_empdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/EMDataBank/EMDataBank.png" alt="EMDataBank" class="columns small-2" /></a>
-            <a title="Go to wwPDB Foundation homepage" href="//foundation.wwpdb.org/" target="_wwpdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/wwPDB/wwpdb-2016.png" alt="wwPDB Foundation" class="columns small-2" /></a>
-            <div class="columns small-12"><a class="small readmore" href="#/relationshops">Learn more about our funding and collaboration</a></div>
-          </div>
-          <div class="columns medium-6 ">
-            <p class="label secondary-color padding-left-large columns small-12">Funded in part by </p>
-            <a title="Go to the wwPDB homepage" href="//www.wwpdb.org" target="_wwpdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/wwPDB/wwpdb.png" alt="wwPDB" class="columns small-2" /></a>
-            <a title="Go to EMDataBank homepage" href="//emdatabank.org/" target="_empdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/EMDataBank/EMDataBank.png" alt="EMDataBank" class="columns small-2" /></a>
-            <a title="Go to wwPDB Foundation homepage" href="//foundation.wwpdb.org/" target="_wwpdb"><img src="//www.ebi.ac.uk/pdbe/static/images/logos/wwPDB/wwpdb-2016.png" alt="wwPDB Foundation" class="columns small-2" /></a>
-          </div>
-        </div>
-
-      </div>
-      <!-- End optional local footer -->
       <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/motion-ui/dist/motion-ui.min.css" type="text/css" media="screen" />
 
-      <div id="elixir-ribbon" class="elixir-ribbon margin-bottom-none callout secondary-background" style="background-color: rgb(79,138,156);">
-        <div class="row">
-          <div class="float-left elixir-logo-kite"></div>
-          <h5 class="white-color padding-top-medium">
-            <a id="show-more" data-toggle="elixir-affiliate show-more show-less" data-toggler=".readmore"  class="readmore no-underline"><span class="elixir-banner-custom-name"></span><span class="elixir-banner-default-name">This</span> is part of the ELIXIR infrastructure</a>
-          </h5>
-          <div id="elixir-affiliate"  data-toggler data-animate="hinge-in-from-top hinge-out-from-top" data-closable="hinge-out-from-top" style="display:none;">
-            <span class="white-color small">
-              This is part of the ELIXIR distributed infrastructure for life-science information.
-              <a class="readmore" href="#">Learn more</a>
-            </span>
-            <!-- <a class="small hide" id="show-less" data-toggle="elixir-affiliate show-more show-less" data-toggler=".hide"><span class="icon icon-functional" data-icon="x"></span></a> -->
-          </div>
-
-        </div>
-      </div>
-
-      <div id="global-footer" class="global-footer">
-
-        <nav id="global-nav-expanded" class="global-nav-expanded row">
-          <!-- Footer will be automatically inserted by footer.js -->
-        </nav>
-
-        <section id="ebi-footer-meta" class="ebi-footer-meta row">
-          <!-- Footer meta will be automatically inserted by footer.js -->
-        </section>
-
-      </div>
-
-    </footer>
 
   <!-- JavaScript -->
 
