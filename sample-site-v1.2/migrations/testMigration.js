@@ -308,18 +308,7 @@ function testMigration(steppingTimeSpeed) {
             <li class="search">\n\
               <a href="#" data-toggle="search-global-dropdown"><span class="show-for-small-only">Search</span></a>\n\
               <div id="search-global-dropdown" class="dropdown-pane" data-dropdown data-options="closeOnClick:true;">\n\
-                <form id="global-search" name="global-search" action="/ebisearch/search.ebi" method="GET">\n\
-                  <fieldset>\n\
-                    <div class="input-group">\n\
-                      <input type="text" name="query" id="global-searchbox" class="input-group-field" placeholder="Search all of EMBL-EBI">\n\
-                      <div class="input-group-button">\n\
-                        <input type="submit" name="submit" value="Search" class="button">\n\
-                        <input type="hidden" name="db" value="allebi" checked="checked">\n\
-                        <input type="hidden" name="requestFrom" value="masthead-black-bar" checked="checked">\n\
-                      </div>\n\
-                    </div>\n\
-                  </fieldset>\n\
-                </form>\n\
+                <!-- The dropdown menu will be programatically added by script.js -->\n\
               </div>\n\
             </li>\n\
             <li class="float-right show-for-medium embl-selector">\n\

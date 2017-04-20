@@ -46,20 +46,9 @@
     <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
   <!-- also inform ES so we can host your colour palette file -->
   <link rel="stylesheet" href="../../move-to-cdn/css/theme-embl-petrol.css" type="text/css" media="all" />
-
-  
-  <!--
-  
-  -->
-
   <!-- end CSS-->
-
-
-  
   <script src="../../move-to-cdn/libraries/modernizr/modernizr.custom.49274.js"></script>
-
 </head>
-
 <body class="level2"><!-- add any of your classes or IDs -->
   <div id="skip-to">
     <ul>
@@ -73,11 +62,7 @@
   <div data-sticky-container>
     <div id="masthead" class="masthead" data-sticky data-sticky-on="large" data-top-anchor="content:top" data-btm-anchor="content:bottom">
       <header>
-
         <div id="masthead-black-bar" class="clearfix masthead-black-bar">
-          
-          
-
           <nav>
             <div class="row">
               <ul id="global-nav" class="menu">
@@ -90,17 +75,7 @@
                 <li class="search">
                   <a href="#" data-toggle="search-global-dropdown"><i class="icon icon-functional" data-icon="1"></i></a>
                   <div id="search-global-dropdown" class="dropdown-pane" data-dropdown data-options="closeOnClick:true;">
-                    <form id="global-search" name="global-search" action="/ebisearch/search.ebi" method="GET">
-                      <fieldset>
-                        <h5>Search all of EMBL-EBI</h5>
-                        <label class="float-left">
-                          <input type="text" name="query" id="global-searchbox">
-                        </label>
-                        <input type="submit" name="submit" value="Search" class="button">
-                        <input type="hidden" name="db" value="allebi" checked="checked">
-                        <input type="hidden" name="requestFrom" value="masthead-black-bar" checked="checked">
-                      </fieldset>
-                    </form>
+                  <!-- The dropdown menu will be programatically added by script.js -->
                   </div>
                 </li>
                 <li class="float-right embl-selector">
