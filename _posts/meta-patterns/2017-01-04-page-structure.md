@@ -8,16 +8,14 @@ tags:
 - navigation
 description: The layout used by the Framework is a wrapper that helps structure your page.
 ---
-<p>This structure is informed by a large amount of UX research, team feedback, and tweaked to be compliant with the EMBL and EMBL-EBI branding.
-In short: using the boilerplate formats will help save you time, deliver a better experience to the users and keep the branding watchdogs happier. </p>
+This structure is informed by a large amount of UX research, team feedback, and tweaked to be compliant with the EMBL and EMBL-EBI branding.
+In short: using the boilerplate formats will help save you time, deliver a better experience to the users and keep the branding watchdogs happier.
 
-<h3>What is the structure?</h3>
-<ol>
-  We have divided the page areas into three types:
-  <li>Centrally governed: here content and structure are managed by EMBL-EBI (global masthead and global footer);</li>
-  <li>Structured with custom content: the content is managed by a service, but structure is managed by EMBL-EBI (i.e. local masthead and local footer); and</li>
-  <li>Custom: content and structure are governed by the service with guidance from within this pattern library.</li>
-</ol>
+### What is the structure?
+We have divided the page areas into three types:
+1. Centrally governed: here content and structure are managed by EMBL-EBI (global masthead and global footer);
+2. Structured with custom content: the content is managed by a service, but structure is managed by EMBL-EBI (i.e. local masthead and local footer); and</li>
+3. Custom: content and structure are governed by the service with guidance from within this pattern library.
 
 <img src="../../static/images/layout/diagram-page.svg" />
 <cite>Placement of the above three region types and associated content regions.</cite>
@@ -25,23 +23,28 @@ In short: using the boilerplate formats will help save you time, deliver a bette
 <p>See also: <a href="../sample-pages" class="readmore">Sample pages</a></p>
 
 
-<h3>What are the regions of the site?</h3>
-<h4><a name="global" id="global"></a>Global masthead (aka: global menu)</h4>
-<p>The global navigation menu sits at the top of every page. It is designed to be easy to find yet unobtrusive, so as not to confuse users who wish to use the navigation menu for your site.</p>
+### What are the regions of the site?
+#### <a name="global" id="global"></a>Global masthead (aka: global menu)
+
+The global navigation menu sits at the top of every page. It is designed to be easy to find yet unobtrusive, so as not to confuse users who wish to use the navigation menu for your site.
 
 <h4><a name="local" id="local"></a>Local masthead (aka: local menu)</h4>
 <p>The local menu is the navigation menu for your website and it sits below the main banner. It is optional, since not all projects require their own menu. Since it is a horizontal menu, you need to think about the text length of labels. We recommend that your first menu link is "Home" and your last one is "About [project-name]".</p>
 
 <h4><a name="breadcrumb" id="breadcrumb"></a>Breadcrumb trail</h4>
 <p>A breadcrumb can help users understand the structure of sites with a large degree of hierarchy, but you should first rely on the global header, local title, and local menu to indicate structure, using a breadcrumb only when that fails. For guidance on your information architecture, contact the web development team.</p>
-<p><img src="https://www.ebi.ac.uk/sites/ebi.ac.uk/files/images/EBI-nav-breadcrumb.png" alt="EBI breadcrumb trail navigation example" width="228" height="149" style="border: 0px;" /></p>
+
+<img src="https://www.ebi.ac.uk/sites/ebi.ac.uk/files/images/EBI-nav-breadcrumb.png" alt="EBI breadcrumb trail navigation example" width="228" height="149" style="border: 0px;" />
 [UPDATE IMAGE...]
 
-<h4><a name="maincontent" id="maincontent"></a>Main content</h4>
+<h4><a name="content" id="content"></a>Content area</h4>
 <p>The <code>#content</code> area is where your core information and application will live, this area should contain content and any secondary navigation.</p>
 
-<h5><a name="secondary" id="secondary"></a>Secondary menus</h5>
- <p>Once the user has selected an item from your local menu, the section may require a secondary navigation menu to display its own child content. Depending on the bredth and depth of content options, there are two possibilites:</p>
+##### Main content area
+The `#main-content-area` holds the core content of your page. This ID will also be used to improve the behaviour of the sticky menu and improve JS Event tracking.
+
+##### <a name="secondary" id="secondary"></a>Secondary menus
+Once the user has selected an item from your local menu, the section may require a secondary navigation menu to display its own child content. Depending on the breadth and depth of content options, there are two possibilites:
 
  <div class="callout medium-4 small-12 float-right">
    <img src="../../static/images/navigation/secondary-strip.png" />
@@ -49,9 +52,9 @@ In short: using the boilerplate formats will help save you time, deliver a bette
  </div>
 
  <h4><a name="secondary-strip" id="secondary-strip"></a>Secondary strip navigation</h4>
- <p>If your page has a few child pages, use this pattern of tabs. It occupies both a highly visible and conceptually similar spot to the local menu.</p>
+ If your page has a few child pages, use this pattern of tabs. It occupies both a highly visible and conceptually similar spot to the local menu.
 
- <p>We recommend using this for no more than eight child pages/links.</p>
+ We recommend using this for no more than eight child pages/links.
 
  <p>Use a <code>ul</code> element with classes <code>.menu.secondary-menu</code>; see a full example <a class="readmore" href="https://www.ebi.ac.uk/about/">on the EMBL-EBI main site</a></p>
 
