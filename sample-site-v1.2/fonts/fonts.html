@@ -9,34 +9,28 @@
 </head>
 
 <body class="full-widthXX"><!-- add any of your classes or IDs -->
-  <div id="masthead" class="masthead">
-    <header>
-
-      <div class="masthead-inner row">
-
-        <!-- local-title -->
-        <div class="columns medium-7" id="local-title">
-          <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
-        </div>
-        <!-- /local-title -->
-
-        <!-- local-nav -->
-        <nav >
-          <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
-            <li><a href="../../">Overview</a></li>
-            <li><a data-open="modal-download">Download</a></li>
-            <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
-          </ul>
-          <ul class="dropdown menu float-right" data-description="tasks">
-            <li><a href="#"><span class="icon icon-functional" data-icon="l"></span> Login</a></li>
-          </ul>
-        </nav>
-        <!-- /local-nav -->
+  <header id="masthead" class="masthead">
+    <div class="masthead-inner row">
+      <!-- local-title -->
+      <div class="columns medium-7" id="local-title">
+        <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
       </div>
+      <!-- /local-title -->
 
-    </header>
-
-  </div>
+      <!-- local-nav -->
+      <nav >
+        <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
+          <li><a href="../../">Overview</a></li>
+          <li><a data-open="modal-download">Download</a></li>
+          <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
+        </ul>
+        <ul class="dropdown menu float-right" data-description="tasks">
+          <li><a href="#"><span class="icon icon-functional" data-icon="l"></span> Login</a></li>
+        </ul>
+      </nav>
+      <!-- /local-nav -->
+    </div>
+  </header>
 
   <div id="content">
     <section>
@@ -60,9 +54,7 @@
             <div class="row">
               <div class="columns medium-10">
                 <p class="lead">This effort is being done in cordination with EMBL, who is looking to update the core brand font for web and print. For background, and to add feedback, <a href="//github.com/ebiwd/EBI-Icon-fonts/issues/8" class="readmore">see this discussion</a></p>
-
                 <p><strong>Current goal:</strong> Rule out any fonts that are clearly poor choices and to identify possible combinations of font faces and weights.</p>
-
               </div>
             </div>
 
@@ -73,7 +65,7 @@
                   <ol>
                     <li><a href="#shortlist">The shorlist and scores</a></li>
                     <li><a href="#samples">Sample implementations</a></li>
-                  </ol>              
+                  </ol>
                 </div>
               </div>
             </div>
@@ -217,7 +209,7 @@
             <p>The second option will allow you to compare two options side-by-side.</p>
 
             <h3><a href="//www.ebi.ac.uk/about/our-impact">Impact page</a></h3>
-            <p>Captures a good mix of editorial content under various type styles.</p> 
+            <p>Captures a good mix of editorial content under various type styles.</p>
 
             <div class="row">
               <div class="option-a columns medium-6">
@@ -225,16 +217,16 @@
                   <div class="columns medium-6 float-left">
                     <div class="label">Left image</div>
                     <select name="impact-page" id="impact-page" class="image-selector clone-parent">
-                      <option value="helvetica-neue.png">helvetica-neue</option> 
-                      <option value="calibri.png">calibri</option> 
-                      <option value="lato.png">lato</option> 
-                      <option value="lucida-sans.png">lucida-sans</option> 
-                      <option value="open-sans.png">open-sans</option> 
-                      <option value="open-sans-weights.png">open-sans with weights</option> 
-                      <option value="raleway.png">raleway</option> 
-                      <option value="roboto.png">roboto</option> 
-                      <option value="super-awesome-font.png">awesome sauce</option> 
-                    </select> 
+                      <option value="helvetica-neue.png">helvetica-neue</option>
+                      <option value="calibri.png">calibri</option>
+                      <option value="lato.png">lato</option>
+                      <option value="lucida-sans.png">lucida-sans</option>
+                      <option value="open-sans.png">open-sans</option>
+                      <option value="open-sans-weights.png">open-sans with weights</option>
+                      <option value="raleway.png">raleway</option>
+                      <option value="roboto.png">roboto</option>
+                      <option value="super-awesome-font.png">awesome sauce</option>
+                    </select>
                   </div>
                 </div>
                 <div class="image">
@@ -251,7 +243,7 @@
                   </div>
                 </div>
                 <div class="image">
-                  <h5 class="text-right">Select a font from the list above</h5>                  
+                  <h5 class="text-right">Select a font from the list above</h5>
                 </div>
               </div>
             </div>
@@ -268,7 +260,7 @@
                 selectedImage = "<img src='images/impact-page/" + selectedImage + "' />";
 
                 $(this).parent().parent().parent().find('.image').html(selectedImage);
-                
+
                 // enable zooming and sync changes between the two images
                 wheelzoom($(this).parent().parent().parent().find('.image img'));
 
@@ -278,7 +270,7 @@
                     var newPosition = $(mutationRecord.target).css('background-position');
                     $('.option-b .image img').css('background-size',newSize);
                     $('.option-b .image img').css('background-position',newPosition);
-                  });    
+                  });
                 });
 
                 var observerB = new MutationObserver(function(mutations) {
@@ -287,7 +279,7 @@
                     var newPosition = $(mutationRecord.target).css('background-position');
                     $('.option-a .image img').css('background-size',newSize);
                     $('.option-a .image img').css('background-position',newPosition);
-                  });    
+                  });
                 });
 
                 var target = $('.option-b .image img')[0];
@@ -318,7 +310,7 @@
               // document.querySelector('img').dispatchEvent(new CustomEvent('wheelzoom.reset'));
 
               // wheelzoom can be removed from an element by calling 'wheelzoom.destroy'
-              // document.querySelector('img').dispatchEvent(new CustomEvent('wheelzoom.destroy'));                
+              // document.querySelector('img').dispatchEvent(new CustomEvent('wheelzoom.destroy'));
             </script>
 
 

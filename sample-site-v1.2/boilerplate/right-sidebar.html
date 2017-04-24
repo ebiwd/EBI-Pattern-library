@@ -88,53 +88,52 @@
       </ul>
     </nav>
   </header>
-  <div data-sticky-container>
-    <div id="masthead" class="masthead" data-sticky data-sticky-on="large" data-top-anchor="content:top" data-btm-anchor="content:bottom">
-      <div class="masthead-inner row">
-
-        <!-- local-title -->
-        <div class="columns medium-7" id="local-title">
-          <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
-
-        </div>
-        <!-- /local-title -->
-
-        <div class="column medium-5">
-          <form id="ebi_search" action="/ebisearch/search.ebi">
-            <fieldset>
-              <div class="input-group margin-bottom-none margin-top-large">
-                <input id="query" class="input-group-field" title="EB-eye Search" tabindex="1" type="text" name="query" value="" size="35" maxlength="2048" placeholder="Search service" />
-                <div class="input-group-button">
-                  <input id="search_submit" class="button icon icon-functional" tabindex="2" type="submit" name="submit1" value="1" />
-                  <input id="allebi" type="hidden" name="db" value="allebi" checked="checked" />
-                  <input type="hidden" name="requestFrom" value="ebi_index" />
-                </div>
-              </div>
-            </fieldset>
-            <p id="example" class="small">
-              Examples: <a href="/ebisearch/search.ebi?db=allebi&amp;requestFrom=ebi_index&amp;query=blast">blast</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=keratin&amp;requestFrom=ebi_index">keratin</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=bfl1&amp;requestFrom=ebi_index">bfl1</a>
-              <a class="float-right" href="#"><span class="icon icon-generic" data-icon="("></span> advanced search</a>
-            </p>
-          </form>
-        </div>
-        <!-- local-nav -->
-        <nav >
-          <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
-            <li><a href="../../">Overview</a></li>
-            <li><a data-open="modal-download">Download</a></li>
-            <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
-          </ul>
-          <ul class="dropdown menu float-right" data-description="tasks">
-            <li><a href="#"><span class="icon icon-functional" data-icon="l"></span> Login</a></li>
-          </ul>
-        </nav>
-        <!-- /local-nav -->
-      </div>
-    </div>
-  </div>
-
 
   <div id="content">
+    <div data-sticky-container>
+      <header id="masthead" class="masthead" data-sticky data-sticky-on="large" data-top-anchor="content:top" data-btm-anchor="content:bottom">
+        <div class="masthead-inner row">
+
+          <!-- local-title -->
+          <div class="columns medium-7" id="local-title">
+            <h1><a href="../../" title="Back to [service-name] homepage">EBI Framework</a></h1>
+
+          </div>
+          <!-- /local-title -->
+
+          <div class="column medium-5">
+            <form id="ebi_search" action="/ebisearch/search.ebi">
+              <fieldset>
+                <div class="input-group margin-bottom-none margin-top-large">
+                  <input id="query" class="input-group-field" title="EB-eye Search" tabindex="1" type="text" name="query" value="" size="35" maxlength="2048" placeholder="Search service" />
+                  <div class="input-group-button">
+                    <input id="search_submit" class="button icon icon-functional" tabindex="2" type="submit" name="submit1" value="1" />
+                    <input id="allebi" type="hidden" name="db" value="allebi" checked="checked" />
+                    <input type="hidden" name="requestFrom" value="ebi_index" />
+                  </div>
+                </div>
+              </fieldset>
+              <p id="example" class="small">
+                Examples: <a href="/ebisearch/search.ebi?db=allebi&amp;requestFrom=ebi_index&amp;query=blast">blast</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=keratin&amp;requestFrom=ebi_index">keratin</a>, <a href="/ebisearch/search.ebi?db=allebi&amp;query=bfl1&amp;requestFrom=ebi_index">bfl1</a>
+                <a class="float-right" href="#"><span class="icon icon-generic" data-icon="("></span> advanced search</a>
+              </p>
+            </form>
+          </div>
+          <!-- local-nav -->
+          <nav >
+            <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
+              <li><a href="../../">Overview</a></li>
+              <li><a data-open="modal-download">Download</a></li>
+              <li><a href="#">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
+            </ul>
+            <ul class="dropdown menu float-right" data-description="tasks">
+              <li><a href="#"><span class="icon icon-functional" data-icon="l"></span> Login</a></li>
+            </ul>
+          </nav>
+          <!-- /local-nav -->
+        </div>
+      </header>
+    </div>
 
       <!-- Suggested layout containers -->
       <section id="main-content-area" class="row" role="main">
@@ -190,11 +189,11 @@
       </section>
       <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
       <!--
-      <section id="local-footer" class="local-footer" role="local-footer">
+      <footer id="local-footer" class="local-footer" role="local-footer">
         <div class="row">
           <span class="reference">How to reference this page: ...</span>
         </div>
-      </section>
+      </footer>
       -->
       <!-- End optional local footer -->
     </div>
