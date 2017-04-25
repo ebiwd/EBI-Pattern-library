@@ -23,6 +23,11 @@ To use:
 - Invoke with the `Choices` function (view the source)
 - For further configuration options, visit the <a href="https://github.com/jshjohnson/Choices">Choices GitHub repo</a>.
 
+Known caveats:
+
+- If you use `optgroup`, all `option` elements must be inside groups
+- `label` elements [cannot](https://github.com/jshjohnson/Choices/issues/57) wrap the `select`
+
 <link rel="stylesheet" href="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/styles/css/choices.min.css">
 <script src="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/scripts/dist/choices.min.js"></script>
 
@@ -162,8 +167,6 @@ To use:
     });
   });
 </script>
-
-
 
 <!-- For syntax highlighting -->
 <link rel="stylesheet" href="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/ebi-code.css">
