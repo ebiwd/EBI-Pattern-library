@@ -8,16 +8,19 @@ description: Configurable select box/text input
 ---
 <span class="tag">v1.2</span>
 
-Choices.js is a lightweight, configurable select box/text input plugin. Similar to Select2 and Selectize but without the jQuery dependency.
+<a href="https://github.com/jshjohnson/Choices">Choices.js</a> is a lightweight, configurable select box/text input plugin. Similar to Select2 and Selectize but without the jQuery dependency.
 
 To use:
-1. Include these two files
-  ```
-  <link rel="stylesheet" href="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/styles/css/choices.min.css">
-  <script src="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/scripts/dist/choices.min.js"></script>
-  ```
-2. Invoke with the `Choices` function (view the source)
-3. For all config options, visit the <a href="https://github.com/jshjohnson/Choices">Choices GitHub repo</a>.
+
+- Include these two files:
+<div class="callout" markdown="1">
+``` html
+<link rel="stylesheet" href="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/styles/css/choices.min.css">
+<script src="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/scripts/dist/choices.min.js"></script>
+```
+</div>
+- Invoke with the `Choices` function (view the source)
+- For further configuration options, visit the <a href="https://github.com/jshjohnson/Choices">Choices GitHub repo</a>.
 
 <link rel="stylesheet" href="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/styles/css/choices.min.css">
 <script src="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/Choices/assets/scripts/dist/choices.min.js"></script>
@@ -40,3 +43,6 @@ To use:
     });
   });
 </script>
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="//wwwdev.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/ebi-code.css">
