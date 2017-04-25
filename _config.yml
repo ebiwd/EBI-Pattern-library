@@ -24,7 +24,7 @@ exclude:     [node_modules, .sass-cache, gulpfile.js, package.json, HOWTO.md]
 #plugins:     ./_plugins
 future:      false
 lsi:         false
-#pygments:    false
 markdown:    kramdown
+highlighter: rouge
 #permalink:    pretty
 permalink:   /:categories/:title/
