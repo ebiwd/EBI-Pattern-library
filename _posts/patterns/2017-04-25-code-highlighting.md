@@ -1,6 +1,6 @@
 ---
 layout: pattern
-title: Select box
+title: Code highlighting
 categories: patterns
 tags:
 - typography
