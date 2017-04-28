@@ -8,22 +8,26 @@ tags:
 - navigation
 description: The layout used by the Framework is a wrapper that helps structure your page.
 ---
+
 This structure is informed by a large amount of UX research, team feedback, and tweaked to be compliant with the EMBL and EMBL-EBI branding.
+
 In short: using the boilerplate formats will help save you time, deliver a better experience to the users and keep the branding watchdogs happier.
 
 ### What is the structure?
+
 We have divided the page areas into three types:
+
 1. Centrally governed: here content and structure are managed by EMBL-EBI (global masthead and global footer);
-2. Structured with custom content: the content is managed by a service, but structure is managed by EMBL-EBI (i.e. local masthead and local footer); and</li>
+2. Structured with custom content: the content is managed by a service, but structure is managed by EMBL-EBI (i.e. local masthead and local footer); and
 3. Custom: content and structure are governed by the service with guidance from within this pattern library.
 
 <img src="../../static/images/layout/diagram-page.svg" />
 <cite>Placement of the above three region types and associated content regions.</cite>
 
-<p>See also: <a href="../sample-pages" class="readmore">Sample pages</a></p>
-
+See also: <a href="../sample-pages" class="readmore">Sample pages</a>
 
 ### What are the regions of the site?
+
 #### <a name="global" id="global"></a>Global masthead (aka: global menu)
 
 The global navigation menu sits at the top of every page. It is designed to be easy to find yet unobtrusive, so as not to confuse users who wish to use the navigation menu for your site.
@@ -37,8 +41,9 @@ The global navigation menu sits at the top of every page. It is designed to be e
 <img src="https://www.ebi.ac.uk/sites/ebi.ac.uk/files/images/EBI-nav-breadcrumb.png" alt="EBI breadcrumb trail navigation example" width="228" height="149" style="border: 0px;" />
 [UPDATE IMAGE...]
 
-<h4><a name="content" id="content"></a>Content area</h4>
-<p>The <code>#content</code> area is where your core information and application will live, this area should contain content and any secondary navigation.</p>
+#### <a name="content" id="content"></a>Content area
+
+The <code>#content</code> area is where your core information and application will live, this area should contain content and any secondary navigation.
 
 ##### Main content area
 The `#main-content-area` holds the core content of your page. This ID will also be used to improve the behaviour of the sticky menu and improve JS Event tracking.
@@ -51,12 +56,12 @@ Once the user has selected an item from your local menu, the section may require
    <cite class="text-right"><a href="https://www.ebi.ac.uk/about">www.ebi.ac.uk/about</a></cite>
  </div>
 
- <h4><a name="secondary-strip" id="secondary-strip"></a>Secondary strip navigation</h4>
- If your page has a few child pages, use this pattern of tabs. It occupies both a highly visible and conceptually similar spot to the local menu.
+#### <a name="secondary-strip" id="secondary-strip"></a>Secondary strip navigation
+If your page has a few child pages, use this pattern of tabs. It occupies both a highly visible and conceptually similar spot to the local menu.
 
- We recommend using this for no more than eight child pages/links.
+We recommend using this for no more than eight child pages/links.
 
- <p>Use a <code>ul</code> element with classes <code>.menu.secondary-menu</code>; see a full example <a class="readmore" href="https://www.ebi.ac.uk/about/">on the EMBL-EBI main site</a></p>
+Use a <code>ul</code> element with classes <code>.menu.secondary-menu</code>; see a full example <a class="readmore" href="https://www.ebi.ac.uk/about/">on the EMBL-EBI main site</a>
 
  <div class="callout medium-4 small-12 float-right">
    <img src="../../static/images/navigation/secondary-book.png" />
