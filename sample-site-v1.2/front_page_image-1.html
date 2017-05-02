@@ -12,16 +12,11 @@
   <meta name="theme-color" content="#70BDBD" /> <!-- Android Chrome mobile browser tab color -->
 
   <!-- Add information on the life cycle of this page -->
-  <meta name="ebi:owner" content="John Doe" /> <!-- Who should be contacted about changes -->
-  <meta name="ebi:review-cycle" content="30" /> <!-- In days, how often should the content be reviewed -->
-  <meta name="ebi:last-review" content="2015-12-20" /> <!-- The last time the content was reviewed -->
-  <meta name="ebi:expiry" content="2016-01-20" /> <!-- When this content is no longer relevant -->
+  <meta name="ebi:owner" content="Web Content Committee" /> <!-- Who should be contacted about changes -->
+  <meta name="ebi:review-cycle" content="90" /> <!-- In days, how often should the content be reviewed -->
+  <meta name="ebi:last-review" content="2017-05-02" /> <!-- The last time the content was reviewed -->
+  <meta name="ebi:expiry" content="2017-06-20" /> <!-- When this content is no longer relevant -->
 
-  <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch -->
-  <link rel="dns-prefetch" href="//embl.de" />
-
-  <!-- If you have custom icon, replace these as appropriate.
-       You can generate them at realfavicongenerator.net -->
   <link rel="icon" type="image/x-icon" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/logos/EMBL-EBI/favicons/favicon.ico" />
   <link rel="icon" type="image/png" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/logos/EMBL-EBI/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="192×192" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/logos/EMBL-EBI/favicons/android-chrome-192x192.png" /> <!-- Android (192px) -->
@@ -38,19 +33,12 @@
   <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation.css" type="text/css" media="all" />
   <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/ebi-global.css" type="text/css" media="all" />
   <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.2/fonts.css" type="text/css" media="all" />
-  <!-- Use this CSS file for any custom styling -->
-  <!--
-    <link rel="stylesheet" href="css/custom.css" type="text/css" media="all" />
-  -->
 
   <!-- If you have a custom header image or colour -->
   <meta name="ebi:masthead-color" content="#111" />
   <!-- <meta name="ebi:masthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/backgrounds/embl-ebi-background.jpg" /> -->
 
-  <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
-  <!-- also inform ES so we can host your colour palette file -->
-  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/theme-embl-petrol.css" type="text/css" media="all" />
-  <!-- end CSS-->
+  <!-- <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/theme-embl-petrol.css" type="text/css" media="all" /> -->
 </head>
 
 <body class="level2"><!-- add any of your classes or IDs -->
@@ -88,26 +76,21 @@
   <div data-sticky-container>
     <div id="masthead" class="masthead" data-sticky data-sticky-on="disabled" data-top-anchor="content:top" data-btm-anchor="content:bottom">
       <header>
-        <div class="masthead-inner row" style="padding-top:0;">
-
+        <div class="masthead-inner row padding-top-none">
           <!-- local-title -->
           <div class="columns medium-12" id="local-title">
-
             <div class="masthead-background" style="position: relative; z-index: 3">
               <iframe src="https://ebiwd.github.io/EBI-Search-index-visulisation/force.html" style="border:0; width: 800px; height: 315px; float: right; overflow: hidden;" scrolling="no"></iframe>
             </div>
-
-            <div class="masthead-content" style="">
+            <div class="masthead-content">
               <div class="small" style="position: relative;z-index: 5;left: 82%;top: 3rem;width: 260px;">
                 Visulisation: EBI Search is an indes of biological resources, sites, and enables scientific queries. <a href="#" class="readmore" style="text-decoration:underline;">Learn more</a>
               </div>
-
               <div class="margin-top-xlarge padding-top-xlarge margin-bottom-xlarge">
                 <img src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/logos/EMBL-EBI/EMBL_EBI_Logo_white.svg" style="width:300px;">
                 <!-- <h1 class="padding-top-xlarge" style="margin-top: 120px;"><a href="[service-url]" title="Back to [service-name] homepage">The European Bioinformatics Institute</a></h1> -->
                 <p class="white-color ">The home for big data in biology</p>
               </div>
-
               <div class="row padding-top-xlarge padding-bottom-xlarge">
                 <div class="columns medium-7">
                   <p><a href="//www.ebi.ac.uk/ebisearch/overview.ebi">EBI Search</a> provides easy and uniform access to dozens of biological data resources. <a class="readmore" href="//www.ebi.ac.uk/ebisearch/overview.ebi">More about EBI Search</a></p>
@@ -166,398 +149,205 @@
                   </div>
                 </div>
               </div>
-
             </div>
-
           </div>
           <!-- /local-title -->
-
-          <!-- local-nav -->
-          <!--
-              <nav >
-                <ul id="local-nav" class="dropdown menu float-left" data-description="navigational">
-                  <li class="first has-children menu-mlid-3055 menu-overview menu-3055"><a href="/about">Overview</a></li>
-                  <li class=" has-children menu-mlid-3057 menu-leadership menu-3057"><a href="/about/leadership" title="Leadership and guidance structure">Leadership</a></li>
-                  <li class=" menu-mlid-3075 menu-funding menu-3075"><a href="/about/funding" title="Funding of EMBL-EBI">Funding</a></li>
-                  <li class=" menu-mlid-3079 menu-background menu-3079"><a href="/about/background" title="History of EMBL-EBI">Background</a></li>
-                  <li class=" menu-mlid-3076 menu-collaborations menu-3076"><a href="/about/partnerships" title="EMBL-EBI partnerships">Collaborations</a></li>
-                  <li class=" has-children menu-mlid-3098 menu-jobs menu-3098"><a href="/about/jobs" title="Opportunities at EMBL-EBI">Jobs</a></li>
-                  <li class=" menu-mlid-3173 menu-people-groups menu-3173"><a href="/about/people" title="Staff directory">People &amp; groups</a></li>
-                  <li class=" has-children menu-mlid-3402 menu-news menu-3402"><a href="/about/news" title="">News</a></li>
-                  <li class=" menu-mlid-7857 menu-events menu-7857"><a href="/about/events">Events</a></li>
-                  <li class=" menu-mlid-3078 menu-visit-us menu-3078"><a href="/about/travel" title="Directions to EMBL-EBI">Visit us</a></li>
-                  <li class="last menu-mlid-3329 menu-contact-us menu-3329"><a href="/about/contact" title="Contact External Relations">Contact us</a></li>
-                </ul>
-                <ul class="menu dropdown float-right" data-dropdown-menu data-description="functional">
-                  <li class="functional"><a href="#"><i class="icon icon-generic" data-icon="d"></i> Share this</a>
-                    <ul class="menu js">
-                      <li><a href="#">Item 1A Loooong</a></li>
-                      <li>
-                        <a href='#'> Item 1 sub</a>
-                        <ul class='menu'>
-                          <li><a href='#'>Item 1 subA</a></li>
-                          <li><a href='#'>Item 1 subB</a></li>
-                          <li>
-                            <a href='#'> Item 1 sub</a>
-                            <ul class='menu'>
-                              <li><a href='#'>Item 1 subA</a></li>
-                              <li><a href='#'>Item 1 subB</a></li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href='#'> Item 1 sub</a>
-                            <ul class='menu'>
-                              <li><a href='#'>Item 1 subA</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Item 1B</a></li>
-                    </ul>
-
-                </ul>
-              </nav>
-              -->
-          <!-- /local-nav -->
-
         </div>
-
       </header>
-
-      </div>
+    </div>
   </div>
 
-
   <div id="content">
+    <section id="main-content-area" class="row" role="main">
+      <div class="row">
+        <div class="small-12 columns margin-bottom-xlarge padding-top-xlarge">
+          <h3>Explore EMBL-EBI and our mission</h3>
+          <p class="intro">The European Bioinformatics Institute (EMBL-EBI) makes freely available <a href="/services">data from life science experiments</a>, performs <a href="/research">basic research</a> in computational biology and offers an extensive <a href="/training">user training</a> programme, supporting researchers in academia and <a href="/industry">industry</a>. <a class="readmore" href="//www.ebi.ac.uk/about/our-impact">More about EMBL-EBI and our impact</a></p>
 
-      <!-- Suggested layout containers -->
-      <section id="main-content-area" class="row" role="main">
-        <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
-        <!--
-        <nav aria-label="You are here:" role="navigation">
-          <ul class="breadcrumbs">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Parent</a></li>
-            <li class="disabled">Disabled</li>
-            <li>
-              <span class="show-for-sr">Current: </span> This page
-            </li>
-          </ul>
-        </nav>
-        -->
-
-        <div class="row">
-
-          <div class="small-12 columns margin-bottom-xlarge padding-top-xlarge">
-
-              <h3>Explore EMBL-EBI and our mission</h3>
-              <p class="intro">The European Bioinformatics Institute (EMBL-EBI) makes freely available <a href="/services">data from life science experiments</a>, performs <a href="/research">basic research</a> in computational biology and offers an extensive <a href="/training">user training</a> programme, supporting researchers in academia and <a href="/industry">industry</a>. <a class="readmore" href="//www.ebi.ac.uk/about/our-impact">More about EMBL-EBI and our impact</a></p>
-
-              <div class=" small-up-2 medium-up-5" data-equalizer>
-                <a href="//www.ebi.ac.uk/services" class="column no-underline" data-equalizer-watch>
-                  <p><h4 class="services-color"><span class="icon icon-generic" data-icon="("></span> <div class="inline-block">Services</div></h4>
-                  <p>To provide freely available data and bioinformatics services to all facets of the scientific community <i class="icon icon-functional" data-icon=">"></i></p>
-                  </p>
-                </a>
-                <a href="//www.ebi.ac.uk/" class="column no-underline" data-equalizer-watch>
-                  <p><h4 class="research-color"><span class="icon icon-generic" data-icon=")"></span> <div class="inline-block">Research</div></h4>
-                  <p>To contribute to the advancement of biology through basic investigator-driven research <i class="icon icon-functional" data-icon=">"></i></p>
-                  </p>
-                </a>
-                <a href="//www.ebi.ac.uk/" class="column no-underline" data-equalizer-watch>
-                  <p><h4 class="training-color"><span class="icon icon-generic" data-icon="t"></span> <div class="inline-block">Training</div></h4>
-                  <p>To provide advanced bioinformatics training to scientists at all levels <i class="icon icon-functional" data-icon=">"></i></p>
-                  </p>
-                </a>
-                <a href="//www.ebi.ac.uk/" class="column no-underline" data-equalizer-watch>
-                  <p><h4 class="industry-color"><span class="icon icon-generic" data-icon="I"></span> <div class="inline-block">Industry</div></h4>
-                  <p>To help disseminate cutting-edge technologies to industry <i class="icon icon-functional" data-icon=">"></i></p>
-                  </p>
-                </a>
-                <a href="//www.ebi.ac.uk/" class="column no-underline" data-equalizer-watch>
-                  <p><h4 class="elixir-color"><span class="icon icon-generic" data-icon="%"></span> <div class="inline-block">ELIXIR</div></h4>
-                  <p>To support, as an ELIXIR node, the coordination of biological data provision throughout Europe <i class="icon icon-functional" data-icon=">"></i></p>
-                  </p>
-                </a>
-              </div>
-
-              <!-- <span class="label  padding-top-large padding-bottom-large">Frequently accessed sub areas</span>
-              <div>
-                <span class="margin-right-large"><a href="//www.ebi.ac.uk/about/news" class="readmore"><span class='icon icon-generic' data-icon='N'></span> News</a></span>
-                <span class="margin-right-large"><a href="//www.ebi.ac.uk/submission" class="readmore"><span class='icon icon-generic' data-icon='N'></span> Data submission</a></span>
-                <span class="margin-right-large"><a href="//www.ebi.ac.uk/about/jobs" class="readmore"><span class='icon icon-generic' data-icon='c'></span> Jobs</a></span>
-                <span class="margin-right-large"><a href="//www.ebi.ac.uk/about/travel" class="readmore"><span class='icon icon-generic' data-icon=']'></span> Contact and Visit us</a></span>
-                <span class="margin-right-large"><a href="//www.embl.de/aboutus/alumni/" class="readmore"><span class='icon icon-generic icon-c8' data-icon='&'></span> EMBL Alumni</a></span>
-                <span class="margin-right-large"><a href="//www.ebi.ac.uk/about/people" class="readmore"><span class='icon icon-generic' data-icon='C'></span> People</a></span>
-              </div> -->
-
-
+          <div class=" small-up-2 medium-up-5" data-equalizer>
+            <a href="//www.ebi.ac.uk/services" class="column no-underline" data-equalizer-watch>
+              <p><h4 class="services-color"><span class="icon icon-generic" data-icon="("></span> <div class="inline-block">Services</div></h4>
+              <p>To provide freely available data and bioinformatics services to all facets of the scientific community <i class="icon icon-functional" data-icon=">"></i></p>
+              </p>
+            </a>
+            <a href="//www.ebi.ac.uk/research" class="column no-underline" data-equalizer-watch>
+              <p><h4 class="research-color"><span class="icon icon-generic" data-icon=")"></span> <div class="inline-block">Research</div></h4>
+              <p>To contribute to the advancement of biology through basic investigator-driven research <i class="icon icon-functional" data-icon=">"></i></p>
+              </p>
+            </a>
+            <a href="//www.ebi.ac.uk/training" class="column no-underline" data-equalizer-watch>
+              <p><h4 class="training-color"><span class="icon icon-generic" data-icon="t"></span> <div class="inline-block">Training</div></h4>
+              <p>To provide advanced bioinformatics training to scientists at all levels <i class="icon icon-functional" data-icon=">"></i></p>
+              </p>
+            </a>
+            <a href="//www.ebi.ac.uk/industry" class="column no-underline" data-equalizer-watch>
+              <p><h4 class="industry-color"><span class="icon icon-generic" data-icon="I"></span> <div class="inline-block">Industry</div></h4>
+              <p>To help disseminate cutting-edge technologies to industry <i class="icon icon-functional" data-icon=">"></i></p>
+              </p>
+            </a>
+            <a href="https://www.elixir-europe.org" class="column no-underline" data-equalizer-watch>
+              <p><h4 class="elixir-color"><span class="icon icon-generic" data-icon="%"></span> <div class="inline-block">ELIXIR</div></h4>
+              <p>To support, as an ELIXIR node, the coordination of biological data provision throughout Europe <i class="icon icon-functional" data-icon=">"></i></p>
+              </p>
+            </a>
           </div>
-
-
-          <div class="medium-4 columns callout">
-
-            <h3>Latest news</h3>
-            <span class="label">Updates across EMBL research and service news</span>
-
-            <div class="row collapse">
-              <div class="with-overlay">
-                <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/large/public/groups/external_relations/images/News/EMPIAR_news_21_03_2016_EBI.jpg?itok=Y5aDjbJy" alt="Photo of Uranus.">
-                <div class="caption">
-                  <a href="#" class="inner">
-                    Supporting the bioimaging revolution
-                  </a>
-                  <p>21 May 2016</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="padding-top-medium">
-              <span class="label">15 Feb 2017</span>
-              <h6><a href="#" class="readmore">UniProt release 2017_02: Freshwater fish see red</a></h6>
-            </div>
-
-            <div class="padding-top-medium">
-              <span class="label">30 Jan 2017</span>
-              <h6><a href="#" class="readmore">Changes to the Trace Archive at ENA</a></h6>
-            </div>
-
-            <div class="padding-top-medium">
-              <span class="label">23 Jan 2017</span>
-              <h6><a href="#" class="readmore">New releases: InterPro 61.0 and InterProScan 5.22-61.0</a></h6>
-            </div>
-
-            <div class="padding-top-medium">
-              <span class="label">23 Jan 2017</span>
-              <h6><a href="#" class="readmore">New releases: InterPro InterProScan 5.22-61.0</a></h6>
-            </div>
-
-
-            <div class=" margin-top-large margin-bottom-xlarge ">
-              <a class="readmore button margin-bottom-none" href="#">More EMBL-EBI news</a><br/>
-              <a class="readmore small" href="#">News from across EMBL </a><br/>
-            </div>
-
-          </div>
-          <div class="medium-8 columns">
-            <div>
-
-              <h3>What's happening at EMBL-EBI</h3>
-              <div class="row small-up-1">
-                <div class="column">
-                  <span class="label ">Wednesday 15th March</span>
-                  <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
-                    Accessing Cloud & HTC Resources in BioExcel Webinar
-                  </a></h5>
-                  <p>
-                    Steven Newhouse, Head of EMBL-EBI Technical Services cluster, will discuss Cloud versus HTC (High Throughput Computing) resources, what is the difference and when you should use which.
-                  </p>
-                </div>
-
-                <div class="column">
-                  <span class="label">Wednesday 15th March</span>
-                  <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
-                    Speaker: Matthew Berriman, Pedro Beltrao
-                  </a></h5>
-                  <p>
-                    EBI/Sanger Seminar Series
-                  </p>
-                </div>
-
-                <div class="column">
-                  <span class="label">Thursday 16th-17th March</span>
-                  <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
-                    Bioinformatics for discovery Course
-                  </a></h5>
-                  <p>
-                    This course was developed by EMBL-European Bioinformatics Institute (EMBL-EBI), with input from representatives of Bayer, GSK, Syngenta and Unilever.
-                  </p>
-                </div>
-
-                <div class="column">
-                  <span class="label">Thursday 16th March</span>
-                  <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
-                      Speaker: Christopher Laumer Seminar
-                  </a></h5>
-                  <p>
-                    Preservation of molecular identity during whole genome amplification: towards accurate single-cell mutation inference
-                  </p>
-                </div>
-
-                <div class="column">
-                  <span class="label">Friday 17th March</span>
-                  <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
-                    Speaker: Kevlin Henney
-                  </a></h5>
-                  <p>
-                    Talk: Good Code
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
-            <div>
-              <a class=" readmore button  margin-top-large margin-bottom-xlarge" href="//www.ebi.ac.uk/about/events">See all events at EMBL-EBI </a>
-            </div>
-
-
-
-          </div>
-
-
-
-          </div>
-
-
-                      <div class="row">
-                        <div>
-                          <h3><a href="//www.ebi.ac.uk/about" class="readmore">About EMBL-EBI's culture and impact</a></h3>
-                        </div>
-                        <div class="row collapse medium-up-5 padding-bottom-large ">
-                          <div class="column with-overlay">
-                            <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/Events/all-at-ebi_stepping_down_EBI.jpg" alt="Photo of Uranus.">
-                            <div class="caption">
-                              <a href="//www.ebi.ac.uk/about/jobs" class="inner"><div style="padding-right: 50px; position: absolute;bottom: 0px;">Jobs &amp; Careers</div></a>
-                            </div>
-                          </div>
-                          <div class="column with-overlay">
-                            <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files//groups/external_relations/images/News/Science_Is_Global_2016_EBI_500x375.jpg?itok=mp_IWQhk" alt="Photo of Uranus.">
-                            <div class="caption">
-                              <a href="//www.ebi.ac.uk/about/jobs/career-profiles" class="inner"><div style="padding-right: 20px; position: absolute;bottom: 0px;">Life at EMBL-EBI</div></a>
-                            </div>
-                          </div>
-                          <div class="column with-overlay">
-                            <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/Events/Stepping_down_bbq_EBI.jpg" alt="Photo of Uranus.">
-                            <div class="caption">
-                              <a href="//www.ebi.ac.uk/about/travel" class="inner"><div style="padding-right: 50px; position: absolute;bottom: 0px;">Visit us</div></a>
-                            </div>
-                          </div>
-                          <div class="column with-overlay">
-                            <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/large/public/field/image/Data_centre_shutdown_2016.jpg?itok=fy5v2YZu" alt="Photo of Uranus.">
-                            <div class="caption">
-                              <a href="//www.ebi.ac.uk/about/about/impact" class="inner"><div style="padding-right: 50px; position: absolute;bottom: 0px;">Our impact</div></a>
-                            </div>
-                          </div>
-                          <div class="column with-overlay">
-                            <img src="images/MACDOWELL_Mark_AKEN_Bronwen_2016.jpg" alt="Photo of Uranus.">
-                            <div class="caption">
-                              <a href="//www.ebi.ac.uk/about/about/people" class="inner"><div style="padding-right: 50px; position: absolute;bottom: 0px;">Find a staff member</div></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-          <!-- <div class="row">
-
-                <div class="small-12 columns">
-
-
-                  <div class="row medium-collapse">
-
-                    <div class="columns medium-up-2">
-                      <div class="column">
-                        <div class="demo-style-intro with-overlay  ">
-                          <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/ultra-wide_16_9/public/groups/external_relations/images/EBI_south_exterior.jpg" alt="EMBL-EBI South Building in June 2015" title="EMBL-EBI's South Building on the Wellcome Genome Campus, June 2015" style="width: 100%; border: 0px;"  />
-                          <div class="caption">
-                           <div class="inner">
-                            <h2 class="white-color">Welcome to EMBL-EBI</h2>
-                            <p class="lead white-color">We help scientists realise the potential of 'big data' in biology, exploiting complex information to make discoveries that benefit humankind.</p>
-                            <a href="//www.ebi.ac.uk/" class="readmore button">About EMBL-EBI</a>
-
-                           </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="column">
-                        <div class="demo-style-intro with-overlay  ">
-                          <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/ultra-wide_16_9/public/shared/images/Research/Ribosome.jpg" alt="EMBL-EBI South Building in June 2015" title="EMBL-EBI's South Building on the Wellcome Genome Campus, June 2015" style="width: 100%; border: 0px;"  />
-                          <div class="caption">
-                           <div class="inner">
-                            <h2 class="white-color">Our Impact</h2>
-                            <blockquote class="lead quote white-color">We simply could not function without the core, reliably maintained data collections and world-leading expertise of EMBL-EBI.</blockquote>
-                            <a href="//www.ebi.ac.uk/" class="readmore button">EMBL-EBI's impact</a>
-                           </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-
-
-
-                </div>
--->
-
-
-          </div>
-  <!--
-          <hr />
-
-        <div class="row">
-
-            <div class="medium-12 columns">
-
-              <h3 class="pane-title">Our mission</h3>
-
-              <ul>
-               <li>To provide freely available data and bioinformatics services to all facets of the scientific community</li>
-               <li>To contribute to the advancement of biology through basic investigator-driven research</li>
-               <li>To provide advanced bioinformatics training to scientists at all levels</li>
-               <li>To help disseminate cutting-edge technologies  to industry</li>
-               <li>To support, as an ELIXIR node, the coordination of biological data provision throughout Europe.</li>
-              </ul>
-            </div>
-
-          </div>
- -->
         </div>
 
+        <div class="medium-4 columns callout">
+          <h3>Latest news</h3>
+          <span class="label">Updates across EMBL research and service news</span>
+          <div class="row collapse">
+            <div class="with-overlay">
+              <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/large/public/groups/external_relations/images/News/EMPIAR_news_21_03_2016_EBI.jpg?itok=Y5aDjbJy" alt="Photo of Uranus.">
+              <div class="caption">
+                <a href="#" class="inner">Supporting the bioimaging revolution</a>
+                <p>21 May 2016</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="padding-top-medium">
+            <span class="label">15 Feb 2017</span>
+            <h6><a href="#" class="readmore">UniProt release 2017_02: Freshwater fish see red</a></h6>
+          </div>
+
+          <div class="padding-top-medium">
+            <span class="label">30 Jan 2017</span>
+            <h6><a href="#" class="readmore">Changes to the Trace Archive at ENA</a></h6>
+          </div>
+
+          <div class="padding-top-medium">
+            <span class="label">23 Jan 2017</span>
+            <h6><a href="#" class="readmore">New releases: InterPro 61.0 and InterProScan 5.22-61.0</a></h6>
+          </div>
+
+          <div class="padding-top-medium">
+            <span class="label">23 Jan 2017</span>
+            <h6><a href="#" class="readmore">New releases: InterPro InterProScan 5.22-61.0</a></h6>
+          </div>
 
 
-      </section>
-      <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
-      <!--
-      <footer id="local-footer" class="local-footer" role="local-footer">
-        <div class="row">
-          <span class="reference">How to reference this page: ...</span>
+          <div class=" margin-top-large margin-bottom-xlarge ">
+            <a class="readmore button margin-bottom-none" href="#">More EMBL-EBI news</a><br/>
+            <a class="readmore small" href="#">News from across EMBL </a><br/>
+          </div>
+
         </div>
-      </footer>
-      -->
-      <!-- End optional local footer -->
-    </div>
-    <!-- End suggested layout containers / #content -->
+        <div class="medium-8 columns">
+          <h3>What's happening at EMBL-EBI</h3>
+          <div class="row small-up-1">
+            <div class="column">
+              <span class="label ">Wednesday 15th March</span>
+              <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
+                Accessing Cloud & HTC Resources in BioExcel Webinar
+              </a></h5>
+              <p>
+                Steven Newhouse, Head of EMBL-EBI Technical Services cluster, will discuss Cloud versus HTC (High Throughput Computing) resources, what is the difference and when you should use which.
+              </p>
+            </div>
 
-    <footer>
-      <div id="global-footer" class="global-footer">
-        <nav id="global-nav-expanded" class="global-nav-expanded row">
-          <!-- Footer will be automatically inserted by footer.js -->
-        </nav>
-        <section id="ebi-footer-meta" class="ebi-footer-meta row">
-          <!-- Footer meta will be automatically inserted by footer.js -->
-        </section>
+            <div class="column">
+              <span class="label">Wednesday 15th March</span>
+              <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
+                Speaker: Matthew Berriman, Pedro Beltrao
+              </a></h5>
+              <p>
+                EBI/Sanger Seminar Series
+              </p>
+            </div>
+
+            <div class="column">
+              <span class="label">Thursday 16th-17th March</span>
+              <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
+                Bioinformatics for discovery Course
+              </a></h5>
+              <p>
+                This course was developed by EMBL-European Bioinformatics Institute (EMBL-EBI), with input from representatives of Bayer, GSK, Syngenta and Unilever.
+              </p>
+            </div>
+
+            <div class="column">
+              <span class="label">Thursday 16th March</span>
+              <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
+                  Speaker: Christopher Laumer Seminar
+              </a></h5>
+              <p>
+                Preservation of molecular identity during whole genome amplification: towards accurate single-cell mutation inference
+              </p>
+            </div>
+
+            <div class="column">
+              <span class="label">Friday 17th March</span>
+              <h5><a href="/about/events/seminars/2016/modelling-selective-forces-driving-evolution-phosphotyrosine-sh2-interaction-network">
+                Speaker: Kevlin Henney
+              </a></h5>
+              <p>
+                Talk: Good Code
+              </p>
+            </div>
+          </div>
+          <div>
+            <a class="readmore button margin-top-large margin-bottom-xlarge" href="//www.ebi.ac.uk/about/events">See all events at EMBL-EBI </a>
+          </div>
+        </div>
       </div>
-    </footer>
+      <div class="row">
+        <h3><a href="//www.ebi.ac.uk/about" class="readmore">About EMBL-EBI's culture and impact</a></h3>
+        <div class="row collapse medium-up-5 padding-bottom-large ">
+          <div class="column with-overlay">
+            <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/Events/all-at-ebi_stepping_down_EBI.jpg" alt="Photo of Uranus.">
+            <div class="caption">
+              <a href="//www.ebi.ac.uk/about/jobs" class="inner"><div style="padding-right: 50px; position: absolute;bottom: 0px;">Jobs &amp; Careers</div></a>
+            </div>
+          </div>
+          <div class="column with-overlay">
+            <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files//groups/external_relations/images/News/Science_Is_Global_2016_EBI_500x375.jpg?itok=mp_IWQhk" alt="Photo of Uranus.">
+            <div class="caption">
+              <a href="//www.ebi.ac.uk/about/jobs/career-profiles" class="inner"><div style="padding-right: 20px; position: absolute;bottom: 0px;">Life at EMBL-EBI</div></a>
+            </div>
+          </div>
+          <div class="column with-overlay">
+            <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/Events/Stepping_down_bbq_EBI.jpg" alt="Photo of Uranus.">
+            <div class="caption">
+              <a href="//www.ebi.ac.uk/about/travel" class="inner"><div style="padding-right: 50px; position: absolute;bottom: 0px;">Visit us</div></a>
+            </div>
+          </div>
+          <div class="column with-overlay">
+            <img src="//www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/large/public/field/image/Data_centre_shutdown_2016.jpg?itok=fy5v2YZu" alt="Photo of Uranus.">
+            <div class="caption">
+              <a href="//www.ebi.ac.uk/about/about/impact" class="inner"><div style="padding-right: 50px; position: absolute;bottom: 0px;">Our impact</div></a>
+            </div>
+          </div>
+          <div class="column with-overlay">
+            <img src="images/MACDOWELL_Mark_AKEN_Bronwen_2016.jpg" alt="Photo of Uranus.">
+            <div class="caption">
+              <a href="//www.ebi.ac.uk/about/about/people" class="inner"><div style="padding-right: 50px; position: absolute;bottom: 0px;">Find a staff member</div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--
+  <footer id="local-footer" class="local-footer" role="local-footer">
+    <div class="row">
+      <span class="reference">How to reference this page: ...</span>
+    </div>
+  </footer>
+  -->
+  <footer>
+    <div id="global-footer" class="global-footer">
+      <nav id="global-nav-expanded" class="global-nav-expanded row">
+        <!-- Footer will be automatically inserted by footer.js -->
+      </nav>
+      <section id="ebi-footer-meta" class="ebi-footer-meta row">
+        <!-- Footer meta will be automatically inserted by footer.js -->
+      </section>
+    </div>
+  </footer>
 
   <!-- JavaScript -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <!--
-  <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.10.2.min.js"><\/script>')</script>
-  -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <!-- Your custom JavaScript file scan go here... change names accordingly -->
-  <!--
-  <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/plugins.js"></script>
-  <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/js/script.js"></script>
-  -->
-  <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/cookiebanner.js"></script>
-  <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/foot.js"></script>
-<!--  <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/script.js"></script>-->
   <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/script.js"></script>
 
   <!-- The Foundation theme JavaScript -->
@@ -565,27 +355,5 @@
   <script src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/foundationExtendEBI.js"></script>
   <script type="text/JavaScript">$(document).foundation();</script>
   <script type="text/JavaScript">$(document).foundationExtendEBI();</script>
-<!--
-   -->
-   <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" type="text/css" media="all" />
-   <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
-   <script type="text/javascript">
-   $(document).ready(function() {
-     $(".js-example-basic-single").select2();
-   });
-   </script> -->
-
-
-  <!-- Google Analytics details... -->
-  <!-- Change UA-XXXXX-X to be your site's ID -->
-  <!--
-  <script>
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
-  -->
-
 </body>
 </html>
