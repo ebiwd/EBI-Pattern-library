@@ -86,7 +86,7 @@
                   <img src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/images/logos/EMBL-EBI/EMBL_EBI_Logo_white.svg" style="width:300px;position:relative;z-index: 5;">
                   <p>The home for big data in biology</p>
                   <div class="small show-for-medium visulisation-legend medium-12 large-2">
-                    Visulisation: EBI Search is an indes of biological resources, sites, and enables scientific queries. <a href="#" class="readmore" style="text-decoration:underline;">Learn more</a>
+                    Visulisation: EBI Search is an indes of biological resources, sites, and enables scientific queries. <a href="#" class="readmore">Learn more</a>
                   </div>
                   <div class="show-for-large margin-bottom-xlarge"><!--spacer--></div>
                 </div>
@@ -122,38 +122,38 @@
               <div class="row padding-top-xlarge padding-bottom-xlarge">
                 <div class="columns medium-7">
                   <p>EBI Search provides easy and uniform access to dozens of biological data resources, <a class="readmore" href="//www.ebi.ac.uk/ebisearch/overview.ebi">more about EBI Search</a></p>
-                  <form id="ebi_search" action="/ebisearch/search.ebi">
-                    <fieldset class=" ">
-                      <!-- <legend><h4 class="white-color">Find a gene, protein or chemical</h4></legend> -->
+                  <form id="ebi_search" action="https://www.ebi.ac.uk/ebisearch/search.ebi">
+                    <fieldset>
                       <div class="margin-bottom-none small-collapse">
                         <div class="columns medium-3 small-4 margin-bottom-small">
-                          <select class="margin-bottom-none" style="opacity: .8">
-                            <option value="everything">Search everything</option>
+                          <select name="db" id="db" tabindex="1" class="margin-bottom-none" style="opacity: .8">
+                            <option value="allebi">Search everything</option>
                             <optgroup label="Science search">
-                              <option value="temp">Genomes &amp; metagenomes</option>
-                              <option value="temp">Nucleotide sequences</option>
-                              <option value="temp">Protein sequences</option>
-                              <option value="temp">Small molecules</option>
-                              <option value="temp">Gene expression</option>
-                              <option value="temp">Molecular interactions</option>
-                              <option value="temp">Reactions, pathways &amp; diseases</option>
-                              <option value="temp">Protein families</option>
-                              <option value="temp">Literature</option>
+                              <option value="genomes">Genomes &amp; metagenomes</option>
+                              <option value="nucleotideSequences">Nucleotide sequences</option>
+                              <option value="proteinSequences">Protein sequences</option>
+                              <option value="smallMolecules">Small molecules</option>
+                              <option value="geneExpression">Gene expression</option>
+                              <option value="molecularInteractions">Molecular interactions</option>
+                              <option value="reactionsPathways">Reactions, pathways &amp; diseases</option>
+                              <option value="proteinFamilies">Protein families</option>
+                              <option value="literature">Literature</option>
+                              <option value="ontologies">Samples & ontologies</option>
                             </optgroup>
                             <optgroup label="Search web content">
-                              <option value="temp">EMBL-EBI People</option>
-                              <option value="temp">EMBL-EBI web</option>
-                              <option value="temp">EMBL web</option>
+                              <option value="ebiweb_people">EMBL-EBI People</option>
+                              <option value="ebiweb">EMBL-EBI web</option>
+                              <!-- <option value="ebiweb">EMBL web</option> -->
                             </optgroup>
                           </select>
                         </div>
                         <div class="columns medium-8 small-7  margin-bottom-none">
-                          <input id="query" class="margin-bottom-none" title="EB-eye Search" tabindex="1" type="text" name="query" value="" size="35" maxlength="2048" placeholder="Find a gene, protein or chemical"/>
+                          <input id="query" class="margin-bottom-none" title="EBI Search" tabindex="2" type="text" name="query" value="" size="35" maxlength="2048" placeholder="Find a gene, protein or chemical"/>
                         </div>
                         <div class="columns medium-1 small-1 margin-bottom-none">
-                          <input id="search_submit" class="button icon icon-functional margin-bottom-none" tabindex="2" type="submit" name="submit1" value="1" style="line-height:.9"/>
+                          <input id="search_submit" class="button icon icon-functional margin-bottom-none" tabindex="3" type="submit" name="submit1" value="1" style="line-height:.9"/>
                         </div>
-                        <input id="allebi" type="hidden" name="db" value="allebi" checked="checked" />
+                        <!-- <input id="allebi" type="hidden" name="db" value="allebi" checked="checked" /> -->
                         <input type="hidden" name="requestFrom" value="ebi_index" />
                       </div>
                     </fieldset>
