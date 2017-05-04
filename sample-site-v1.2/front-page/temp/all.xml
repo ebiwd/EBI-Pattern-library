@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="http://www.ebi.ac.uk/about/news/all.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Service news from EMBL-EBI</title>
+    <link>http://www.ebi.ac.uk/about/news/all.xml</link>
+    <description></description>
+    <language>en</language>
+     <atom:link href="http://www.ebi.ac.uk/about/news/all.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>New ENA discovery API</title>
+    <link>http://www.ebi.ac.uk/about/news/service-news/new-ena-discovery-api</link>
+    <description>ENA has launched a powerful new API to support programmatic search across all data types. Learn more here: http://bit.ly/2ptbbWk</description>
+     <pubDate>Thu, 27 Apr 2017 10:09:23 +0100</pubDate>
+ <dc:creator>nicole@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/17010</guid>
+  </item>
+  <item>
+    <title>A race against the ageing clock</title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/mouse-epigenetic-clock</link>
+    <description>EMBL-EBI researchers release mouse epigenetic clock</description>
+     <pubDate>Thu, 13 Apr 2017 14:03:24 +0100</pubDate>
+ <dc:creator>stroe@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/17006</guid>
+  </item>
+  <item>
+    <title>Genomics reboots deep learning</title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/deep-learning-epigenetics</link>
+    <description>New deep learning method DeepCpG used to understand how genomes work</description>
+     <pubDate>Tue, 11 Apr 2017 09:33:00 +0100</pubDate>
+ <dc:creator>stroe@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/17000</guid>
+  </item>
+  <item>
+    <title>Positions in the Goldman Group</title>
+    <link>http://www.ebi.ac.uk/research/goldman/positions</link>
+    <description></description>
+     <pubDate>Mon, 03 Apr 2017 16:44:50 +0100</pubDate>
+ <dc:creator>goldman@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16992</guid>
+  </item>
+  <item>
+    <title>ENA Release 131</title>
+    <link>http://www.ebi.ac.uk/about/news/service-news/ena-release-131</link>
+    <description>Release 131 of ENA&#039;s assembled/annotated sequences now available</description>
+     <pubDate>Mon, 03 Apr 2017 10:16:34 +0100</pubDate>
+ <dc:creator>nicole@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16990</guid>
+  </item>
+  <item>
+    <title>A better way to find drug targets</title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/druggable-genome-better-way-find-drug-targets-2017</link>
+    <description>The ChEMBL team at EMBL-EBI and their colleagues deliver a new way to identify drug targets from Genome Wide Association Studies</description>
+     <pubDate>Fri, 31 Mar 2017 16:52:17 +0100</pubDate>
+ <dc:creator>mary@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16988</guid>
+  </item>
+  <item>
+    <title>When science meets management</title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/research-infrastructure-management</link>
+    <description>Executive Master’s of Management of Research Infrastructures by RItrain offers new opportunities for leadership</description>
+     <pubDate>Thu, 30 Mar 2017 12:26:13 +0100</pubDate>
+ <dc:creator>stroe@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16984</guid>
+  </item>
+  <item>
+    <title>Ageing: cell coordination breakdown </title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/ageing-cell-coordination-breakdown</link>
+    <description>EMBL-EBI researchers use single-cell sequencing to understand how cells age</description>
+     <pubDate>Wed, 29 Mar 2017 16:29:00 +0100</pubDate>
+ <dc:creator>stroe@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16982</guid>
+  </item>
+  <item>
+    <title>Life-science data: a global responsibility</title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/life-science-data-global-responsibility-2017</link>
+    <description>Perspective: Rolf Apweiler on a new coalition  to secure global data resources for the future of open science. </description>
+     <pubDate>Tue, 28 Mar 2017 17:10:27 +0100</pubDate>
+ <dc:creator>mary@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16980</guid>
+  </item>
+  <item>
+    <title>New releases: InterPro 62.0 and InterProScan 5.23-62.0</title>
+    <link>http://www.ebi.ac.uk/about/news/service-news/InterPro-62.0</link>
+    <description>Check out the latest releases of InterPro (62.0) and InterProScan (5.23-62.0)!</description>
+     <pubDate>Wed, 15 Mar 2017 10:25:58 +0000</pubDate>
+ <dc:creator>siewyit@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16921</guid>
+  </item>
+  <item>
+    <title>UX design for the life sciences: myths and realities</title>
+    <link>http://www.ebi.ac.uk/about/life-at-embl-ebi/ux-design-seminar-2017</link>
+    <description>User experience design seminar for life sciences</description>
+     <pubDate>Thu, 09 Mar 2017 13:03:15 +0000</pubDate>
+ <dc:creator>stroe@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16878</guid>
+  </item>
+  <item>
+    <title>Driving gender equality in science </title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/best-practice-awards-2017</link>
+    <description>On International Womens Day, the EMBL-EBI gender diversity champions take the spotlight.</description>
+     <pubDate>Tue, 07 Mar 2017 16:28:38 +0000</pubDate>
+ <dc:creator>stroe@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16876</guid>
+  </item>
+  <item>
+    <title>Watching immune cells fight malaria</title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/watching-immune-cells-fight-malaria</link>
+    <description>Reconstructing the scene of the crime: immunology study uses machine learning to model how cells fight malaria </description>
+     <pubDate>Fri, 03 Mar 2017 16:36:36 +0000</pubDate>
+ <dc:creator>mary@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16871</guid>
+  </item>
+  <item>
+    <title>UniProt release 2017_02: Freshwater fish see red</title>
+    <link>http://www.ebi.ac.uk/about/news/service-news/uniprot-release-201702-freshwater-fish-see-red</link>
+    <description>UniProt release 2017_02 offers over 78 million protein records! Headline: &#039;Freshwater Fish See Red&#039;, on the CYP27C1 gene. </description>
+     <pubDate>Wed, 15 Feb 2017 17:27:17 +0000</pubDate>
+ <dc:creator>spundir@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16836</guid>
+  </item>
+  <item>
+    <title>Changes to the Trace Archive at ENA</title>
+    <link>http://www.ebi.ac.uk/about/news/service-news/changes-trace-archive-ena</link>
+    <description></description>
+     <pubDate>Mon, 30 Jan 2017 10:09:09 +0000</pubDate>
+ <dc:creator>nicole@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16768</guid>
+  </item>
+  <item>
+    <title>Genetic makeup of ‘room-mate’ influences health</title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/roommate-genes-affect-health</link>
+    <description>“We want to study the full genetic ecosystem to understand how we influence each other” @AmelieBaud on #PartnerGenes </description>
+     <pubDate>Tue, 24 Jan 2017 14:55:30 +0000</pubDate>
+ <dc:creator>mary@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16742</guid>
+  </item>
+  <item>
+    <title>New releases: InterPro 61.0 and InterProScan 5.22-61.0</title>
+    <link>http://www.ebi.ac.uk/about/news/service-news/InterPro-61.0</link>
+    <description>Check out the latest releases of InterPro (61.0) and InterProScan (5.22-61.0)! </description>
+     <pubDate>Mon, 23 Jan 2017 13:28:11 +0000</pubDate>
+ <dc:creator>siewyit@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16740</guid>
+  </item>
+  <item>
+    <title>Cancer genetics refine treatment decisions</title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/cancer-genetics-refine-treatment-decisions</link>
+    <description>Cancer genetics refine treatment decisions - @MoritzGerstung @sangerinstitute in @NatureRevGenet | code: https://github.com/gerstung-lab/aml</description>
+     <pubDate>Mon, 16 Jan 2017 15:48:59 +0000</pubDate>
+ <dc:creator>mary@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16710</guid>
+  </item>
+  <item>
+    <title>Buffering mechanism protects embryonic development</title>
+    <link>http://www.ebi.ac.uk/about/news/press-releases/buffering-mechanism-protects-embryonic-development</link>
+    <description>Buffering mechanisms cancel out detrimental effects of genetic variation during embryonic development. Research in @NatureNews</description>
+     <pubDate>Thu, 12 Jan 2017 16:37:29 +0000</pubDate>
+ <dc:creator>mary@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16708</guid>
+  </item>
+  <item>
+    <title>Science Is Global</title>
+    <link>http://www.ebi.ac.uk/about/news/science-is-global-2016</link>
+    <description>Our first #ScienceIsGlobal event on the Wellcome Genome Campus celebrated the diversity, discovery and unpredictable life journeys! </description>
+     <pubDate>Mon, 09 Jan 2017 12:30:55 +0000</pubDate>
+ <dc:creator>mary@ebi.ac.uk</dc:creator>
+ <guid isPermaLink="true">http://www.ebi.ac.uk/node/16698</guid>
+  </item>
+  </channel>
+</rss>
