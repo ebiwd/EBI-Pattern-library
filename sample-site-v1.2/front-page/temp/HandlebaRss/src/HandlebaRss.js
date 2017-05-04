@@ -1,4 +1,4 @@
-function HandlebaRss(feedUrl,template,destination,multiLimit){
+function HandlebaRss(feedUrl,template,destination){
   if(feedUrl instanceof Array){
     this.feedUrls = feedUrl;
   }else{
@@ -6,17 +6,12 @@ function HandlebaRss(feedUrl,template,destination,multiLimit){
   }
   this.template = template;
   this.destination = destination;
-  this.multiLimit = multiLimit;
   //this.retrieveUrl();
 }
 
 HandlebaRss.prototype.init = function(){
   if(this.feedUrl){
     this.retrieveUrl(this.feedUrl, $.proxy(this.captureAndRender,this));
-  }else{
-    for(var i = 0; i<this.feedUrls.length; i++){
-      this.retrieveUrl(this.feedUrls[i], $.proxy(this.captureMultiAndRender,this));
-    }
   }
 }
 
@@ -31,24 +26,15 @@ HandlebaRss.prototype.retrieveUrl = function(url,callback){
   var protocol = document.location.protocol;
   if(protocol == 'file:'){ protocol = 'http:'}
   $.ajax({
-    url: protocol + '//query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22'+ encodeURIComponent(url)+'%22&format=json&diagnostics=true&callback=?',
-    // https://developer.yahoo.com/yql/console/#h=select+*+from+rss(0%2C4)+where+url%3D%22http%3A%2F%2Fwww.ebi.ac.uk%2Fabout%2Fnews%2Fpress.xml%22
-    // select * from rss(0,4) where url="http://www.ebi.ac.uk/about/news/press.xml"
-    // url: protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
+    url: protocol + '//query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22'+ encodeURIComponent(url)+'%22&format=json&diagnostics=true&_maxage=3600&callback=?',
     dataType: 'json',
     success: callback
   });
 };
 
 HandlebaRss.prototype.captureAndRender = function(data){
-  // console.log(data);
   this.captureFeed(data);
   this.render();
-};
-
-HandlebaRss.prototype.captureMultiAndRender = function(data){
-  this.addFeedData(data);
-  this.renderMulti();
 };
 
 HandlebaRss.prototype.captureFeed = function(data){
@@ -62,48 +48,3 @@ HandlebaRss.prototype.render = function(){
   var html    = template(this.feed);
   $(this.destination).html(html);
 };
-
-
-HandlebaRss.prototype.renderMulti = function(){
-  var source   = $(this.template).html();
-  var template = Handlebars.compile(source);
-  var entries = this.coalesseFeeds();
-  var context = { entries : entries };
-
-  var html    = template(context);
-  $(this.destination).html(html);
-};
-
-HandlebaRss.prototype.coalesseFeeds = function(){
-  var entries = [];
-  for(var i = 0; i<this.feedDatas.length; i++){
-    var feedData = this.feedDatas[i];
-    // build a representation of the main feed data, which will be added
-    // to each entry
-    var feed = {
-      author : feedData.author,
-      description : feedData.description,
-      feedUrl : feedData.feedUrl,
-      link : feedData.link,
-      title : feedData.title,
-      type : feedData.type
-    }
-    for(var j = 0; j<feedData.entries.length; j++){
-      if(this.multiLimit && j >= this.multiLimit){ break; }
-      var entry = feedData.entries[j];
-      entry.feed = feed;
-      entries.push(entry);
-    }
-  }
-  var sortedEntries = entries.sort(function(a,b){
-    var aDate = Date.parse(a.publishedDate);
-    var bDate = Date.parse(b.publishedDate);
-    if( aDate == bDate){
-      return 0;
-    }else if( aDate < bDate ){
-      return 1;
-    }
-    return -1;
-  });
-  return sortedEntries;
-}
