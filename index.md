@@ -82,29 +82,31 @@ This framework functions similar to many front-end solutions: several files and 
 <div class="button-grid small-collapse margin-bottom-large" markdown="0">
   <div class="columns">
     <div class="row" style="position: relative;">
-      <div class="columns small-4">
+      <div class="columns small-7">
         <div class="row small-collapse">
-          <a class="button secondary columns small-6 small-push-3" href="https://www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css">fonts.css</a>
-          <a class="button secondary columns small-12" href="css/theme-embl-petrol.css">Custom CSS<br/><small> Colours and patterns specific to your service/site</small></a>
-          <a class="button primary columns small-12" href="css/ebi-global.css">
+          <a class="button secondary columns small-6 small-push-1" href="css/theme-embl-petrol.css">Custom CSS<br/><small> Colours and patterns specific to your service/site</small></a>
+          <a class="button secondary columns small-8" href="https://www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.2/">Optional foundation styles<br/>
+          <small>Additional styling for modals, buttons, etc.</small></a>
+          <a class="button secondary columns small-4" href="https://www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css">EBI Icons<br/>
+          <small>Functional and scientific</small></a>
+          <a class="button primary columns small-12" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/css/ebi-global.css">
             EBI base CSS styles<br/>
             <small>EMBL-EBI look, colours</small></a>
-          <a class="button primary columns small-12" href="https://ebiwd.github.io/EBI-Framework/libraries/foundation-6/css/foundation.css">Foundation base CSS styles<br/>
-          <small>The base grid structure, style resets, core page styling</small></a>
+          <a class="button primary columns small-12" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/css/foundation-lite.css">Foundation base styling<br/>
+          <small>The base grid structure, core page styling</small></a>
         </div>
       </div>
-      <div class="columns small-8" style="position: absolute;bottom: 0;right: 0;">
+      <div class="columns small-5" style="position: absolute;bottom: 0;right: 0;">
         <div class="row small-collapse" data-equalizer data-equalize-on="medium" style="position: relative;">
           <div class="columns small-7" data-equalizer-watch>
-            <a class="button secondary columns small-12" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/foundationExtendEBI.js">FoundationExtendEBI.js <small>EBI JS tweaks to Foundation: A series of value adds that build atop Foundation</small></a>
-            <a class="button secondary columns small-12" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/js/foundation.js">foundation.js</a>
-            <a class="button secondary columns small-12" href="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">jQuery 1.10.2<br/><small>Slightly older versions may be compatible</small></a>
+            <a class="button secondary columns small-10 small-push-1" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/foundationExtendEBI.js">FoundationExtendEBI.js<br/>
+            <small>EBI JS tweaks to Foundation and jQuery value adds</small></a>
+            <a class="button secondary columns small-12" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/libraries/foundation-6/js/foundation.js">foundation.js</a>
+            <a class="button secondary columns small-12" href="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">jQuery 1.10.2<br/><small>Or newer, or slightly older</small></a>
           </div>
           <div class="columns small-5" style="position: absolute;bottom: 0;right: 0;">
             <!-- todo: come up with a pattern to bottom align columns, or do we hold out for v1.2 and switch to flex gird? http://foundation.zurb.com/sites/docs/flex-grid.html -->
-            <a class="button primary columns small-12" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/cookiebanner.js">EBI cookiebanner.js</a>
-            <a class="button primary columns small-6" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/foot.js">EBI footer.js</a>
-            <a class="button primary columns small-6" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/script.js">EBI script.js</a>
+            <a class="button primary columns small-8 small-push-2" href="https://www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/script.js">EBI script.js</a>
           </div>
         </div>
         <div class="row">
@@ -113,7 +115,7 @@ This framework functions similar to many front-end solutions: several files and 
       </div>
     </div>
 
-    <a class="button primary columns small-12" href="https://ebiwd.github.io/EBI-Pattern-library/sample-site/">Core HTML structure<br/><small>The basic HTML tag structure for the page (global-nav black bar, local-nav area, main content div, footer, etc)</small></a>
+    <a class="button primary columns small-12" href="http://ebiwd.github.io/EBI-Pattern-library/meta-patterns/page-structure/">Core HTML structure<br/><small>The basic HTML tag structure for the page (global-nav black bar, local-nav area, main content div, footer, etc)</small></a>
   </div>
 </div>
 
