@@ -303,10 +303,8 @@
   <!-- JavaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.2/js/script.js"></script>
-  <script type="text/javascript" src="temp/HandlebaRss/lib/handlebars-v1.3.0.js"></script>
-
   <!-- include HandlebaRss -->
-  <script type="text/javascript" src="temp/HandlebaRss/src/HandlebaRss.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
 
   <script id="feed-template-news-lead-item" type="text/x-handlebars-template">
     {{#each item}}
@@ -396,15 +394,33 @@
       return jointDate;
     });
 
+    // feed processor
+    function HandlebaRss(feedUrl,template,destination){
+      this.feedUrl = feedUrl;
+      this.template = template;
+      this.destination = destination;
+    }
+    HandlebaRss.prototype.init = function(){
+      $.ajax({
+        url: 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22'+ encodeURIComponent(url)+'%22&format=json&diagnostics=true&_maxage=3600&callback=?',
+        dataType: 'json',
+        success: $.proxy(this.captureAndRender,this)
+      });
+    }
+    HandlebaRss.prototype.captureAndRender = function(data){
+      var source   = $(this.template).html();
+      var template = Handlebars.compile(source);
+      var html    = template(data.query.results);
+      $(this.destination).html(html);
+    };
+
     newsLeadItem = new HandlebaRss("http://www.ebi.ac.uk/about/news/press.xml",  "#feed-template-news-lead-item","#news-lead-item").init();
-    newsUpdates =  new HandlebaRss("http://www.ebi.ac.uk/about/news/service.xml","#feed-template-news-updates",  "#news-updates").init();
+    newsUpdates =  new HandlebaRss("http://www.ebi.ac.uk/about/news/service.xml","#feed-template-news-updates",  "#news-updates"  ).init();
 
-
-
-  // $.getJSON('temp/events-common-fields-feed-upcoming-events.json', function(data) {
-  // select json.title, json.bundle_name, json.path, json.short_description, json.starts from json where url='https://www.ebi.ac.uk/sites/ebi.ac.uk/files/data/events-common-fields-feed-upcoming-events.json' limit 6
-  // https://developer.yahoo.com/yql/console/?q=select%20*%20from%20html%20where%20url%3D%27http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FYahoo%27%20and%20xpath%3D%27%2F%2Ftable%2F*%5Bcontains(.%2C%22Founder%22)%5D%2F%2Fa%27&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys#h=select+json.title%2C+json.bundle%2C+json.path%2C+json.short_description+from+json+where+url%3D'https%3A%2F%2Fwww.ebi.ac.uk%2Fsites%2Febi.ac.uk%2Ffiles%2Fdata%2Fevents-common-fields-feed-upcoming-events.json'+limit+10
-  $.getJSON("https://query.yahooapis.com/v1/public/yql?q=select%20json.title%2C%20json.bundle_name%2C%20json.path%2C%20json.short_description%2C%20json.starts%20from%20json%20where%20url%3D'https%3A%2F%2Fwww.ebi.ac.uk%2Fsites%2Febi.ac.uk%2Ffiles%2Fdata%2Fevents-common-fields-feed-upcoming-events.json'%20limit%206&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&_maxage=1200", function(data) {
+    // $.getJSON('temp/events-common-fields-feed-upcoming-events.json', function(data) {
+    // select json.title, json.bundle_name, json.path, json.short_description, json.starts from json where url='https://www.ebi.ac.uk/sites/ebi.ac.uk/files/data/events-common-fields-feed-upcoming-events.json' limit 6
+    // https://developer.yahoo.com/yql/console/?q=select%20*%20from%20html%20where%20url%3D%27http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FYahoo%27%20and%20xpath%3D%27%2F%2Ftable%2F*%5Bcontains(.%2C%22Founder%22)%5D%2F%2Fa%27&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys#h=select+json.title%2C+json.bundle%2C+json.path%2C+json.short_description+from+json+where+url%3D'https%3A%2F%2Fwww.ebi.ac.uk%2Fsites%2Febi.ac.uk%2Ffiles%2Fdata%2Fevents-common-fields-feed-upcoming-events.json'+limit+10
+    $.getJSON("https://query.yahooapis.com/v1/public/yql?q=select%20json.title%2C%20json.bundle_name%2C%20json.path%2C%20json.short_description%2C%20json.starts%20from%20json%20where%20url%3D'https%3A%2F%2Fwww.ebi.ac.uk%2Fsites%2Febi.ac.uk%2Ffiles%2Fdata%2Fevents-common-fields-feed-upcoming-events.json'%20limit%206&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&_maxage=1200", function(data) {
       // data = data.splice(0,6); // only N results, please
       data = data.query.results.json; // yql path
       // console.log(data);
@@ -412,11 +428,10 @@
       var template = Handlebars.compile(source)(data);
       $('#upcoming-events').html(template);
     });
+
+    // insert data vis
+    $('#visulisation-parent').prepend('<iframe class="medium-7 large-12 visulisation" src="https://ebiwd.github.io/EBI-Search-index-visulisation/force.html" style="" scrolling="no"></iframe>');
   }
-
-  // insert data vis
-  $('#visulisation-parent').prepend('<iframe class="medium-7 large-12 visulisation" src="https://ebiwd.github.io/EBI-Search-index-visulisation/force.html" style="" scrolling="no"></iframe>');
-
   </script>
 
   <!-- The Foundation theme JavaScript -->
