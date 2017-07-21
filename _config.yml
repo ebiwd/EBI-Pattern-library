@@ -28,3 +28,8 @@ markdown:    kramdown
 highlighter: rouge
 #permalink:    pretty
 permalink:   /:categories/:title/
+
+# Allow redirects
+# https://help.github.com/articles/redirects-on-github-pages/
+gems:
+  - jekyll-redirect-from
