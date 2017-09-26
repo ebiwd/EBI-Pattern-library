@@ -116,13 +116,13 @@ Generating a similar chart in Piwik would be very manual and time intensive. It 
 
  ![](/EBI-Pattern-library/static/images/analytics/image03.png)Typically we found that Piwik's interface didn't show data in a form on which we could take action. Thus, data analysis in Piwik usually meant downloading information into excel and then doing additional number crunching.
 
-### Each options' unique benefit
+### Each option's unique benefit
 
 <div class="callout">
   <h4>The short take-away</h4>
   <p>If where data is stored and privacy matter, use Piwik. If you need peripheral data on visitors, use GA.</p>
 
-  <p>Google Analytics adds in data from other sources, this allows GA to show visitor's demographic data (age and gender), interests, and improve geolocation data. It is alos of particular necessity for users of Google Adwords. However, your website's data is stored by Google.</p>
+  <p>Google Analytics adds in data from other sources, this allows GA to show visitor's demographic data (age and gender), interests, and improve geolocation data. It is also of particular necessity for users of Google Adwords. However, your website's data is stored by Google.</p>
 
   <p>With Piwik you own and store your website's data. This gives you greater flexibility with collecting and storing your data.</p>
 </div>
