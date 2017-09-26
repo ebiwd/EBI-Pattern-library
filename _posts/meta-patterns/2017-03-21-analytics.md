@@ -28,7 +28,7 @@ We can't hope to answer all those questions, but we can help you to gain insight
 
 ### What website analytics tool is right for you?
 
-There are two widely chosen options for web analytics: [Google Analytics](https://www.google.com/url?q=http://www.google.com/analytics/&sa=D&ust=1490357443796000&usg=AFQjCNGJrMzPPlqR0fYgffvYWymfeNPSYw) (GA) or [Piwik](https://www.google.com/url?q=http://piwik.org/&sa=D&ust=1490357443797000&usg=AFQjCNG0ErNwERCnDn7y8-hTT5s2xkMh3Q). While there are other, less ubiquitous options such as [Clicky](https://www.google.com/url?q=https://clicky.com/&sa=D&ust=1490357443798000&usg=AFQjCNE99aQMQKDa4_js_IDTqAn-oHPBbw), [Open Web Analytics](https://www.google.com/url?q=http://www.openwebanalytics.com/&sa=D&ust=1490357443798000&usg=AFQjCNFbJQngsX49Em74JX2Tc_DwUDzQpg), or [eAnalytics](https://www.google.com/url?q=http://www.eanalytics.de/&sa=D&ust=1490357443799000&usg=AFQjCNGis-bMNmSJ2ChTz5ylQgb-YptBEQ), this article will focus solely on GA and Piwik.
+There are two widely chosen options for web analytics: [Google Analytics](https://www.google.com/analytics/) (GA) or [Piwik](https://piwik.org/). While there are other, less ubiquitous options such as [Clicky](https://clicky.com/), [Open Web Analytics](https://www.openwebanalytics.com/), or [eAnalytics](https://www.eanalytics.de/), this article will focus solely on GA and Piwik.
 
 To investigate the difference between these two options, Web Development ran a side by side test of GA and Piwik on intranet.ebi.ac.uk. The numbers presented in here are from a one week period, 18/11/15-26/11/15\.
 
@@ -46,16 +46,16 @@ To investigate the difference between these two options, Web Development ran a s
   <td colspan="1" rowspan="1">Friendlier, easier to learn interface, but less modifiable.</td>
   <td colspan="1" rowspan="1">Addition of data from Google's empire -- demographics, interests, and improved geolocation.</td>
   <td colspan="1" rowspan="1"><span markdown="1">
-  Free ([until 10mil visitor hits](https://www.google.com/url?q=https://developers.google.com/analytics/devguides/collection/ios/v3/limits-quotas&sa=D&ust=1490357443806000&usg=AFQjCNHLsnIoXwOr_aXvI-124m5ZWZPA2Q))</span>
+  Free ([until 10mil visitor hits](https://developers.google.com/analytics/devguides/collection/ios/v3/limits-quotas))</span>
   </td>
 </tr>
 <tr>
   <td colspan="1" rowspan="1">Piwik</td>
   <td colspan="1" rowspan="1">More visitor data captured, but more work analysing.</td>
   <td colspan="1" rowspan="1">More technical interface. It's slower to learn and use. Knowing SQL is useful.</td>
-  <td colspan="1" rowspan="1"><span markdown="1">You [own the data](https://www.google.com/url?q=http://piwik.org/privacy/&sa=D&ust=1490357443809000&usg=AFQjCNGLbwvpzzksnreHUsmKOrqTXicmXA) and can address privacy concerns; flexibility in collecting and analysing it</span>
+  <td colspan="1" rowspan="1"><span markdown="1">You [own the data](http://piwik.org/privacy/) and can address privacy concerns; flexibility in collecting and analysing it</span>
   </td>
-  <td colspan="1" rowspan="1"><span markdown="1">Cost of running a LAMP server (or using [Piwik Cloud](https://www.google.com/url?q=https://piwik.pro/cloud/%23pricing&sa=D&ust=1490357443811000&usg=AFQjCNGiERuE_0Lytyz9AFsElVbakSFrfQ))</span></td>
+  <td colspan="1" rowspan="1"><span markdown="1">Cost of running a LAMP server (or using [Piwik Cloud](https://piwik.pro/cloud/pricing))</span></td>
 </tr>
 </tbody></table>
 
@@ -94,7 +94,7 @@ The GA data appeared to be "cleaner." For instance Piwik recorded a visitor with
 
 It's unclear why the GA numbers are lower. However there are theories.
 
-1.  It's easier to block and abuse GA tracking: GA is used more widely than Piwik, so it's more likely to be blocked (e.g. Ad block plugins). China sometimes blocks Google traffic (including your GA tracking links), which in turn can cause issues with your javascript loading. Also, GA tracking calls to Google can be captured and redirected as a "[Great Cannon](https://www.google.com/url?q=http://www.wired.co.uk/news/archive/2015-04/10/china-great-cannon-github-hack&sa=D&ust=1490357443827000&usg=AFQjCNF4Md1s6Qazo-eeHNTXt4EDrf5o6A)" attack on other websites.
+1.  It's easier to block and abuse GA tracking: GA is used more widely than Piwik, so it's more likely to be blocked (e.g. Ad block plugins). China sometimes blocks Google traffic (including your GA tracking links), which in turn can cause issues with your javascript loading. Also, GA tracking calls to Google can be captured and redirected as a "[Great Cannon](http://www.wired.co.uk/news/archive/2015-04/10/china-great-cannon-github-hack)" attack on other websites.
 2.  The process of cleaning the data: As noted, Piwik records some data that appears non-sensical. GA might filter these visitors' data out and thus lower the numbers reported.
 
 ### Accessing and analysing data
@@ -133,7 +133,7 @@ GA also offers the ability to benchmark against other websites in your industry 
 
 Piwik doesn't have additional data to add insights, but it does give you full and complete control of your data. You decide where it's stored and for how long, who has access to what parts of the data, and what's tracked and not tracked.
 
-Piwik also offers much more flexibility. You can develop our own plugins; you have direct access to the MySQL database to do all kinds of statistics; you can even ignore "Do Not Track" setting to collect certain data ([Not recommended](https://www.google.com/url?q=http://piwik.org/docs/privacy/&sa=D&ust=1490357443841000&usg=AFQjCNFkBLxRRWyMD4mdtPxmppqf1_x1SQ) though!).
+Piwik also offers much more flexibility. You can develop our own plugins; you have direct access to the MySQL database to do all kinds of statistics; you can even ignore "Do Not Track" setting to collect certain data ([Not recommended](http://piwik.org/docs/privacy/) though!).
 
 ### Cost of web analytics
 
@@ -142,9 +142,9 @@ Piwik also offers much more flexibility. You can develop our own plugins; you ha
   <p>If you have a high number of visitors (>10mil) but not a lot of money to devote to web analytics, you should consider using Piwik.</p>
 </div>
 
-Google will host the service for you. Thus no infrastructure is needed on your part. Google Analytics is free if your site receives [fewer than 10 million hits](https://www.google.com/url?q=https://developers.google.com/analytics/devguides/collection/ios/v3/limits-quotas&sa=D&ust=1490357443845000&usg=AFQjCNEQ1gZHOcy1ZWuIT7VzgAsJseCCog) per month, but it's important to note that one user session can result in [many hits](https://www.google.com/url?q=https://support.google.com/analytics/answer/1070983?hl%3Den&sa=D&ust=1490357443846000&usg=AFQjCNHdEcbICLge5lMxd5hKvpOnJhrozA). If you have 10milion visitors you're likely to exceed this limit. To resolve it, you either need to [sample your data](https://www.google.com/url?q=http://www.blastam.com/blog/index.php/2011/08/set-sample-rate-in-google-analytics&sa=D&ust=1490357443846000&usg=AFQjCNFjbQAzLGxYNbdavAqE1AwtcFuQNQ) (so less visit data gets recorded in GA) or you need to talk with Google about the fee of premium version for a non-profit organisation. Exact pricing isn't posted but other sites quote a cost of [150,000USD](https://www.google.com/url?q=http://www.actualmetrics.com/google-analytics-price/&sa=D&ust=1490357443847000&usg=AFQjCNFxulECluvudU8UW_C7-7eBR02Wlg) (likely this is the cost for a profit organisation and the fee for NPO's is lower). The premium version comes with a more offerings and support than the free version.
+Google will host the service for you. Thus no infrastructure is needed on your part. Google Analytics is free if your site receives [fewer than 10 million hits](https://developers.google.com/analytics/devguides/collection/ios/v3/limits-quotas) per month, but it's important to note that one user session can result in [many hits](https://support.google.com/analytics/answer/1070983?hl%3Den). If you have 10milion visitors you're likely to exceed this limit. To resolve it, you either need to [sample your data](http://www.blastam.com/blog/index.php/2011/08/set-sample-rate-in-google-analytics) (so less visit data gets recorded in GA) or you need to talk with Google about the fee of premium version for a non-profit organisation. Exact pricing isn't posted but other sites quote a cost of [150,000USD](http://www.actualmetrics.com/google-analytics-price/) (likely this is the cost for a profit organisation and the fee for NPO's is lower). The premium version comes with a more offerings and support than the free version.
 
-Piwik is open source and free, but you need to have your own LAMP server on which to deploy it. This means a start-up cost to configure the server, and an ongoing cost to maintain it. As number of visitors increase (or decrease) it will be up to you to scale the server and deal with speeding up queries to the database. For teams with limited knowledge of LAMP servers, Piwik Cloud is an option with reasonable pricing options ([690€](https://www.google.com/url?q=https://piwik.pro/cloud/%23pricing&sa=D&ust=1490357443848000&usg=AFQjCNGA-TzpkqDmHL-8Uq0v0OJFNzmJAg) for 10mil actions). Unlike GA premium, Piwik Cloud is a hosting option, not a fuller service option.
+Piwik is open source and free, but you need to have your own LAMP server on which to deploy it. This means a start-up cost to configure the server, and an ongoing cost to maintain it. As number of visitors increase (or decrease) it will be up to you to scale the server and deal with speeding up queries to the database. For teams with limited knowledge of LAMP servers, Piwik Cloud is an option with reasonable pricing options ([690€](https://piwik.pro/cloud/pricing) for 10mil actions). Unlike GA premium, Piwik Cloud is a hosting option, not a fuller service option.
 
 ### Summary
 
