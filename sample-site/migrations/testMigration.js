@@ -1,28 +1,28 @@
 /*
-  This script will:
-  1) Swap out the old compliance CSS/JS
-  2) Swap out the omega grid for the Foundation grid
-  3) Some nesting changes for the global/local header
-  4) A handful of minor CSS edits may be needed for any Service-specific oddities
-    Originally authored on 2016-05-16
-    For assistance contact Ken Hawkins in Webdev
-        or post to Github https://github.com/ebiwd/EBI-Framework/issues
-
   To run, copy-paste the below line into your browser's console:
+
   jQuery('head').append('<script defer="defer" src="//ebiwd.github.io/EBI-Pattern-library/sample-site/migrations/testMigration.js"></script>\n');
 
   If your page does not have jQuery, you can load with eight lines of vaniala JS:
+var filerefJquery=document.createElement('script')
+    filerefJquery.setAttribute("type","text/javascript")
+    filerefJquery.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+    document.getElementsByTagName("head")[0].appendChild(filerefJquery)
 
-  var filerefJquery=document.createElement('script')
-      filerefJquery.setAttribute("type","text/javascript")
-      filerefJquery.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-      document.getElementsByTagName("head")[0].appendChild(filerefJquery)
-      
-  var fileref=document.createElement('script')
-      fileref.setAttribute("type","text/javascript")
-      fileref.setAttribute("src", "//ebiwd.github.io/EBI-Pattern-library/sample-site/migrations/testMigration.js")
-      document.getElementsByTagName("head")[0].appendChild(fileref)
+var fileref=document.createElement('script')
+    fileref.setAttribute("type","text/javascript")
+    fileref.setAttribute("src", "//ebiwd.github.io/EBI-Pattern-library/sample-site/migrations/testMigration.js")
+    document.getElementsByTagName("head")[0].appendChild(fileref)
 
+
+1) Swap out the old compliance CSS/JS
+2) Swap out the omega grid for the Foundation grid
+3) Some nesting changes for the global/local header
+4) A handful of minor CSS edits may be needed for any Service-specific oddities
+
+  Originally authored on 2016-05-16
+  For assistance contact Ken Hawkins in Webdev
+      or post to Github https://github.com/ebiwd/EBI-Framework/issues
  */
 
 console.log('%c ' + String.fromCharCode(0xD83D,0xDC4B) + ' \n Hi. \n I\'ll autopilot a transition of this page to the new EMBL-EBI visual framework.', 'background: rgb(0,124,130); color: #FFF; font-size: 20px;');
@@ -78,9 +78,9 @@ function testMigration(steppingTimeSpeed) {
   }, steppingTime());
 
   setTimeout(function(){
-    jQuery('head').append('<link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/css/foundation.css" type="text/css" />\n');
-    jQuery('head').append('<link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/ebi-global.css" type="text/css" />\n');
-    jQuery('head').append('<link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css" type="text/css" />\n');
+    jQuery('head').append('<link rel="stylesheet" href="//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/css/foundation.css" type="text/css" />\n');
+    jQuery('head').append('<link rel="stylesheet" href="//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/css/ebi-global.css" type="text/css" />\n');
+    jQuery('head').append('<link rel="stylesheet" href="//ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css" type="text/css" />\n');
     console.log('CSS: Injected new ebi-global.css fonts.css and foundation.css');
     console.log('------------------\n');
   }, steppingTime());
@@ -101,12 +101,12 @@ function testMigration(steppingTimeSpeed) {
     // Define array of object pairs
     // [what we check for] [what we replace with]
     var colourPalettes = [
-                          { "original" : "link[href$=\"/embl-petrol-colours.css\"]",        "new" : "//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css" },
-                          { "original" : "link[href$=\"/ebi-industry-colours.css\"]",       "new" : "//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-ebi-industry.css" },
-                          { "original" : "link[href$=\"/ebi-research.colour.css\"]",        "new" : "//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-ebi-research.css" },
-                          { "original" : "link[href$=\"/ebi-services-about-colours.css\"]", "new" : "//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-ebi-services-about.css" },
-                          { "original" : "link[href$=\"/ebi-training-colours.css\"]",       "new" : "//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-ebi-training.css" },
-                          { "original" : ".no-match", "new" : "//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css" }
+                          { "original" : "link[href$=\"/embl-petrol-colours.css\"]",        "new" : "//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css" },
+                          { "original" : "link[href$=\"/ebi-industry-colours.css\"]",       "new" : "//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/css/theme-ebi-industry.css" },
+                          { "original" : "link[href$=\"/ebi-research.colour.css\"]",        "new" : "//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/css/theme-ebi-research.css" },
+                          { "original" : "link[href$=\"/ebi-services-about-colours.css\"]", "new" : "//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/css/theme-ebi-services-about.css" },
+                          { "original" : "link[href$=\"/ebi-training-colours.css\"]",       "new" : "//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/css/theme-ebi-training.css" },
+                          { "original" : ".no-match", "new" : "//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css" }
                         ];
     var i = 0;
     // which colour palette is used?
@@ -134,14 +134,14 @@ function testMigration(steppingTimeSpeed) {
 
   setTimeout(function(){
     // Add new JS
-    jQuery('head').append('<script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/cookiebanner.js"></script>\n');
-    jQuery('head').append('<script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/foot.js"></script>\n');
-    jQuery('head').append('<script defer="defer" src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/script.js"></script>\n');
+    jQuery('head').append('<script defer="defer" src="//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/js/cookiebanner.js"></script>\n');
+    jQuery('head').append('<script defer="defer" src="//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/js/foot.js"></script>\n');
+    jQuery('head').append('<script defer="defer" src="//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/js/script.js"></script>\n');
 
     console.log('Javascript: I\'ve added three scripts:\n' +
-                '            //www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/cookiebanner.js\n' +
-                '            //www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/foot.js\n' +
-                '            //www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/script.js\n'
+                '            //ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/js/cookiebanner.js\n' +
+                '            //ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/js/foot.js\n' +
+                '            //ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/js/script.js\n'
     );
     console.log('------------------\n');
   }, steppingTime());
@@ -449,8 +449,8 @@ function testMigration(steppingTimeSpeed) {
 
   setTimeout(function(){
     // The Foundation theme JavaScript
-    jQuery('head').append('<script src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/js/foundation.js"></script>\n');
-    jQuery('head').append('<script src="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/js/foundationExtendEBI.js"></script>\n');
+    jQuery('head').append('<script src="//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/js/foundation.js"></script>\n');
+    jQuery('head').append('<script src="//ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.1/js/foundationExtendEBI.js"></script>\n');
 
     console.log('Javascript: I\'ve added (but not executed) the Foundation JS. Invoke with runJS()');
     console.log('------------------\n');
